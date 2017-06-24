@@ -1,0 +1,9 @@
+/**
+ * Created by anhle on 6/20/17.
+ */
+export interface Project {
+    id: number;
+    name: string;
+    info: string;
+    image: string;
+}
