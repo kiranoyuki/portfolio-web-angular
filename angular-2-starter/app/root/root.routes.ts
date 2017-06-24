@@ -7,7 +7,7 @@ import {ErrorComponent} from '../error/error.component';
 import {ProjectService} from '../shared/project.service';
 
 const routes : RouterConfig = [
-    { path: '', redirectTo: 'home', pathMatch, 'full'},
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent},
     { path: 'detail/:id', component: DetailComponent },
     { path: 'projects', component: ProjectsComponent},

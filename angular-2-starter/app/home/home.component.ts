@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 import { TruncatePipe } from '../shared/trunc.pipe';
 
 @Component({
-    templeteUrl : 'app/home/home.html',
+    templateUrl : 'app/home/home.html',
     directives: [ROUTER_DIRECTIVES],
     styleUrls: ['app/home/home.css'],
     pipes: [TruncatePipe]
