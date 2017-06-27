@@ -24,6 +24,11 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['detail', project.id]);
     }
 
+    seeProject(){
+        this.router.navigate(['projects']);
+    }
+
+
     ngOnInit() {
         this._projectService.getProjects()
             .then(projects => projects.slice(-3))

@@ -1,6 +1,19 @@
+:root {
+	--inactive-color: #B5C2EB;
+	--active-color: #494DA1;
+}
 body {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
 	background-color: white;
-	color: black;
+}
+
+.inactive-color {
+	color: var(--inactive-color);
+}
+
+.active-color {
+	color: var(--active-color);
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -26,6 +39,40 @@ body {
 	width: auto;
 }
 
+.navbar-default .navbar-toggle {
+	border-style: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: var(--inactive-color);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus>.icon-bar, .navbar-default .navbar-toggle:hover>.icon-bar{
+	background-color: var(--active-color);
+}
+
+
+.navbar-custom{
+	border-style: none;
+	background-color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: smaller;
+
+}
+
+.navbar-custom .navbar-nav>li>a{
+	color: var(--inactive-color);
+}
+
+.navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+	color: var(--active-color);
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
@@ -45,4 +92,55 @@ body {
 	.navbar-wrapper .navbar {
 		border-radius: 4px;
 	}
+
+	/*.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover .icon-bar{
+		background-color: var(--active-color);
+	}*/
+
+	.navbar-custom{
+		border-style: none;
+		background-color: white;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: smaller;
+
+	}
+
+	.navbar-custom .navbar-nav>li>a{
+		color: var(--inactive-color);
+	}
+
+	.navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+		color: var(--active-color);
+	}
+}
+
+/* General style
+---------------------------------------------------------*/
+.full-height {
+	height: 100%;
+}
+
+.flex-container-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.flex-container-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-item {
+	align-self: center;
+	text-align: center;
 }

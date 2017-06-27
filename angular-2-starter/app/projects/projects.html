@@ -1,10 +1,10 @@
 <div class="container">
 
 	<div class="row spacer">
-		<h1 class="text-center">All of our projects</h1>
+		<h1 class="text-center">Work / Projects</h1>
 	</div>
 
-	<div class="row ">
+	<div class="flex-container-row">
 		<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
 			<img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140">
 			<h2>{{project.name}}</h2>
