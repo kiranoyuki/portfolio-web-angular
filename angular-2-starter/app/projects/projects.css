@@ -3,8 +3,13 @@
 	padding-bottom: 5%;
 }
 
-.btn-app{
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	color: black;
+.img-thumbnail {
+	width: 240px;
+	height: 240px;
+	padding: 0;
+}
+
+.img-thumbnail:hover {
+	opacity: 50;
+	transition: opacity 2s;
 }

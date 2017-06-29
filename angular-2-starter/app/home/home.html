@@ -2,34 +2,36 @@
 	<img src="app/home/images/3.jpg" class="jumbo">
 </div-->
 
-
-<div class="flex-container-column">
-	<div class="flex-item">
-		<h1>Anh Le</h1>
-	</div>
-	<div class="flex-item">
-		<h3>Software engineer and UX Designer</h3>
-
-	</div>
-	<div class="flex-item">
-
-		<h3>I seek knowledge through challenges and complex problems</h3>
-	</div>
-
-	<div class="flex-container-row">
-		<p><button class="btn btn-default btn-style" type="button" (click)="seeProject()">Explore Projects</button></p>
-		<p><button class="btn btn-default btn-style" type="button"><a target="_self" download="anhle.pdf" href="app/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
-
-	</div>
-
-
-
-	<!--div class="row ">
-		<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
-			<img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140">
-			<h2>{{project.name}}</h2>
-			<p >{{project.info | truncate}}</p>
-			<p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>
+<div class="container">
+	<div class="flex-left-container-column">
+		<div class="flex-left-item">
+			<h1>Anh Le</h1>
 		</div>
-	</div-->
+		<div class="flex-left-item">
+			<h3>Software engineer and UX Designer</h3>
+
+		</div>
+		<div class="flex-left-item">
+
+			<h3>I seek knowledge through challenges and complex problems</h3>
+		</div>
+
+
+		<div class="flex-left-container-row">
+			<p><button class="btn btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button></p>
+			<p><button class="btn btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="app/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
+
+		</div>
+
+
+
+		<!--div class="row ">
+			<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
+				<img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140">
+				<h2>{{project.name}}</h2>
+				<p >{{project.info | truncate}}</p>
+				<p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>
+			</div>
+		</div-->
+	</div>
 </div>

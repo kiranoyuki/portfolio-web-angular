@@ -4,12 +4,15 @@
 		<h1 class="text-center">Work / Projects</h1>
 	</div>
 
-	<div class="flex-container-row">
+	<div class="flex-center-container-row">
 		<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
-			<img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140">
+			<div>
+				<img class="img-thumbnail" src="{{project.image}}" (click)="chooseProject(project)" alt="project image">
+				<p class="trunc">{{project.info | truncate}}</p>
+			</div>
+
 			<h2>{{project.name}}</h2>
-			<p class="trunc">{{project.info | truncate}}</p>
-			<p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>
+			<p>{{project.category}}</p>
 		</div>
 	</div>
 
