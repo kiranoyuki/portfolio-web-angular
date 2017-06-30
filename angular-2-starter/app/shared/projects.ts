@@ -43,5 +43,13 @@ export const ourProjects: Project[] = [
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
         image: 'app/shared/images/sample1.jpg'
+    },
+    {
+        id: 106,
+        name: 'Project1',
+        category: 'company website',
+        info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
+        'eget at in elit in enim adipiscing',
+        image: 'app/shared/images/sample1.jpg'
     }
 ];

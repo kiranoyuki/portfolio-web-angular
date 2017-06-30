@@ -4,19 +4,21 @@
 		<h1 class="text-center">Work / Projects</h1>
 	</div>
 
-	<div class="flex-center-container-row">
+	<div class="image-flex-div">
 		<div *ngFor="let project of projects" class="text-center projects">
-			<div class="galleryItem">
+			<figure>
 				<img ng-click="chooseProject(project)" class="img-thumbnail" src="{{project.image}}" (click)="chooseProject(project)" alt="project image">
-				<div class="overlay">
-					<p class="text trunc">{{project.info | truncate}}</p>
-				</div>
-			</div>
-
-			<h3>{{project.name}}</h3>
-			<p>{{project.category}}</p>
+				<figcaption>
+					<h3>{{project.name}}</h3>
+					<p>{{project.category}}</p>
+				</figcaption>
+			</figure>
 		</div>
 	</div>
 
 </div>
 
+
+<!--div class="overlay">
+	<p class="text trunc">{{project.info | truncate}}</p>
+</div-->
