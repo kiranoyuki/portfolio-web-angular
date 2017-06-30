@@ -3,11 +3,12 @@
 	padding-bottom: 5%;
 }
 
-
+.projects {
+	margin: 1em 0;
+}
 
 .galleryItem {
 	position: relative;
-	float: left;
 }
 
 .img-thumbnail {
@@ -18,9 +19,6 @@
 
 .galleryItem img {
 	max-width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 
 .overlay {

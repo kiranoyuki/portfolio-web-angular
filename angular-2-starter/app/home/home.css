@@ -2,6 +2,11 @@
 	background-color: aquamarine;
 }
 
+.container {
+	margin: auto 3em;
+	height: inherit;
+}
+
 .btn-style {
 	margin: 2em;
 }
