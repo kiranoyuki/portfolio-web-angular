@@ -6,14 +6,17 @@
 
 	<div class="flex-center-container-row">
 		<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
-			<div>
-				<img class="img-thumbnail" src="{{project.image}}" (click)="chooseProject(project)" alt="project image">
-				<p class="trunc">{{project.info | truncate}}</p>
+			<div class="galleryItem">
+				<img ng-click="chooseProject(project)" class="img-thumbnail" src="{{project.image}}" (click)="chooseProject(project)" alt="project image">
+				<div class="overlay">
+					<p class="text trunc">{{project.info | truncate}}</p>
+				</div>
 			</div>
 
-			<h2>{{project.name}}</h2>
+			<h3>{{project.name}}</h3>
 			<p>{{project.category}}</p>
 		</div>
 	</div>
 
 </div>
+

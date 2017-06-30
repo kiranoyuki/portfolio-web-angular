@@ -3,13 +3,49 @@
 	padding-bottom: 5%;
 }
 
+
+
+.galleryItem {
+	position: relative;
+	float: left;
+}
+
 .img-thumbnail {
-	width: 240px;
-	height: 240px;
+	display: block;
+	height: auto;
 	padding: 0;
 }
 
-.img-thumbnail:hover {
-	opacity: 50;
-	transition: opacity 2s;
+.galleryItem img {
+	max-width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--inactive-color);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.galleryItem:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 1em;
+	position: absolute;
+	hyphens: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }

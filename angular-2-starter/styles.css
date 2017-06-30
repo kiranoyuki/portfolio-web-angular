@@ -12,6 +12,7 @@ body {
 
 .container {
 	margin: auto 3em;
+	height: inherit;
 }
 
 
@@ -64,8 +65,8 @@ body {
 
 
 .navbar-custom{
-	border-style: none;
-	background-color: whitesmoke;
+	border-style: solid;
+	background-color: white;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: smaller;
@@ -99,14 +100,6 @@ body {
 	.navbar-wrapper .navbar {
 		border-radius: 4px;
 	}
-
-	/*.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-		background-color: transparent;
-	}
-
-	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover .icon-bar{
-		background-color: var(--active-color);
-	}*/
 
 	.navbar-custom{
 		border-style: none;

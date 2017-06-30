@@ -4,6 +4,7 @@
 export interface Project {
     id: number;
     name: string;
+    category: string;
     info: string;
     image: string;
 }
