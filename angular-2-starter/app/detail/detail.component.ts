@@ -12,7 +12,6 @@ import { Image } from '../shared/image-interface';
 @Component({
     templateUrl : 'app/detail/detail.html',
     styleUrls: ['app/detail/detail.css'],
-    directives : [ CarouselComponent ]
 })
 
 export class DetailComponent implements OnInit {

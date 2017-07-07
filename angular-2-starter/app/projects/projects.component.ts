@@ -9,8 +9,7 @@ import { TruncatePipe } from '../shared/trunc.pipe';
 
 @Component({
     templateUrl: 'app/projects/projects.html',
-    styleUrls: ['app/projects/projects.css'],
-    pipes: [TruncatePipe]
+    styleUrls: ['app/projects/projects.css']
 })
 
 export class ProjectsComponent implements OnInit {

@@ -2,17 +2,13 @@
  * Created by anhle on 6/23/17.
  */
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 import { ProjectService } from '../shared/project.service';
 import { Project } from '../shared/project-interface';
 import { Router } from '@angular/router';
-import { TruncatePipe } from '../shared/trunc.pipe';
 
 @Component({
     templateUrl : 'app/home/home.html',
-    directives: [ROUTER_DIRECTIVES],
-    styleUrls: ['app/home/home.css'],
-    pipes: [TruncatePipe]
+    styleUrls: ['app/home/home.css']
 })
 
 export class HomeComponent implements OnInit {

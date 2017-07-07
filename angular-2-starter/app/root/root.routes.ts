@@ -1,14 +1,14 @@
-import {provideRouter, RouterConfig} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from '../home/home.component';
 import {DetailComponent} from '../detail/detail.component';
 import {ProjectsComponent} from '../projects/projects.component';
 import {AboutComponent} from '../about/about.component';
 import {ErrorComponent} from '../error/error.component';
 import {ContactComponent} from '../contact/contact.component';
-import {ImageService} from '../shared/image.service';
-import {ProjectService} from '../shared/project.service';
+import {NgModule} from "@angular/core";
 
-const routes : RouterConfig = [
+
+const routes : Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent},
     { path: 'detail/:id', component: DetailComponent },
@@ -18,9 +18,11 @@ const routes : RouterConfig = [
     { path : '*', component: ErrorComponent}
 ];
 
-export const myRouterProviders = [
-    provideRouter(routes),
-    ProjectService,
-    ImageService
+@NgModule({
+    imports: [
+        RouterModule.forRoot(routes)
+    ],
+    exports: [ RouterModule ]
+})
 
-]
+export class RootRouting {}
