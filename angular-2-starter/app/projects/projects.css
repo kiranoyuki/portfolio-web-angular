@@ -50,6 +50,7 @@
 }
 
 .img-wrapper img {
+	margin: auto;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
