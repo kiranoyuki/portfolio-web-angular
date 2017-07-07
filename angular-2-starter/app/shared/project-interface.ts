@@ -6,5 +6,6 @@ export interface Project {
     name: string;
     category: string;
     info: string;
-    image: string;
+    images: any;
+    thumbnail: string;
 }

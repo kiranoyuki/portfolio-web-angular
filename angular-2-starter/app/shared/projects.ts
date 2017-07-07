@@ -10,7 +10,16 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     },
     {
         id: 102,
@@ -18,7 +27,16 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     },
     {
         id: 103,
@@ -26,7 +44,16 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     },
     {
         id: 104,
@@ -34,7 +61,16 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     },
     {
         id: 105,
@@ -42,7 +78,16 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     },
     {
         id: 106,
@@ -50,6 +95,15 @@ export const ourProjects: Project[] = [
         category: 'company website',
         info: 'Pede accumsan, lorem pellentesque lectus scelerisque consequat sit, ligula tristique tincidunt et, ' +
         'eget at in elit in enim adipiscing',
-        image: 'app/shared/images/sample1.jpg'
+        images: [{
+            title: 'image1',
+            url : 'app/shared/images/2.png'
+        },
+            {
+                title: 'image2',
+                url : 'app/shared/images/1.png'
+            }
+        ],
+        thumbnail: 'app/shared/images/sample1.jpg'
     }
 ];

@@ -4,8 +4,9 @@ import {DetailComponent} from '../detail/detail.component';
 import {ProjectsComponent} from '../projects/projects.component';
 import {AboutComponent} from '../about/about.component';
 import {ErrorComponent} from '../error/error.component';
-import {ProjectService} from '../shared/project.service';
 import {ContactComponent} from '../contact/contact.component';
+import {ImageService} from '../shared/image.service';
+import {ProjectService} from '../shared/project.service';
 
 const routes : RouterConfig = [
     { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -19,5 +20,7 @@ const routes : RouterConfig = [
 
 export const myRouterProviders = [
     provideRouter(routes),
-    ProjectService
+    ProjectService,
+    ImageService
+
 ]

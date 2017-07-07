@@ -8,7 +8,7 @@
 		<div *ngFor="let project of projects" class="text-center projects">
 			<figure>
 				<div class="img-wrapper">
-					<img ng-click="chooseProject(project)" class="img-thumbnail" src="{{project.image}}" (click)="chooseProject(project)" alt="project image">
+					<img ng-click="chooseProject(project)" class="img-thumbnail" src="{{project.thumbnail}}" (click)="chooseProject(project)" alt="project image">
 				</div>
 				<figcaption>
 					<h3>{{project.name}}</h3>
