@@ -1,5 +1,11 @@
-img {
-	height: 80%;
-	width: 100%;
+.detail-container {
+	margin: auto 10%;
 }
 
+
+@media (min-width: 768px) {
+	.detail-container {
+		margin: auto 30%;
+	}
+
+}

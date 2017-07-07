@@ -11,6 +11,10 @@ body {
 }
 
 
+.project-container {
+	width: 80%;
+	margin: 10% auto;
+}
 
 
 .inactive-color {

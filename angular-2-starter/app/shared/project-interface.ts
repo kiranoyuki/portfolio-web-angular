@@ -8,4 +8,9 @@ export interface Project {
     info: string;
     images: any;
     thumbnail: string;
+    company: string;
+    place: string;
+    date: string;
+    description: string;
+    challenge: string;
 }
