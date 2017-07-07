@@ -3,7 +3,6 @@
  */
 import {Component, Input} from '@angular/core';
 import {Image} from '../shared/image-interface';
-import {ImageService} from '../shared/image.service';
 
 @Component({
     selector: 'custom-carousel',
@@ -16,5 +15,8 @@ export class CarouselComponent {
 
     constructor () {}
 
+    isActive(image: Image) {
+        return image === this.images[0];
+    }
 
 }
