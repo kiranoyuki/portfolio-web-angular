@@ -1,6 +1,6 @@
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner" role="listbox">
-		<div *ngFor="let image of images" class="item" [ngClass]="{active: isActive(image)}">
+		<div *ngFor="let image of images" class="item slider-size" [ngClass]="{active: isActive(image)}">
 			<img src="{{image.url}}" alt="{{image.title}}">
 			<div class="carousel-caption">
 				{{image.title}}

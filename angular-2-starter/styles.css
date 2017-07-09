@@ -1,14 +1,56 @@
 :root {
-	--inactive-color: #B5C2EB;
-	--active-color: #494DA1;
+	--light-purple: #B5C2EB;
+	--dark-purple: #494DA1;
 	--button-color: #fd76b2;
+	--blue-color: #4FC3F7;
+	--dark-grey: #212121;
+	--main-grey: #616161;
+	--light-grey: #9E9E9E;
 }
 body {
 	height: 100%;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color: white;
+	letter-spacing: 0.08em;
+}
+
+
+
+h1 {
+	color: var(--dark-purple);
+}
+
+h2 {
+	color: var(--light-purple);
+}
+
+h3 {
+	color: var(--main-grey);
+}
+
+h4 {
+	color: var(--main-grey);
+}
+
+h5 {
+	font-weight: 400;
+	color: var(--main-grey);
+	line-height: 150%;
 
 }
+
+h6 {
+	font-weight: 400;
+	color: var(--light-grey);
+	line-height: 150%;
+}
+
+p {
+	font-size: small;
+	color: var(--light-grey);
+	line-height: 150%;
+}
+
 
 
 .project-container {
@@ -18,11 +60,11 @@ body {
 
 
 .inactive-color {
-	color: var(--inactive-color);
+	color: var(--light-purple);
 }
 
 .active-color {
-	color: var(--active-color);
+	color: var(--blue-color);
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -53,7 +95,7 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar{
-	background-color: var(--inactive-color);
+	background-color: var(--light-purple);
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -61,7 +103,7 @@ body {
 }
 
 .navbar-default .navbar-toggle:focus>.icon-bar, .navbar-default .navbar-toggle:hover>.icon-bar{
-	background-color: var(--active-color);
+	background-color: var(--blue-color);
 }
 
 
@@ -69,18 +111,18 @@ body {
 	border-style: solid;
 	background-color: white;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: smaller;
 
 }
 
-.navbar-custom .navbar-nav>li>a{
+/*.navbar-custom .navbar-nav>li>a{
 	color: var(--inactive-color);
 }
 
 .navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
 	color: var(--active-color);
-}
+}*/
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -106,18 +148,30 @@ body {
 		border-style: none;
 		background-color: white;
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: smaller;
 
 	}
 
-	.navbar-custom .navbar-nav>li>a{
+	.navbar-nav .btn-custom {
+		margin: 0.15em 0.4em;
+	}
+
+    .btn-custom a {
+	    color: white;
+    }
+
+    .btn-custom a:hover{
+	    text-decoration: none;
+    }
+
+	/*.navbar-custom .navbar-nav>li>a{
 		color: var(--inactive-color);
 	}
 
 	.navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
 		color: var(--active-color);
-	}
+	}*/
 }
 
 /* General style
@@ -139,7 +193,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	height: 100%;
 }
 
 .flex-center-container-row {
@@ -175,9 +228,77 @@ body {
 	margin: 0.5em 1em;
 	padding: 1em 1em;
 	border-radius: 0;
-	background-color: var(--button-color);
+	background-color: var(--light-purple);
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: small;
 	font-weight: 500;
+}
+
+.btn-custom:hover {
+	color: white;
+	background-color: var(--blue-color);
+}
+
+.btn-animate {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+
+}
+.btn-animate:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.text-animate {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.text-animate:hover {
+	text-shadow: 0 0 1px gray, 0 0 25px gray, 0 0 5px grey;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.custom-margin {
+	margin: auto 5%;
+}
+
+
+/* DEMO TYPEWRITER STYLES */
+.typewriter h2 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid mediumpurple; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation:
+			typing 3.5s steps(30, end),
+			blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: mediumpurple }
 }
