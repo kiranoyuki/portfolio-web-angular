@@ -21,6 +21,7 @@ import {AppComponent} from "./app.component";
 import {TruncatePipe} from "../shared/trunc.pipe";
 import {ProjectCardComponent} from "../shared/project-card/project-card.component";
 import {ProjectGroupComponent} from "../shared/group-project/group-project.component";
+import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import {ProjectGroupComponent} from "../shared/group-project/group-project.compo
     CarouselComponent,
     TruncatePipe,
     FaderComponent,
+    GroupFaderComponent,
     ProjectCardComponent,
     ProjectGroupComponent
   ],
