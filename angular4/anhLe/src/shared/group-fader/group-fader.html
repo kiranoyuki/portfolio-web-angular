@@ -1,5 +1,14 @@
-<div id="container" [@listAnimation]="items">
+
+<div *ngIf="items" [@listAnimation]="items">
 
 	<group-project [projects]="items"></group-project>
 
 </div>
+
+
+
+<!--div [@delayListAnimation]="delayItems" *ngIf="delayItems">
+
+	<group-project [projects]="delayItems"></group-project>
+
+</div-->

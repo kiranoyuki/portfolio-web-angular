@@ -54,3 +54,15 @@ a:hover
 #home-btn {
 	width: 100%;
 }
+
+/*----------- project list ----------------*/
+
+#project-list {
+	margin-top: 5%;
+	padding: 5%;
+	background-color: var(--light-background);
+}
+
+#project-list group-fader{
+	margin:5%;
+}

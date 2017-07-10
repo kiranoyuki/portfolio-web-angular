@@ -15,7 +15,7 @@ import { Component, Input, OnChanges } from '@angular/core';
     animations: [
         trigger('visibilityChanged', [
             transition(':enter', [
-                query('.object-animate', [
+                query('*', [
                     style({ transform: 'translateY(20px)', opacity: 0 }),
                     stagger(100, [
                         animate('500ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))

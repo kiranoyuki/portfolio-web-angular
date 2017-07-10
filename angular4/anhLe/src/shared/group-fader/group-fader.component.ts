@@ -5,7 +5,7 @@
  * Created by anhle on 7/9/17.
  */
 import {query, stagger, animate, style, transition, trigger, keyframes} from '@angular/animations';
-import { Component, Input } from '@angular/core';
+import {Component, Input, OnChanges} from '@angular/core';
 
 
 @Component({
@@ -13,25 +13,20 @@ import { Component, Input } from '@angular/core';
     templateUrl : './group-fader.html',
     animations: [
         trigger('listAnimation', [
-            transition('* => *', [
-
-                query(':enter', style({ opacity: 0 }), {optional: true}),
-
-                query(':enter', stagger('200ms', [
-                    animate('1s ease-in', keyframes([
-                        style({opacity: 0, transform: 'translateY(20%)', offset: 0}),
-                        style({opacity: .5, transform: 'translateY(-10px)',  offset: 0.3}),
-                        style({opacity: 1, transform: 'translateY(0)',     offset: 1.0}),
-                    ]))]), {optional: true})
+            transition(':enter', [
+                query('*', [
+                    style({ transform: 'translateY(20px)', opacity: 0 }),
+                    stagger(100, [
+                        animate('1200ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
+                    ])
+                ])
             ])
         ])
     ]
 })
 export class GroupFaderComponent {
 
-
     @Input('items') items: any[];
-
 }
 
 

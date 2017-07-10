@@ -1,7 +1,7 @@
 /**
  * Created by anhle on 6/23/17.
  */
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, HostListener} from '@angular/core';
 import { ProjectService } from '../shared/project.service';
 import { Project } from '../shared/project-interface';
 import { Router } from '@angular/router';
@@ -63,9 +63,7 @@ export class HomeComponent implements OnInit {
 
 
     ngOnInit() {
-        /*this._projectService.getProjects()
-            .then(projects => projects.slice(-3))
-            .then(projects => this.projects = projects);*/
+
 
         this.typewriter(this.INTRO[0], this.displayText, "text1", 50).then(()=>{
             this.typewriter(this.INTRO[1], this.displayText, "text2", 50).then(res=>{
@@ -76,6 +74,17 @@ export class HomeComponent implements OnInit {
                 });
             });
         });
+    }
+
+    @HostListener("window:scroll", [])
+    onWindowScroll(){
+        this.getProject();
+    }
+
+    getProject(){
+        this._projectService.getProjects()
+            .then(projects => projects.slice(-3))
+            .then(projects => this.projects = projects);
     }
 
 }
