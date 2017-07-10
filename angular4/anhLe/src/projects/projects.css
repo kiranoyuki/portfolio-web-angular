@@ -1,77 +1,41 @@
-*, *::before, *::after{
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+/**, *::before, *::after{*/
+	/*-moz-box-sizing: border-box;*/
+	/*box-sizing: border-box;*/
 
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-
-.image-flex-div {
-	display: flex;
-	flex-wrap: wrap;
-}
+	/*-webkit-transition: all 0.3s ease-in-out;*/
+	/*transition: all 0.3s ease-in-out;*/
+/*}*/
 
 
-.projects {
-	display: inline-block;
-	margin-bottom: 8px;
-	width: calc(50% - 4px);
-	margin-right: 8px;
-	text-decoration: none;
-	color: black;
-}
-
-.projects:nth-of-type(2n) {
-	margin-right: 0;
-}
-
-@media screen and (min-width: 50em) {
-	.projects{
-		width: calc(25% - 6px);
-	}
-
-	.projects:nth-of-type(2n) {
-		margin-right: 8px;
-	}
-
-	.projects:nth-of-type(4n) {
-		margin-right: 0;
-	}
-}
+/*.image-flex-div {*/
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+/*}*/
 
 
-.img-wrapper {
-	overflow: hidden;
-}
+/*.projects {*/
+	/*display: inline-block;*/
+	/*margin-bottom: 8px;*/
+	/*width: calc(50% - 4px);*/
+	/*margin-right: 8px;*/
+	/*text-decoration: none;*/
+	/*color: black;*/
+/*}*/
 
-.img-wrapper img {
-	margin: auto;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
+/*.projects:nth-of-type(2n) {*/
+	/*margin-right: 0;*/
+/*}*/
 
-.img-wrapper img:hover {
-	transform:scale(1.15);
-	-ms-transform:scale(1.15); /* IE 9 */
-	-moz-transform:scale(1.15); /* Firefox */
-	-webkit-transform:scale(1.15); /* Safari and Chrome */
-	-o-transform:scale(1.15); /* Opera */
-}
+/*@media screen and (min-width: 50em) {*/
+	/*.projects{*/
+		/*width: calc(25% - 6px);*/
+	/*}*/
 
+	/*.projects:nth-of-type(2n) {*/
+		/*margin-right: 8px;*/
+	/*}*/
 
-figcaption {
-	margin-top: 15px;
-}
-
-img {
-	border: none;
-	max-width: 100%;
-	height: auto;
-	display: block;
-	padding: 0;
-	transition: transform .2s ease-in-out;
-}
+	/*.projects:nth-of-type(4n) {*/
+		/*margin-right: 0;*/
+	/*}*/
+/*}*/

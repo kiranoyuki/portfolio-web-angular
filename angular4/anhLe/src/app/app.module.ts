@@ -12,14 +12,15 @@ import {ProjectsComponent} from '../projects/projects.component';
 import {AboutComponent} from '../about/about.component';
 import {ErrorComponent} from '../error/error.component';
 import {ContactComponent} from '../contact/contact.component';
-import {CarouselComponent} from '../carousel/carousel.component';
+import {CarouselComponent} from '../shared/carousel/carousel.component';
 import {FaderComponent} from '../shared/fader/fader.component';
 import {AppRouting}     from './app.routes';
 import {ImageService} from "../shared/image.service";
 import {ProjectService} from "../shared/project.service";
 import {AppComponent} from "./app.component";
 import {TruncatePipe} from "../shared/trunc.pipe";
-import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
+import {ProjectCardComponent} from "../shared/project-card/project-card.component";
+import {ProjectGroupComponent} from "../shared/group-project/group-project.component";
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
     CarouselComponent,
     TruncatePipe,
     FaderComponent,
-    GroupFaderComponent
+    ProjectCardComponent,
+    ProjectGroupComponent
   ],
   providers: [ ImageService,
     ProjectService

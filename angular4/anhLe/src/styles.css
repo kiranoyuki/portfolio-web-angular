@@ -6,6 +6,8 @@
 	--dark-grey: #212121;
 	--main-grey: #616161;
 	--light-grey: #9E9E9E;
+	--bold-grey: #27303b;
+	--light-text: #a3afbf;
 }
 body {
 	height: 100%;
@@ -29,8 +31,10 @@ h3 {
 }
 
 h4 {
-	color: var(--main-grey);
-}
+	font-weight: bold;
+	font-size: 1.5em;
+	color: var(--bold-grey);
+	font-family: "PT Serif";}
 
 h5 {
 	font-weight: 400;

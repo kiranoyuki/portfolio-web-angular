@@ -2,12 +2,12 @@
  * Created by anhle on 7/5/17.
  */
 import {Component, Input} from '@angular/core';
-import {Image} from '../shared/image-interface';
+import {Image} from '../image-interface';
 
 @Component({
     selector: 'custom-carousel',
-    templateUrl : './carousel.html',
-    styleUrls: ['./carousel.css']
+    templateUrl : 'carousel.html',
+    styleUrls: ['carousel.css']
 })
 
 export class CarouselComponent {

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../shared/project.service';
 import { Project } from '../shared/project-interface';
-import { CarouselComponent } from '../carousel/carousel.component';
+import { CarouselComponent } from '../shared/carousel/carousel.component';
 import { ImageService} from '../shared/image.service';
 import { Image } from '../shared/image-interface';
 
