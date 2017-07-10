@@ -1,0 +1,36 @@
+<div class="project-container">
+
+	<div class="row spacer">
+		<h1 class="text-center">Work / Projects</h1>
+	</div>
+
+
+		<div class="image-flex-div">
+			<my-fader [isVisible]="true" *ngFor="let project of projects" class="text-center projects object-animate">
+
+
+
+					<figure class="">
+						<div class="img-wrapper">
+							<img ng-click="chooseProject(project)" class="img-thumbnail" src="{{project.thumbnail}}" (click)="chooseProject(project)" alt="project image">
+						</div>
+						<figcaption>
+							<h3>{{project.name}}</h3>
+							<p>{{project.category}}</p>
+						</figcaption>
+					</figure>
+
+
+
+
+			</my-fader>
+
+		</div>
+
+
+</div>
+
+
+<!--div class="overlay">
+	<p class="text trunc">{{project.info | truncate}}</p>
+</div-->

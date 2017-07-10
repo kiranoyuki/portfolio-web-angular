@@ -1,0 +1,45 @@
+<!--div class="jumbotron">
+	<img src="app/home/images/3.jpg" class="jumbo">
+</div-->
+
+<div class="container">
+	<div class="flex-left-container-column custom-margin">
+		<div id="typedtext">
+			<div class="flex-left-item">
+				<h5>{{displayText.text1}}</h5>
+			</div>
+			<div class="flex-left-item">
+				<h2>{{displayText.text2}}</h2>
+				<h2>{{displayText.text3}}</h2>
+
+			</div>
+			<div class="flex-left-item">
+				<h5>{{displayText.text4}}</h5>
+			</div>
+		</div>
+		<div *ngIf="textDisplayDone" class="full-width">
+			<my-fader [isVisible]="textDisplayDone">
+				<div class="flex-left-container-row margin-top">
+					<p><button class="object-animate btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button></p>
+					<p><button class="object-animate btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="../assets/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
+				</div>
+
+				<div class="object-animate flex-center-item margin-top">
+					<span class="text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+				</div>
+			</my-fader>
+		</div>
+
+
+
+		<!--div class="row ">
+			<div *ngFor="let project of projects" class="col-lg-4 text-center projects">
+				<img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140">
+				<h2>{{project.name}}</h2>
+				<p >{{project.info | truncate}}</p>
+				<p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>
+			</div>
+		</div-->
+	</div>
+
+</div>
