@@ -4,7 +4,7 @@
 import {
     Component, OnChanges, Input,
     trigger, state, animate, transition, style, group
-} from '@angular/core';
+} from '@angular/animations';
 
 @Component({
     selector : 'my-fader',
