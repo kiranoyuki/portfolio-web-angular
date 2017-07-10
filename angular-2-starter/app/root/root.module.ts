@@ -12,7 +12,7 @@ import {AboutComponent} from '../about/about.component';
 import {ErrorComponent} from '../error/error.component';
 import {ContactComponent} from '../contact/contact.component';
 import {CarouselComponent} from '../carousel/carousel.component';
-
+import {FaderComponent} from '../shared/fader/fader.component';
 import { RootRouting }     from './root.routes';
 import {ImageService} from "../shared/image.service";
 import {ProjectService} from "../shared/project.service";
@@ -35,7 +35,8 @@ import {TruncatePipe} from "../shared/trunc.pipe";
         ContactComponent,
         ErrorComponent,
         CarouselComponent,
-        TruncatePipe
+        TruncatePipe,
+        FaderComponent
     ],
     providers: [ ImageService,
         ProjectService

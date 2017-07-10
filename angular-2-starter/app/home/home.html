@@ -4,28 +4,36 @@
 
 <div class="container">
 	<div class="flex-left-container-column custom-margin">
-		<div class="flex-left-item">
-			<h5>Hi,</h5>
-		</div>
-		<div class="flex-left-item typewriter">
-			<h2>I'm Anh Le, <br> and I design the experience!</h2>
-			<h2></h2>
+		<div id="typedtext">
+			<div class="flex-left-item">
+				<h5>{{displayText.text1}}</h5>
+			</div>
+			<div class="flex-left-item">
+				<h2>{{displayText.text2}}</h2>
+				<h2>{{displayText.text3}}</h2>
 
-		</div>
-		<div class="flex-left-item">
-			<h5>I love designing simple and consistent user interfaces. I implement my own designs using many tools and
-			frameworks to make the interaction more fun and easy to use.</h5>
-		</div>
-
-
-		<div class="flex-left-container-row margin-top">
-			<p><button class="btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button></p>
-			<p><button class="btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="app/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
-
+			</div>
+			<div class="flex-left-item">
+				<h5>{{displayText.text4}}</h5>
+			</div>
 		</div>
 
-		<div class="flex-center-item margin-top">
-			<span class=" text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		<div>
+			<div class="flex-left-container-row margin-top">
+				<my-fader [isVisible]="displayButtons">
+					<p><button class="btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button></p>
+
+				</my-fader>
+				<my-fader [isVisible]="displayButtons">
+					<p><button class="btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="app/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
+
+				</my-fader>
+
+			</div>
+
+			<div class="flex-center-item margin-top">
+				<span class=" text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+			</div>
 		</div>
 
 		<!--div class="row ">

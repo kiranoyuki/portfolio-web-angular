@@ -50,3 +50,7 @@ a:hover
 .glyphicon:hover {
 	color: white;
 }
+
+#home-btn {
+	width: 100%;
+}
