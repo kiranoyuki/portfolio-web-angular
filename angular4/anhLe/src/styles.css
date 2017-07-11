@@ -82,15 +82,7 @@ p {
 	left: 0;
 	z-index: 20;
 }
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-	padding-right: 0;
-	padding-left: 0;
-}
-.navbar-wrapper .navbar {
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .navbar-wrapper .navbar .container {
 	width: auto;
 }
@@ -121,28 +113,29 @@ p {
 
 }
 
-/*.navbar-custom .navbar-nav>li>a{
-	color: var(--inactive-color);
+.navbar-nav .btn-custom {
+	margin: 0.15em 0.4em;
 }
 
-.navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
-	color: var(--active-color);
-}*/
+.btn-custom a {
+	color: white;
+}
+
+.btn-custom a:hover{
+	text-decoration: none;
+}
+
+.navbar-wrapper .navbar {
+	padding: 0 25px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
-	/* Navbar positioning foo */
-	.navbar-wrapper {
-		margin-top: 20px;
-	}
-	.navbar-wrapper .container {
-		padding-right: 15px;
-		padding-left: 15px;
-	}
+
+
 	.navbar-wrapper .navbar {
-		padding-right: 0;
-		padding-left: 0;
+		padding: 15px 25px;
 	}
 	/* The navbar becomes detached from the top, so we round the corners */
 	.navbar-wrapper .navbar {
@@ -158,25 +151,7 @@ p {
 
 	}
 
-	.navbar-nav .btn-custom {
-		margin: 0.15em 0.4em;
-	}
 
-    .btn-custom a {
-	    color: white;
-    }
-
-    .btn-custom a:hover{
-	    text-decoration: none;
-    }
-
-	/*.navbar-custom .navbar-nav>li>a{
-		color: var(--inactive-color);
-	}
-
-	.navbar-custom .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
-		color: var(--active-color);
-	}*/
 }
 
 /* General style
