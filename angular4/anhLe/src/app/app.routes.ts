@@ -13,11 +13,26 @@ import {NgModule} from "@angular/core";
 
 const routes : Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full'},
-    { path: 'home', component: HomeComponent},
-    { path: 'detail/:id', component: DetailComponent },
-    { path: 'projects', component: ProjectsComponent},
-    { path: 'about', component: AboutComponent},
-    { path: 'contact', component: ContactComponent},
+    { path: 'home', component: HomeComponent,
+        data : {
+        animation: { value: 'homePage'}
+    }},
+    { path: 'detail/:id', component: DetailComponent,
+        data : {
+            animation: { value: 'detailPage'}
+    }},
+    { path: 'projects', component: ProjectsComponent,
+        data: {
+            animation: { value: 'projectsPage'}
+    }},
+    { path: 'about', component: AboutComponent,
+        data: {
+        animation : { value: 'aboutPage'}
+    }},
+    { path: 'contact', component: ContactComponent,
+        data: {
+            animation: { value: 'contactPage'}
+    }},
     { path : '*', component: ErrorComponent}
 ];
 

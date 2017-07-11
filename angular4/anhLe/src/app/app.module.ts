@@ -22,6 +22,7 @@ import {TruncatePipe} from "../shared/trunc.pipe";
 import {ProjectCardComponent} from "../shared/project-card/project-card.component";
 import {ProjectGroupComponent} from "../shared/group-project/group-project.component";
 import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
+import {HomeCacheService} from "../shared/home-cache.service";
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
     ProjectGroupComponent
   ],
   providers: [ ImageService,
-    ProjectService
+    ProjectService,
+    HomeCacheService
   ],
   bootstrap: [AppComponent]
 })

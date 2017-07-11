@@ -2,8 +2,13 @@
 	background-color: aquamarine;
 }
 
+.c-container {
+	margin: 15% 5%;
+	padding-top: 10%;
+}
+
 .container {
-	margin: 15% auto;
+	width: inherit;
 }
 
 .margin-top{
@@ -65,4 +70,13 @@ a:hover
 
 #project-list group-fader{
 	margin:5%;
+}
+
+@media (max-width: 700px) {
+
+	.btn-custom {
+		font-size: 0.8em;
+		margin: 0.5em 0.2em;
+		padding: 1em 0.3em;
+	}
 }

@@ -4,7 +4,7 @@
 /**
  * Created by anhle on 7/9/17.
  */
-import {query, stagger, animate, style, transition, trigger, keyframes} from '@angular/animations';
+import {query, stagger, animate, style, transition, trigger, keyframes, animateChild, group} from '@angular/animations';
 import {Component, Input, OnChanges} from '@angular/core';
 
 
@@ -16,8 +16,8 @@ import {Component, Input, OnChanges} from '@angular/core';
             transition(':enter', [
                 query('*', [
                     style({ transform: 'translateY(20px)', opacity: 0 }),
-                    stagger(100, [
-                        animate('1200ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
+                    stagger(20, [
+                        animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
                     ])
                 ])
             ])

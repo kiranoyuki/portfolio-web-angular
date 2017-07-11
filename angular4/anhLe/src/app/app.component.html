@@ -25,4 +25,6 @@
   </div>
 </div>
 
-<router-outlet></router-outlet>
+<div [@routerAnimation]="prepRouteState(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>

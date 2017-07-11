@@ -24,7 +24,6 @@ export class DetailComponent implements OnInit {
         let id = +this.route.snapshot.params['id'];
         this._projectService.getOneProject(id).then(project => {
             this.project = project;
-            console.log(this.project);
             this.images = this._imageService.getImagesFromProject(this.project);
         });
 

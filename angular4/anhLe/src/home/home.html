@@ -1,35 +1,47 @@
-<div class="container">
+<div class="c-container">
 	<div class="flex-left-container-column custom-margin">
 		<div id="typedtext">
 			<div class="flex-left-item">
-				<h5>{{displayText.text1}}</h5>
+				<h5>{{displayText[0]}}</h5>
 			</div>
 			<div class="flex-left-item">
-				<h2>{{displayText.text2}}</h2>
-				<h2>{{displayText.text3}}</h2>
+				<h2>{{displayText[1]}}</h2>
+				<h2>{{displayText[2]}}</h2>
 
 			</div>
 			<div class="flex-left-item">
-				<h5>{{displayText.text4}}</h5>
+				<h5>{{displayText[3]}}</h5>
 			</div>
 		</div>
-		<div *ngIf="textDisplayDone" class="full-width">
-			<my-fader [isVisible]="textDisplayDone">
-				<div class="flex-left-container-row margin-top">
-					<p><button class="btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button></p>
-					<p><button class="btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="../assets/shared/Resume-AnhLe.pdf">Download my CV</a></button></p>
+		<div *ngIf="isLoaded" class="full-width">
+			<my-fader [isVisible]="isLoaded">
+				<div class="row margin-top">
+					<div class="col-xs-6 col-sm-4 ">
+						<button class="btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 ">
+						<button class="col-xs-6 col-sm-4 btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="../assets/shared/Resume-AnhLe.pdf">Download my CV</a></button>
+					</div>
+
 				</div>
 
-				<div class="flex-center-item margin-top">
+				<!--div class="flex-center-item margin-top">
 					<span class="text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-				</div>
+				</div-->
 			</my-fader>
 		</div>
 	</div>
 
 
-	<!-- SHOWCASE PROJECTS -->
-	<div id="project-list" *ngIf="projects">
+</div>
+
+
+
+<!-- SHOWCASE PROJECTS -->
+<div id="project-list" *ngIf="projects">
+	<div class="container">
+		<h2>My Latest Work</h2>
 		<group-fader [items]="projects"></group-fader>
 
 	</div>
