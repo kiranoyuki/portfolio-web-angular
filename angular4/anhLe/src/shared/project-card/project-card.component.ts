@@ -2,7 +2,7 @@
  * Created by anhle on 7/10/17.
  */
 import {Component, Input} from '@angular/core';
-import {Project} from '../project-interface';
+import {Project} from '../object-interface/project-interface';
 import {Router} from "@angular/router";
 
 

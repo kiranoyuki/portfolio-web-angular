@@ -1,0 +1,11 @@
+.navbar{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9em;
+	background: rgba(255, 255, 255, 0.78);
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.navbar-custom {
+	width: 100%;
+}

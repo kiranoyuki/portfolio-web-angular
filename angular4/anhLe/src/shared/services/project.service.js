@@ -9,20 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by anhle on 6/23/17.
+ * Created by anhle on 6/20/17.
  */
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
+var projects_1 = require('./infos/projects');
+var ProjectService = (function () {
+    function ProjectService() {
+        this.projectPromise = Promise.resolve(projects_1.ourProjects);
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/about/about.html',
-            styleUrls: ['app/about/about.css'],
-        }), 
+    ProjectService.prototype.getProjects = function () {
+        return this.projectPromise;
+    };
+    ProjectService.prototype.getOneProject = function (id) {
+        return this.projectPromise
+            .then(function (project) { return project.find(function (project) { return project.id === +id; }); });
+    };
+    ProjectService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], ProjectService);
+    return ProjectService;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.ProjectService = ProjectService;
+//# sourceMappingURL=project.service.js.map

@@ -2,7 +2,7 @@
  * Created by anhle on 7/5/17.
  */
 import {Component, Input} from '@angular/core';
-import {Image} from '../image-interface';
+import {Image} from '../object-interface/image-interface';
 
 @Component({
     selector: 'custom-carousel',

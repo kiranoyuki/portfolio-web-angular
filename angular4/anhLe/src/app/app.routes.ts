@@ -5,7 +5,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from '../home/home.component';
 import {DetailComponent} from '../detail/detail.component';
 import {ProjectsComponent} from '../projects/projects.component';
-import {AboutComponent} from '../about/about.component';
 import {ErrorComponent} from '../error/error.component';
 import {ContactComponent} from '../contact/contact.component';
 import {NgModule} from "@angular/core";
@@ -25,10 +24,7 @@ const routes : Routes = [
         data: {
             animation: { value: 'projectsPage'}
     }},
-    { path: 'about', component: AboutComponent,
-        data: {
-        animation : { value: 'aboutPage'}
-    }},
+
     { path: 'contact', component: ContactComponent,
         data: {
             animation: { value: 'contactPage'}

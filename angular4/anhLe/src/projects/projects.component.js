@@ -12,7 +12,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by anhle on 6/23/17.
  */
 var core_1 = require('@angular/core');
-var project_service_1 = require('../shared/project.service');
+var project_service_1 = require('../shared/services/project.service.ts');
 var router_1 = require('@angular/router');
 var ProjectsComponent = (function () {
     function ProjectsComponent(_projectService, router) {

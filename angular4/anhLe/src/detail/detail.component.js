@@ -13,8 +13,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var project_service_1 = require('../shared/project.service');
-var image_service_1 = require('../shared/image.service');
+var project_service_1 = require('../shared/services/project.service.ts');
+var image_service_1 = require('../shared/services/image.service.ts');
 var DetailComponent = (function () {
     function DetailComponent(route, router, _projectService, _imageService) {
         this.route = route;

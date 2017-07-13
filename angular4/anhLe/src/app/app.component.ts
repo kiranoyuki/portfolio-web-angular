@@ -20,7 +20,7 @@ import {Router, NavigationEnd} from "@angular/router";
             animateChild()
           ]), { optional: true }),
           query(':enter', group([
-            animate('1000ms ease-in-out', style({ transform: 'translateY(0%)' })),
+            animate('800ms ease-in-out', style({ transform: 'translateY(0%)' })),
             animateChild()
           ]), { optional: true })
         ])

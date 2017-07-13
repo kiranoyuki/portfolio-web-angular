@@ -1,49 +1,95 @@
-<div class="c-container">
-	<div class="flex-left-container-column custom-margin">
-		<div id="typedtext">
+<div id="intro" class="c-container">
+	<div id="intro-content center-div" style="width:80%;height:50%;">
+		<div class="flex-left-container-column center-div">
 			<div class="flex-left-item">
-				<h5>{{displayText[0]}}</h5>
+				<h5>{{intro[0]}}</h5>
 			</div>
 			<div class="flex-left-item">
-				<h2>{{displayText[1]}}</h2>
-				<h2>{{displayText[2]}}</h2>
+				<h4>{{intro[1]}}</h4>
+				<h4>{{intro[2]}}</h4>
 
 			</div>
 			<div class="flex-left-item">
-				<h5>{{displayText[3]}}</h5>
+				<h5>{{intro[3]}}</h5>
 			</div>
-		</div>
-		<div *ngIf="isLoaded" class="full-width">
-			<my-fader [isVisible]="isLoaded">
-				<div class="row margin-top">
-					<div class="col-xs-6 col-sm-4 ">
-						<button class="btn btn-animate btn-custom align-left" type="button" (click)="seeProject()">Explore Projects</button>
-					</div>
-
-					<div class="col-xs-6 col-sm-4 ">
-						<button class="col-xs-6 col-sm-4 btn btn-animate btn-custom align-left" type="button"><a target="_self" download="anhle.pdf" href="../assets/shared/Resume-AnhLe.pdf">Download my CV</a></button>
-					</div>
-
-				</div>
-
-				<!--div class="flex-center-item margin-top">
-					<span class="text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-				</div-->
-			</my-fader>
 		</div>
 	</div>
 
 
+
+	<div id="intro-scroll-button">
+		<my-fader [isVisible]="intro">
+			<div class="flex-center-item">
+				<span class="text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+			</div>
+		</my-fader>
+	</div>
+
+</div>
+
+
+<div id="expertise" *ngIf="expertise" class="padding-content">
+	<div class="container-fluid">
+
+		<h2>My expertise</h2>
+
+		<div class="row">
+			<div *ngFor="let exp of expertise | evenodd:'odd'; let even=even;"
+			     class="col-md-6 border-bottom" [ngClass]="{'border-right': even}">
+				<div>
+					<h4>{{exp.category}}</h4>
+					<h6>{{exp.description}}</h6>
+				</div>
+			</div>
+			<div *ngFor="let exp of expertise | evenodd:'even'; let even=even;"
+			     class="col-md-6" [ngClass]="{'border-right': even}">
+				<div>
+					<h4>{{exp.category}}</h4>
+					<h6>{{exp.description}}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="skills" *ngIf="skills">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="languages" *ngIf="skills.languages" class="col-lg-4">
+				<h4>Language</h4>
+				<ul>
+					<li *ngFor="let item of skills.languages"
+					    class="skills-item"><h6>{{item}}</h6></li>
+				</ul>
+
+			</div>
+			<div id="software" *ngIf="skills.software" class="col-lg-4">
+				<h4>Software</h4>
+				<ul>
+					<li *ngFor="let item of skills.software"
+					    class="skills-item"><h6>{{item}}</h6></li>
+				</ul>
+			</div>
+			<div id="knowledge" *ngIf="skills.knowledge" class="col-lg-4">
+				<h4>Knowledge</h4>
+				<ul>
+					<li *ngFor="let item of skills.knowledge"
+					     class="skills-item"><h6>{{item}}</h6></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 
 <!-- SHOWCASE PROJECTS -->
-<div id="project-list" *ngIf="projects">
+<!--div id="project-list" *ngIf="projects">
 	<div class="container">
 		<h2>My Latest Work</h2>
 		<group-fader [items]="projects"></group-fader>
 
 	</div>
 
-</div>
+</div-->
