@@ -1,11 +1,6 @@
-.detail-container {
-	margin: auto 10%;
-}
 
-
-@media (min-width: 768px) {
-	.detail-container {
-		margin: auto 30%;
-	}
-
+#project-img div {
+	background-color: #f1bd39;
+	width: 100%;
+	height: 50vh;
 }

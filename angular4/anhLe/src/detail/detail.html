@@ -1,24 +1,8 @@
 <div *ngIf="project" >
 
-	<div class="project-container">
-
-		<div class="detail-container">
-			<div class="row text-left">
-				<h2>{{project.name}}</h2>
-			</div>
-			<div class="row text-left">
-				<h4>{{project.info}}</h4>
-			</div>
-			<div class="row text-left">
-				<p>{{project.place}}</p>
-				<p>{{project.date}}</p>
-			</div>
-		</div>
-
-		<custom-carousel [project-images]="images"></custom-carousel>
-
-		<div class="detail-container">
-
+	<div class="project-container nav-offset">
+		<div id="project-img">
+			<div></div>
 		</div>
 	</div>
 

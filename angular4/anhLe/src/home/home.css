@@ -1,3 +1,4 @@
+
 .padding-content {
 	padding: 5% 10%;
 
@@ -10,8 +11,8 @@
 	width:100%;
 	position: relative;
 	background: linear-gradient(
-			rgba(20,20,20, .7),
-			rgba(20,20,20, .7)),
+			rgba(20,20,20, .8),
+			rgba(20,20,20, .3)),
 	url("../assets/images/intro4.jpg") no-repeat center center fixed;
 	background-position: calc(100% - 10px) calc(100% - 5px);
 
@@ -80,7 +81,8 @@
 
 /*----------------Experience----------------*/
 #expertise {
-	background-color: cadetblue;
+	background-color: var(--expertise-bg);
+	color: var(--expertise-font);
 }
 
 #expertise .row {
@@ -94,11 +96,11 @@
 @media screen and (min-width: 768px) {
 
 	.border-bottom {
-		border-bottom: 1px solid rgba(242,242,242,.3);
+		border-bottom: 1px solid var(--skills-border);
 	}
 
 	.border-right {
-		border-right: 1px solid rgba(242,242,242,.3);
+		border-right: 1px solid var(--skills-border) ;
 	}
 }
 
@@ -119,7 +121,9 @@
 	display: inline-block;
 }
 
-
+.light-blue {
+	background-color: var(--expertise-blue-font)!important;
+}
 
 
 

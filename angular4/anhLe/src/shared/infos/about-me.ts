@@ -20,13 +20,13 @@ export const aboutMe : AboutMe = {
             },
             {
                 icon: 'dashboard',
-                category: 'UI+UX Web Development',
+                category: 'UI+UX',
                 description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
                 "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
             },
             {
                 icon: 'lightbulb_outline',
-                category: 'Web Development Artificial Intelligent',
+                category: 'Artificial Intelligent',
                 description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
                 "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
             }

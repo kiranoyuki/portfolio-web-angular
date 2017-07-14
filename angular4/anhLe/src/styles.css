@@ -8,11 +8,20 @@
 	--highlight-blue: #04e2f2;
 	--yellow: #f1bd39;
 	--dark-grey: #333333;
+	--inactive: #9E9E9E;
+	--light-grey-bg: #F5F5F5;
+
+	/*------------home--------------*/
+	--skills-border: #DCE1E3;
+	--expertise-bg: white;
+	--expertise-font: #3F4647;
+	--expertise-blue-font:  #A3C3EB;
+	--expertise-green-font: #74C2C7;
 }
 
 body {
 	min-height: 100vh;
-	background-color: #212121;
+	background-color: #F5F5F5;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 
@@ -56,6 +65,10 @@ h2 {
 		margin-bottom: 0;
 	}
 
+}
+
+.nav-offset {
+	margin-top: 60px;
 }
 
 
