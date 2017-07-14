@@ -133,21 +133,19 @@
 
 <!-- SHOWCASE PROJECTS -->
 <div id="projects" *ngIf="projects" class="padding-content">
-	<div class="container">
-		<div class="text-center">
-			<h2>My Latest Work</h2>
+	<div class="text-center">
+		<h2>My Latest Work</h2>
 
-			<div class="view-work">
-				<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
-
-			</div>
-		</div>
-
-		<div class="project-list">
-			<group-fader [items]="projects"></group-fader>
+		<div class="view-work">
+			<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
 
 		</div>
+	</div>
+
+	<div class="project-list">
+		<group-fader [items]="projects"></group-fader>
 
 	</div>
+
 
 </div>

@@ -1,5 +1,5 @@
-<div class="row">
-	<div id="project-list" class="projects col-xs-6 col-sm-4" *ngFor="let project of projects">
+<div class="row" id="project-list" >
+	<div class="projects col-sm-4" *ngFor="let project of projects">
 		<project-card [project]="project"></project-card>
 	</div>
 </div>

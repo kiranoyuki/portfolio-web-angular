@@ -1,5 +1,7 @@
-<div class="work-item" (click)="chooseProject(project)">
-	<div class="work-item-inner">
+
+
+<div class="work-item">
+	<div class="work-item-inner" (click)="chooseProject(project)">
 		<div class="project-img" [ngStyle]="{'background-image':'url('+ project.thumbnail +')'}"></div>
 		<div class="overlay">
 			<div class="overlay-inner"></div>
