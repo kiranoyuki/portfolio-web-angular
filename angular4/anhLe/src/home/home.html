@@ -2,14 +2,14 @@
 	<div id="intro-content center-div" style="width:80%;height:50%;">
 		<div class="flex-left-container-column center-div">
 			<div class="flex-left-item">
-				<h5>{{intro[0]}}</h5>
+				<h2>{{intro[0]}}</h2>
 			</div>
 			<div class="flex-left-item">
 				<h4>{{intro[1]}}</h4>
-				<h4>{{intro[2]}}</h4>
 
 			</div>
 			<div class="flex-left-item">
+				<h5>{{intro[2]}}</h5>
 				<h5>{{intro[3]}}</h5>
 			</div>
 		</div>
@@ -20,7 +20,9 @@
 	<div id="intro-scroll-button">
 		<my-fader [isVisible]="intro">
 			<div class="flex-center-item">
-				<span class="text-animate glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+				<h6><span></span></h6>
+				<a href=""><span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+				</span></a>
 			</div>
 		</my-fader>
 	</div>
@@ -31,20 +33,29 @@
 <div id="expertise" *ngIf="expertise" class="padding-content">
 	<div class="container-fluid">
 
-		<h2>My expertise</h2>
+		<div class="text-center">
+			<h2>My expertise</h2>
+		</div>
 
 		<div class="row">
 			<div *ngFor="let exp of expertise | evenodd:'odd'; let even=even;"
 			     class="col-md-6 border-bottom" [ngClass]="{'border-right': even}">
 				<div>
-					<h4>{{exp.category}}</h4>
+					<div class="flex-left">
+						<i class="material-icons md-48 md-light">{{exp.icon}}</i>
+						<h3>{{exp.category}}</h3>
+					</div>
+
 					<h6>{{exp.description}}</h6>
 				</div>
 			</div>
 			<div *ngFor="let exp of expertise | evenodd:'even'; let even=even;"
 			     class="col-md-6" [ngClass]="{'border-right': even}">
 				<div>
-					<h4>{{exp.category}}</h4>
+					<div class="flex-left">
+						<i class="material-icons md-48 md-light">{{exp.icon}}</i>
+						<h3>{{exp.category}}</h3>
+					</div>
 					<h6>{{exp.description}}</h6>
 				</div>
 			</div>
@@ -54,42 +65,89 @@
 </div>
 
 <div id="skills" *ngIf="skills">
-	<div class="container-fluid">
+	<div class="container-fluid text-center">
+		<h2>My skills</h2>
+
 		<div class="row">
-			<div id="languages" *ngIf="skills.languages" class="col-lg-4">
-				<h4>Language</h4>
+			<div id="languages" *ngIf="skills.languages" class="col-md-4">
+				<h3>Language</h3>
 				<ul>
 					<li *ngFor="let item of skills.languages"
 					    class="skills-item"><h6>{{item}}</h6></li>
 				</ul>
 
 			</div>
-			<div id="software" *ngIf="skills.software" class="col-lg-4">
-				<h4>Software</h4>
+			<div id="software" *ngIf="skills.software" class="col-md-4">
+				<h3>Software</h3>
 				<ul>
 					<li *ngFor="let item of skills.software"
 					    class="skills-item"><h6>{{item}}</h6></li>
 				</ul>
 			</div>
-			<div id="knowledge" *ngIf="skills.knowledge" class="col-lg-4">
-				<h4>Knowledge</h4>
+			<div id="knowledge" *ngIf="skills.knowledge" class="col-md-4">
+				<h3>Knowledge</h3>
 				<ul>
 					<li *ngFor="let item of skills.knowledge"
 					     class="skills-item"><h6>{{item}}</h6></li>
 				</ul>
 			</div>
 		</div>
+
+		<div class="view-resume">
+			<button type='button' class="btn my-btn-outline">
+				<a href="newsletter_01.pdf" target="_blank">View My Resume</a></button>
+		</div>
 	</div>
+</div>
+
+<div id="timeline" *ngIf="timeline" class="padding-content">
+	<div class="text-center">
+		<h2>My experience</h2>
+	</div>
+
+	<ul class="timeline">
+		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
+			<div class="timeline-badge">
+				<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+			</div>
+
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<h3 class="timeline-title">{{item.title}}</h3>
+					<h4>{{item.company}}</h4>
+					<p class="text-muted"><i class="glyphicon glyphicon-time"></i>{{item.period}}</p>
+				</div>
+				<div class="timeline-body">
+					<h6>{{item.description}}</h6>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<i class="down-arrow"></i>
 </div>
 
 
 
+
+
+
 <!-- SHOWCASE PROJECTS -->
-<!--div id="project-list" *ngIf="projects">
+<div id="projects" *ngIf="projects" class="padding-content">
 	<div class="container">
-		<h2>My Latest Work</h2>
-		<group-fader [items]="projects"></group-fader>
+		<div class="text-center">
+			<h2>My Latest Work</h2>
+
+			<div class="view-work">
+				<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
+
+			</div>
+		</div>
+
+		<div class="project-list">
+			<group-fader [items]="projects"></group-fader>
+
+		</div>
 
 	</div>
 
-</div-->
+</div>

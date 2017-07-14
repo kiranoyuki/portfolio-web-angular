@@ -1,13 +1,48 @@
+:root {
+	--light-purple: #B5C2EB;
+	--dark-purple: #6E48AA;
+	--light-purple: #f079f2;
+	--dark-green: #3b4f5a;
+	--light-blue: #29B6F6;
+	--dark-trans: rgba(27,27,27,0.8);
+	--highlight-blue: #04e2f2;
+	--yellow: #f1bd39;
+	--dark-grey: #333333;
+}
+
 body {
 	min-height: 100vh;
 	background-color: black;
 	color: white;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 body > .container {
 	padding-top: 40px;
 	background-color: white;
 }
+
+body h3, h4, h5, h6, p {
+	line-height: 1.75em;
+	letter-spacing: 0.02em;
+}
+
+p {
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+h6 {
+	font-weight: 300;
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 600;
+}
+
 
 /*
  * Responsive stypes
@@ -39,4 +74,33 @@ body > .container {
 .flex-center-item {
 	align-self: center;
 	text-align: center;
+}
+
+.my-btn-outline {
+	position: relative;
+	z-index: 3;
+	background: transparent;
+	font-size: 14px;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 0;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+}
+
+.my-btn-outline a {
+	color: white;
+	text-decoration: none;
+}
+
+.my-btn-outline:hover > a{
+	color: black;
+}
+
+.my-btn-outline:hover {
+	background: white;
+	border-color: white;
+	transition: all 0.2s linear;
 }

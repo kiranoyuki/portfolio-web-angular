@@ -5,6 +5,6 @@ export interface Work {
     id: number,
     company: string,
     title : string,
-    period: string[],
+    period: string,
     description: string
 }

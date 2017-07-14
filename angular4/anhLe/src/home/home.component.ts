@@ -7,6 +7,7 @@ import { Project } from '../shared/object-interface/project-interface';
 import { Router } from '@angular/router';
 import {HomeCacheService} from "../shared/services/home-cache.service";
 import {window} from "rxjs/operator/window";
+import {Work} from "../shared/object-interface/work-interface";
 
 @Component({
     templateUrl : './home.html',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
     isLoaded:boolean;
     expertise: any;
     skills: any;
+    timeline: Work[];
 
     constructor (public _modalService: ModalService, public router: Router,
                  public _homeCache: HomeCacheService) {
@@ -62,6 +64,8 @@ export class HomeComponent implements OnInit {
 
         this.getExpertise();
         this.getSkills();
+        this.getTimeline();
+        this.getProject();
 
     }
 
@@ -81,6 +85,10 @@ export class HomeComponent implements OnInit {
 
     getSkills(){
         this.skills = this._modalService.getSkills(this.content);
+    }
+
+    getTimeline(){
+        this.timeline = this._modalService.getTimeline(this.content);
     }
 
 

@@ -13,16 +13,19 @@ export const aboutMe : AboutMe = {
     experience: {
         expertise: [
             {
+                icon: 'important_devices',
                 category: 'Web development',
                 description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
                 "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
             },
             {
+                icon: 'dashboard',
                 category: 'UI/UX Design',
                 description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
                 "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
             },
             {
+                icon: 'lightbulb_outline',
                 category: 'Problem Solving',
                 description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
                 "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
@@ -45,24 +48,24 @@ export const aboutMe : AboutMe = {
         id: 201,
         company: 'Company one',
         title: 'Web Dev',
-        period: ['2017-11-11', '2017-03-03'],
+        period: 'May 2015 - Sep 2016',
         description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
         ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
     },
-        {
-            id: 202,
-            company: 'Company one',
-            title: 'Web Dev',
-            period: ['2017-11-11', '2017-03-03'],
-            description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
-            ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
-        },
-        {
-            id: 203,
-            company: 'Company one',
-            title: 'Web Dev',
-            period: ['2017-11-11', '2017-03-03'],
-            description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
-            ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
-        }]
+    {
+        id: 202,
+        company: 'Company one',
+        title: 'Web Dev',
+        period: 'May 2015 - Sep 2016',
+        description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
+        ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
+    },
+    {
+        id: 203,
+        company: 'Company one',
+        title: 'Web Dev',
+        period: 'May 2015 - Sep 2016',
+        description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
+        ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
+    }]
 };
