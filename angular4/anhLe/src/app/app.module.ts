@@ -15,13 +15,14 @@ import {CarouselComponent} from '../shared/carousel/carousel.component';
 import {FaderComponent} from '../shared/fader/fader.component';
 import {AppRouting}     from './app.routes';
 import {AppComponent} from "./app.component";
-import {TruncatePipe} from "../shared/trunc.pipe";
+import {TruncatePipe} from "../shared/pipe/trunc.pipe";
 import {ProjectCardComponent} from "../shared/project-card/project-card.component";
 import {ProjectGroupComponent} from "../shared/group-project/group-project.component";
 import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
 import {HomeCacheService} from "../shared/services/home-cache.service";
 import {ModalService} from "../shared/services/modal.service";
-import {EvenOddPipe} from "../shared/EvenOddPipe";
+import {EvenOddPipe} from "../shared/pipe/EvenOddPipe";
+import {ProjectFilter} from "../shared/pipe/ProjectFilter";
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import {EvenOddPipe} from "../shared/EvenOddPipe";
     ProjectCardComponent,
     ProjectGroupComponent,
     TruncatePipe,
-    EvenOddPipe
+    EvenOddPipe,
+    ProjectFilter
   ],
   providers: [
     ModalService,

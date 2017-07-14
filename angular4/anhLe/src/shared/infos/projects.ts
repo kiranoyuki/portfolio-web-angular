@@ -9,7 +9,7 @@ export const ourProjects: Project[] = [
         name: 'project name',
         place: 'company',
             position: 'position',
-            tags: ['UI/UX', 'Webdev'],
+            tags: ['UI+UX', 'Artificial Intelligent'],
             description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ' +
             'totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo',
             thumbnail: {
@@ -42,7 +42,7 @@ export const ourProjects: Project[] = [
         name: 'project name',
         place: 'company',
         position: 'position',
-        tags: ['AI', 'Webdev'],
+        tags: ['Artificial Intelligent', 'Web Development'],
         description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ' +
         'totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo',
         thumbnail: {
@@ -75,7 +75,7 @@ export const ourProjects: Project[] = [
         name: 'project name',
         place: 'company',
         position: 'position',
-        tags: ['UI/UX'],
+        tags: ['UI+UX'],
         description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ' +
         'totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo',
         thumbnail: {

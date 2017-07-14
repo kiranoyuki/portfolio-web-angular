@@ -1,10 +1,19 @@
 <div class="project-container">
 
-	<div class="row spacer">
-		<h1 class="text-center">Work / Projects</h1>
+	<div class="project-inner-container">
+		<div class="filter">
+			<ul class="nav nav-tabs">
+				<li role="presentation" *ngFor="let item of menu" [ngClass]="{'active': activeMenu === item}">
+					<button type="button" class="my-tab-btn" (click)="setActiveTab(item)">{{item}}</button></li>
+
+			</ul>
+		</div>
+
+		<div class="project-list">
+			<group-fader [items]="display"></group-fader>
+		</div>
 	</div>
 
-	<group-fader [items]="projects"></group-fader>
 </div>
 
 

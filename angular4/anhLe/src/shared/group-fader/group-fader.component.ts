@@ -19,8 +19,16 @@ import {Component, Input, OnChanges} from '@angular/core';
                     stagger(20, [
                         animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
                     ])
+                ], {optional: true})
+            ]),
+            transition(':leave', [
+                query('*', [
+                    style({ overflow: 'hidden' }),
+                    animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({ height: '0px'}))
                 ])
+
             ])
+
         ])
     ]
 })

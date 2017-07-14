@@ -5,6 +5,7 @@ import {Injectable} from '@angular/core';
 import {ourProjects} from '../infos/projects';
 import {aboutMe} from "../infos/about-me";
 import {AboutMe} from "../object-interface/about-interface";
+import {Tags} from "../infos/constant";
 
 @Injectable()
 export class ModalService {
@@ -43,5 +44,9 @@ export class ModalService {
 
     getTimeline(aboutMe:AboutMe){
         return aboutMe.timeline;
+    }
+
+    getTags() {
+        return Tags;
     }
 }
