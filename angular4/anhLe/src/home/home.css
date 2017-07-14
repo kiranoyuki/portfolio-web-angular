@@ -380,7 +380,10 @@
 
 /*-------------projects------------------*/
 #projects {
-	background-color: var(--dark-grey);
+	background: linear-gradient(
+			rgba(73, 129, 153, .7),
+			rgba(73, 129, 153, .7)),
+	url("../assets/images/projects.jpg") no-repeat center center fixed;
 }
 
 .view-work {
@@ -390,6 +393,10 @@
 .project-list {
 	margin-top: 15%;
 	margin-bottom: 10%;
+}
+
+.view-work .my-btn-outline:hover {
+	color: var(--yellow);
 }
 
 
