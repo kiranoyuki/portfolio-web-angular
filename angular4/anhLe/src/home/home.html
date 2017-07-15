@@ -1,19 +1,12 @@
 <div id="intro" class="c-container">
-	<div id="intro-content center-div" style="width:80%;height:50%;">
-		<div class="flex-left-container-column center-div">
-			<div class="flex-left-item">
-				<h2>{{intro[0]}}</h2>
+		<div class="center-div">
+			<div class="flex-center-item">
+				<h1>{{intro[0]}}</h1>
 			</div>
-			<div class="flex-left-item">
+			<div class="flex-center-item">
 				<h4>{{intro[1]}}</h4>
-
-			</div>
-			<div class="flex-left-item">
-				<h5>{{intro[2]}}</h5>
-				<h5>{{intro[3]}}</h5>
 			</div>
 		</div>
-	</div>
 
 
 
@@ -29,33 +22,46 @@
 
 </div>
 
+<div id="about">
+	<div class="container-fluid">
+		<div class="padding-content text-center">
+			<h3>About</h3>
+			<div class="flex-center-item">
+				<h6>{{intro[2]}}</h6>
+			</div>
+
+			<div class="flex-center-item margin-top">
+				<h6>Check out my connection below</h6>
+				<div id="network-icons">
+					<i class="fa fa-github" aria-hidden="true"></i>
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 
 <div id="expertise" *ngIf="expertise" class="padding-content">
 	<div class="container-fluid">
 
-		<div class="text-center">
-			<h2>My expertise</h2>
+		<div class="title">
+			<h3>expertise</h3>
+			<h6>What I am good at.</h6>
 		</div>
 
 		<div class="row">
-			<div *ngFor="let exp of expertise | evenodd:'odd'; let even=even;"
-			     class="col-md-6 border-bottom" [ngClass]="{'border-right': even}">
-				<div>
+			<div *ngFor="let exp of expertise"
+			     class="col-md-6">
+				<div class="expertise-card polaroid">
 					<div class="flex-left">
 						<i class="material-icons md-48 md-light">{{exp.icon}}</i>
 						<h3>{{exp.category}}</h3>
 					</div>
 
-					<h6>{{exp.description}}</h6>
-				</div>
-			</div>
-			<div *ngFor="let exp of expertise | evenodd:'even'; let even=even;"
-			     class="col-md-6" [ngClass]="{'border-right': even}">
-				<div>
-					<div class="flex-left">
-						<i class="material-icons md-48 md-light">{{exp.icon}}</i>
-						<h3>{{exp.category}}</h3>
-					</div>
 					<h6>{{exp.description}}</h6>
 				</div>
 			</div>
@@ -66,7 +72,10 @@
 
 <div id="skills" *ngIf="skills">
 	<div class="container-fluid text-center">
-		<h2>My skills</h2>
+		<div class="title">
+			<h3>skills</h3>
+			<h6>Everything I use to create beautiful and functionable projects. </h6>
+		</div>
 
 		<div class="row">
 			<div id="languages" *ngIf="skills.languages" class="col-md-4">
@@ -101,14 +110,16 @@
 </div>
 
 <div id="timeline" *ngIf="timeline" class="padding-content">
-	<div class="text-center">
-		<h2>My experience</h2>
+	<div class="title">
+		<h3>experience</h3>
+		<h6>My work experience.</h6>
+
 	</div>
 
 	<ul class="timeline">
 		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
 			<div class="timeline-badge">
-				<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+				<div class="timeline-badge-inner"></div>
 			</div>
 
 			<div class="timeline-panel">
@@ -133,10 +144,12 @@
 
 <!-- SHOWCASE PROJECTS -->
 <div id="projects" *ngIf="projects" class="padding-content">
-	<div class="text-center">
-		<h2>My Latest Work</h2>
+	<div>
+		<div class="title">
+			<h3>My Latest Work</h3>
+		</div>
 
-		<div class="view-work">
+		<div class="view-work text-center">
 			<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
 
 		</div>
