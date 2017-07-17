@@ -21,6 +21,6 @@ export class ProjectCardComponent {
     }
 
     chooseProject(project){
-        this.router.navigate(['detail', project.id]);
+        this.router.navigate(['/detail', project.id]);
     }
 }

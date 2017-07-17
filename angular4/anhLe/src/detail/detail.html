@@ -1,8 +1,83 @@
-<div *ngIf="project" >
+<div [@detailAnimation]="true" *ngIf="project" >
 
-	<div class="project-container nav-offset">
-		<div id="project-img">
-			<div></div>
+
+
+	<div id="project-nav" [ngClass]="{'show': scrollUp}">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<div class="navbar-text navbar-right">
+					<button (click)="chooseNextProject()">Next Project</button>
+					<i class="material-icons">trending_flat</i>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+
+
+	<!--   ---------------INTRO ------------------- -->
+
+	<div class="project-container">
+		<div id="project-intro" [ngStyle]="{'background-image':'url('+ project.images[0] +')'}">
+			<div class="center-div">
+				<div class="flex-center-item">
+					<h1>{{project.name}}</h1>
+				</div>
+				<div class="flex-center-item">
+					<h4>{{project.description.intro}}</h4>
+					<h6>{{project.position}}</h6>
+				</div>
+			</div>
+		</div>
+
+		<!--   ---------------OVERVIEW------------------- -->
+
+
+		<div id="project-overview" class="padding-content">
+			<div class="container-fluid">
+				<h2>Overview</h2>
+				<div class="row">
+					<div class="col-md-8">
+						<div>
+							<h3>PROBLEM</h3>
+							<h6>{{project.description.problem}}</h6>
+						</div>
+						<div>
+							<h3>ACHIEVE</h3>
+							<h6>{{project.description.achieve}}</h6>
+						</div>
+
+					</div>
+					<div class="col-md-4">
+						<div>
+							<h3>ROLE</h3>
+							<h6>{{project.position}}</h6>
+						</div>
+						<div>
+							<h3>PLATFORM</h3>
+							<h6>{{project.description.platform}}</h6>
+						</div>
+						<div id="tools">
+							<h3>TOOLS</h3>
+							<h6 *ngFor="let item of project.description.tools">{{item}}</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--   ---------------MAIN CONTENT ------------------- -->
+
+
+		<!-- ------------------ SUGGEST NEXT PROJECT ------------ -->
+		<hr>
+		<div id="moreProjects" class="padding-content">
+			<h3>MORE WORK</h3>
+
+			<div class="project-list">
+				<group-fader [items]="moreProjects"></group-fader>
+
+			</div>
 		</div>
 	</div>
 

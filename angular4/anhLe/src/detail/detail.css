@@ -1,6 +1,75 @@
+.project-container {
+	color: var(--main-font);
+}
 
-#project-img div {
+#project-nav {
+	visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#project-nav .navbar-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+}
+
+#project-nav .navbar-text button {
+	display: inline-block;
+	margin: auto 10px;
+	color: var(--inactive);
+}
+
+#project-nav .navbar-text:hover {
+	color: var(--main-font);
+}
+
+#project-nav .navbar-text button:hover {
+	color: var(--main-font);
+}
+
+#project-nav button {
+	border: none;
+	background-color: transparent;
+}
+
+#project-intro {
 	background-color: #f1bd39;
 	width: 100%;
-	height: 50vh;
+	min-height: 101vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
+
+#project-intro h4 {
+	font-weight: 300;
+	color: var(--yellow);
+}
+#project-intro h6 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.center-div {
+	width: 80%;
+}
+
+#tools h6{
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+#moreProjects h3 {
+	color:  var(--dark-grey);
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	border-bottom: solid 3px var(--yellow);
+}
+
+
+
+
+

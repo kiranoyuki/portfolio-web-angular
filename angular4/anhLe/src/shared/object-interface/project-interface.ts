@@ -8,13 +8,15 @@ export interface Project {
     place: string,
     position: string,
     tags: string[],
-    description: string,
+    description: {
+        intro: string,
+        problem: string,
+        achieve: string;
+        platform: string,
+        tools: string[]
+    },
     thumbnail: Image,
     images : Image[],
-    content : {
-        tools : string[],
-        goal: string,
-        challenge : string,
-        process: string
-    }
+    content : any[]
+
 }
