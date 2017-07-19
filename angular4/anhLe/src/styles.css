@@ -1,13 +1,5 @@
 :root {
-	--light-purple: #B5C2EB;
-	--dark-purple: #6E48AA;
-	--light-purple: #f079f2;
-	--dark-green: #3b4f5a;
-	--light-blue: #29B6F6;
 	--dark-trans: rgba(27,27,27,0.8);
-	--highlight-blue: #04e2f2;
-
-
 	--light-grey-bg: #F5F5F5;
 
 
@@ -65,6 +57,23 @@ h3 {
 	font-size: 1.4em;
 	font-weight: 600;
 }
+
+@media (max-width: 800px) {
+	.responsive-bg {
+		-webkit-background-size:cover !important;
+		-moz-background-size:cover !important;
+		-o-background-size:cover !important;
+		background-size:cover !important;
+	}
+}
+
+.responsive-bg {
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-attachment: fixed !important;
+
+}
+
 
 
 /*
