@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
     expertise: any;
     skills: any;
     timeline: Work[];
+    resume:any;
+    links:any;
 
     constructor (public _modalService: ModalService, public router: Router,
                  public _homeCache: HomeCacheService) {
@@ -62,6 +64,8 @@ export class HomeComponent implements OnInit {
 
         this.intro = this._modalService.getIntroduction(this.content);
         this.isLoaded = this._homeCache.isLoaded();
+        this.resume = this._modalService.getResume();
+        this.links = this._modalService.getLinks();
 
         this.getExpertise();
         this.getSkills();

@@ -3,9 +3,10 @@
 		<div id="left" class="col-lg-4">
 			<div class="myPhoto"></div>
 			<div class="network-icons">
-				<i class="fa fa-github" aria-hidden="true"></i>
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a href="{{links.linkedin}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="{{links.mail}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
 			</div>
 		</div>
 		<div id="right" class="col-lg-8">
@@ -16,8 +17,7 @@
 
 
 			<div class="view-resume">
-				<button type='button' class="btn my-btn-outline">
-					<a href="newsletter_01.pdf" target="_blank">View My Resume</a></button>
+				<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>
 			</div>
 
 			<div>
@@ -26,17 +26,16 @@
 
 			<div id="personal-contact" class="row">
 				<div class="col-md-6">
-					<h4>{{contact.email}}</h4>
+					<h4><i class="fa fa-envelope" aria-hidden="true"></i>{{contact.email}}</h4>
 				</div>
 				<div class="col-md-6">
-					<h4>{{contact.phone}}</h4>
+					<h4><i class="fa fa-phone"></i>{{contact.phone}}</h4>
 				</div>
 			</div>
 
 
 			<div class="send-message">
-				<button type='button' class="btn my-btn-outline">
-					<a href="newsletter_01.pdf" target="_blank">Send Message</a></button>
+				<a href="{{links.mail}}" target="_blank"><button type='button' class="btn my-btn-outline">Send Message</button></a>
 			</div>
 		</div>
 	</div>

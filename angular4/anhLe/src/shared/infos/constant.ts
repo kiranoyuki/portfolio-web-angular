@@ -7,3 +7,10 @@ export const Tags:string[] = [
     'Artificial Intelligent'
 ];
 
+
+export const Link = {
+    resume: '../assets/anhle.pdf',
+    linkedin: 'https://www.linkedin.com/in/anhquynhle/',
+    github: 'https://github.com/kiranoyuki',
+    mail: 'mailto:le.masque.anh@gmail.com'
+};

@@ -38,6 +38,7 @@ h5 {
 	margin-top: 20px;
 	color: var(--inactive);
 }
+
 .my-btn-outline {
 	width: 100%;
 	border-color: var(--dark-grey);
@@ -45,11 +46,16 @@ h5 {
 .my-btn-outline:hover {
 	background-color: var(--dark-grey);
 }
-.my-btn-outline a {
+.my-btn-outline {
 	color: var(--dark-grey);
 }
-.my-btn-outline:hover > a{
+.my-btn-outline:hover{
 	color: var(--yellow);
+}
+
+
+.view-resume a {
+	color: white;
 }
 
 .myPhoto {
@@ -61,5 +67,23 @@ h5 {
 .network-icons {
 	margin-bottom: 3em;
 }
+
+.network-icons i {
+	color: var(--dark-grey);
+}
+
+#personal-contact i {
+	color: var(--inactive);
+	margin-right: 0.5em;
+}
+
+@media (max-width: 700px){
+
+	#personal-contact i {
+		display: block;
+	}
+}
+
+
 
 

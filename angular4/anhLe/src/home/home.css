@@ -79,7 +79,9 @@
 	color: var(--intro-scroll-button-font);
 }
 
-
+.network-icons i {
+	color: var(--main-font);
+}
 
 
 
@@ -197,14 +199,16 @@
 }
 .view-resume .my-btn-outline {
 	background-color: rgba(20,20,20, .7);
+	color: white;
 }
-.view-resume .my-btn-outline:hover {
+
+.view-resume .my-btn-outline:hover{
+	color: var(--yellow);
+	text-decoration: none;
 	background-color: white;
 }
 
-.view-resume .my-btn-outline:hover > a{
-	color: var(--yellow);
-}
+
 
 /*----------------Timeline----------------*/
 #timeline {

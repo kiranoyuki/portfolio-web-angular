@@ -5,7 +5,7 @@ import {Injectable} from '@angular/core';
 import {ourProjects} from '../infos/projects';
 import {aboutMe} from "../infos/about-me";
 import {AboutMe} from "../object-interface/about-interface";
-import {Tags} from "../infos/constant";
+import {Tags, Link} from "../infos/constant";
 import {contact} from "../infos/contact";
 
 @Injectable()
@@ -53,5 +53,13 @@ export class ModalService {
 
     getContact() {
         return contact;
+    }
+
+    getResume() {
+        return Link.resume;
+    }
+
+    getLinks() {
+        return Link;
     }
 }

@@ -121,21 +121,15 @@ h3 {
 	padding: 10px 40px;
 	text-transform: uppercase;
 	transition: all 0.2s linear;
-}
-
-.my-btn-outline a {
-	color: white;
 	text-decoration: none;
 }
 
-.my-btn-outline:hover > a{
-	color: black;
-}
 
 .my-btn-outline:hover {
 	background: white;
 	border-color: white;
 	transition: all 0.2s linear;
+
 }
 
 .margin-top {
@@ -179,10 +173,10 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 2em;
+	min-height: 3em;
 }
 
-.network-icons i{
+.network-icons a{
 	margin-left: 5px;
 	margin-right: 5px;
 	font-size: 1.5em;
@@ -193,7 +187,7 @@ h3 {
 	transition: all 300ms ease;
 }
 
-.network-icons i:hover {
+.network-icons a:hover {
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
