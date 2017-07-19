@@ -7,8 +7,7 @@
 	background: linear-gradient(
 			rgba(255,255,255, 0),
 			rgba(255,255,255, 1)),
-	url("../assets/images/intro.jpg") no-repeat center center fixed;
-
+	url("../assets/images/intro.jpg");
 
 }
 
@@ -153,7 +152,7 @@
 	background: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
-	url("../assets/images/skills.jpg") no-repeat center center fixed;
+	url("../assets/images/skills.jpg");
 }
 
 #skills div h4 {
@@ -214,10 +213,6 @@
 #timeline {
 	padding-bottom: 15%;
 	background-color: var(--timeline-bg);
-	/*background: -webkit-linear-gradient(-15deg,var(--light-blue), var(--dark-green));
-	background: -o-linear-gradient(-15deg,var(--light-blue), var(--dark-green));
-	background: -moz-linear-gradient(-15deg,var(--light-blue), var(--dark-green));
-	background: linear-gradient(-15deg,var(--light-blue), var(--dark-green));*/
 }
 
 #timeline .title {
@@ -437,7 +432,7 @@
 	background: linear-gradient(
 			rgba(20, 20, 20, 0.7),
 			rgba(20, 20, 20, 0.7)),
-	url("../assets/images/projects.jpg") no-repeat center center fixed;
+	url("../assets/images/projects.jpg");
 }
 
 
