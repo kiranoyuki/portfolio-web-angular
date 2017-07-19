@@ -1,7 +1,7 @@
 /**
  * Created by anhle on 6/23/17.
  */
-import {Component, OnInit, HostListener} from '@angular/core';
+import {Component, OnInit, HostListener, Directive} from '@angular/core';
 import { ModalService } from '../shared/services/modal.service';
 import { Project } from '../shared/object-interface/project-interface';
 import { Router } from '@angular/router';
@@ -13,6 +13,7 @@ import {Work} from "../shared/object-interface/work-interface";
     templateUrl : './home.html',
     styleUrls: ['./home.css']
 })
+
 
 export class HomeComponent implements OnInit {
 

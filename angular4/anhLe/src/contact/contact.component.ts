@@ -1,13 +1,17 @@
-/**
- * Created by anhle on 6/25/17.
- */
-/**
- * Created by anhle on 6/23/17.
- */
-import { Component } from '@angular/core';
+
+import {Component, OnInit} from '@angular/core';
+import {ModalService} from "../shared/services/modal.service";
 
 @Component({
     templateUrl: './contact.html',
     styleUrls: ['./contact.css'],
 })
-export class ContactComponent { }
+export class ContactComponent implements OnInit{
+    contact:any;
+
+    constructor(public _modalService: ModalService){}
+
+    ngOnInit() {
+        this.contact = this._modalService.getContact();
+    }
+}

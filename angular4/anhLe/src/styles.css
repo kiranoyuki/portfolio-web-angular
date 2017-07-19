@@ -6,14 +6,17 @@
 	--light-blue: #29B6F6;
 	--dark-trans: rgba(27,27,27,0.8);
 	--highlight-blue: #04e2f2;
-	--yellow: #f1bd39;
-	--dark-grey: #333333;
-	--inactive: #9E9E9E;
+
+
 	--light-grey-bg: #F5F5F5;
-	--main-font: #3b599a;
+
 
 	/*-------------intro------------------*/
 	--intro-scroll-button-font: #3b599a;
+	--yellow: #f1bd39;
+	--dark-grey: #424242;
+	--inactive: #9E9E9E;
+	--main-font: #3b599a;
 
 	/*------------expertise--------------*/
 	--expertise-bg: #F5F5F5;
@@ -167,5 +170,35 @@ h3 {
 	-ms-transition: all 400ms ease;
 	-o-transition: all 400ms ease;
 	transition: all 400ms ease;
+
+}
+
+
+.network-icons {
+	margin-top: 0.8em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2em;
+}
+
+.network-icons i{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.5em;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.network-icons i:hover {
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	font-size: 2em;
 
 }

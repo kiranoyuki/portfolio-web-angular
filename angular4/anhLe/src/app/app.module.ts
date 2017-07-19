@@ -23,6 +23,7 @@ import {HomeCacheService} from "../shared/services/home-cache.service";
 import {ModalService} from "../shared/services/modal.service";
 import {EvenOddPipe} from "../shared/pipe/EvenOddPipe";
 import {ProjectFilter} from "../shared/pipe/ProjectFilter";
+import {ScrollToModule} from 'ng2-scroll-to';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {ProjectFilter} from "../shared/pipe/ProjectFilter";
     BrowserModule,
     FormsModule,
     AppRouting,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScrollToModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -44,8 +46,6 @@ import {ProjectFilter} from "../shared/pipe/ProjectFilter";
     GroupFaderComponent,
     ProjectCardComponent,
     ProjectGroupComponent,
-    TruncatePipe,
-    EvenOddPipe,
     ProjectFilter
   ],
   providers: [

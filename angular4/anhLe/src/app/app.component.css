@@ -2,10 +2,15 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.9em;
 	background: rgba(255, 255, 255, 0.78);
-	padding-left: 3%;
-	padding-right: 3%;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 .navbar-custom {
 	width: 100%;
+}
+
+.navbar-custom a {
+	text-transform: uppercase;
+	color: var(--main-font);
 }

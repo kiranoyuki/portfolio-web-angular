@@ -6,6 +6,7 @@ import {ourProjects} from '../infos/projects';
 import {aboutMe} from "../infos/about-me";
 import {AboutMe} from "../object-interface/about-interface";
 import {Tags} from "../infos/constant";
+import {contact} from "../infos/contact";
 
 @Injectable()
 export class ModalService {
@@ -48,5 +49,9 @@ export class ModalService {
 
     getTags() {
         return Tags;
+    }
+
+    getContact() {
+        return contact;
     }
 }

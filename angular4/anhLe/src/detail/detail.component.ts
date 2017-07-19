@@ -12,8 +12,8 @@ import {trigger, transition, style, query, group, animate, stagger} from "@angul
 
 @Component({
     templateUrl : './detail.html',
-    styleUrls: ['./detail.css'],
-    animations : [
+    styleUrls: ['./detail.css']
+    /*animations : [
         trigger('detailAnimation', [
             transition(':enter', [
                 query('*', [
@@ -25,7 +25,7 @@ import {trigger, transition, style, query, group, animate, stagger} from "@angul
             ])
         ])
 
-    ]
+    ]*/
 })
 
 export class DetailComponent implements OnInit {
@@ -60,8 +60,6 @@ export class DetailComponent implements OnInit {
     chooseNextProject() {
         let id = Number(this.project.id);
         let nextId = id > this.moreProjects.length? 1 : id+1;
-        console.log(this.moreProjects.length);
-        console.log(nextId);
         this.router.navigate(['/detail', nextId.toString()]);
 
     }
