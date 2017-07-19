@@ -1,6 +1,7 @@
 import {Component, ViewEncapsulation, OnInit} from '@angular/core';
 import {trigger, transition, style, query, group, animate, animateChild} from "@angular/animations";
 import {Router, NavigationEnd} from "@angular/router";
+import {ModalService} from "../shared/services/modal.service";
 
 @Component({
   selector: 'app-root',
@@ -51,24 +52,26 @@ import {Router, NavigationEnd} from "@angular/router";
 })
 export class AppComponent implements OnInit{
 
+  links:any;
+
   prepRouteState(outlet: any) {
     const animation = outlet.activatedRouteData['animation'] || {};
     return animation['value'] || null;
   }
 
-  constructor(public router: Router){
+  constructor(public router: Router, public _modalService: ModalService){
+    this.links = this._modalService.getContact();
 
   }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
-        console.log('HULA');
         return;
       }
-      console.log('HEYA');
       window.scrollTo(0, 0)
     });
+
   }
 
 

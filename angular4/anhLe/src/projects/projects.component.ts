@@ -20,6 +20,7 @@ export class ProjectsComponent implements OnInit {
     menu: string[] = [this.all];
     activeMenu:string;
     display:any[];
+    links:any;
 
     constructor ( public _modalService: ModalService, public router: Router ) {}
 
@@ -35,15 +36,13 @@ export class ProjectsComponent implements OnInit {
             this.menu.push(item);
         });
         this.display = this.projects;
+        this.links = this._modalService.getContact();
     }
 
     setActiveTab(menuItem) {
         this.activeMenu = menuItem;
         this.display = null;
-        console.log(this.display);
-
         this.filterProject(menuItem);
-        console.log(this.display);
 
     }
 

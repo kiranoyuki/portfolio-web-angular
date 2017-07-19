@@ -7,25 +7,11 @@ import { Project } from '../shared/object-interface/project-interface';
 import { ModalService} from '../shared/services/modal.service';
 import { Image } from '../shared/object-interface/image-interface';
 import { NgZone } from '@angular/core';
-import {trigger, transition, style, query, group, animate, stagger} from "@angular/animations";
 
 
 @Component({
     templateUrl : './detail.html',
     styleUrls: ['./detail.css']
-    /*animations : [
-        trigger('detailAnimation', [
-            transition(':enter', [
-                query('*', [
-                    style({ transform: 'translateY(20px)', opacity: 0 }),
-                    stagger(100, [
-                        animate('500ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
-                    ])
-                ], {optional: true}, )
-            ])
-        ])
-
-    ]*/
 })
 
 export class DetailComponent implements OnInit {
@@ -34,6 +20,7 @@ export class DetailComponent implements OnInit {
     moreProjects: Project[];
     lastScrollTop: number = 0;
     scrollUp: boolean = false;
+    links:any;
 
     constructor( private route: ActivatedRoute, private router:Router, private _modalService: ModalService, private lc: NgZone) {
         window.onscroll = () => {
@@ -55,6 +42,7 @@ export class DetailComponent implements OnInit {
             this.images = this._modalService.getImagesFromProject(this.project);
             this.moreProjects = this._modalService.getProjects().filter(project => project !== this.project);
         });
+        this.links = this._modalService.getContact();
     }
 
     chooseNextProject() {

@@ -1,5 +1,5 @@
 #contact {
-	min-height: 100vh;
+	min-height: 88vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -64,12 +64,9 @@ h5 {
 	height: 250px;
 }
 
-.network-icons {
-	margin-bottom: 3em;
-}
-
-.network-icons i {
-	color: var(--dark-grey);
+.quote h6{
+	font-weight: 700;
+	color: var(--inactive);
 }
 
 #personal-contact i {

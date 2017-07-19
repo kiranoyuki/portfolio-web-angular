@@ -79,7 +79,7 @@
 	color: var(--intro-scroll-button-font);
 }
 
-.network-icons i {
+#about .network-icons i {
 	color: var(--main-font);
 }
 
