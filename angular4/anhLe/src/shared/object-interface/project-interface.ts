@@ -17,6 +17,6 @@ export interface Project {
     },
     thumbnail: Image,
     images : Image[],
-    content : any[]
+    content : any
 
 }

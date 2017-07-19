@@ -13,12 +13,13 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
+	color: darkgray;
+
 }
 
 #project-nav .navbar-text button {
 	display: inline-block;
 	margin: auto 10px;
-	color: var(--inactive);
 }
 
 #project-nav .navbar-text:hover {
@@ -35,7 +36,6 @@
 }
 
 #project-intro {
-	background-color: #f1bd39;
 	width: 100%;
 	min-height: 101vh;
 	display: flex;
@@ -55,6 +55,7 @@
 
 .center-div {
 	width: 80%;
+	background-color: rgba(225,225,225, 0.3);
 }
 
 #tools h6{
@@ -67,6 +68,18 @@
 	padding-bottom: 10px;
 	margin-bottom: 30px;
 	border-bottom: solid 3px var(--yellow);
+}
+
+#project-content {
+	background-color: white;
+}
+
+.item-img {
+	margin: 3em auto;
+}
+#project-content img {
+	max-width: 100%;
+	height: auto;
 }
 
 
