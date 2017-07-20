@@ -27,7 +27,7 @@ export const ourProjects: Project[] = [
         },
         images : [{
             title: 'intro',
-            url: '../assets/images/lifekit-intro.jpg'
+            url: '../assets/images/lg/lifekit-intro.png'
         }],
         content : Lifekit
     },
@@ -50,7 +50,7 @@ export const ourProjects: Project[] = [
         },
         images : [{
             title: 'projectthumbnail',
-            url: '../assets/images/enjoychess-intro.png'
+            url: '../assets/images/lg/enjoychess-intro.png'
         }],
         content: EnjoyChess
     },
@@ -77,10 +77,10 @@ export const ourProjects: Project[] = [
         },
         images : [{
             title: 'projectthumbnail',
-            url: '../assets/images/2.png'
+            url: '../assets/images/other/2.png'
         },{
             title: 'projectthumbnail',
-            url: '../assets/images/1.png'
+            url: '../assets/images/other/1.png'
         }],
             content : ''
     }
