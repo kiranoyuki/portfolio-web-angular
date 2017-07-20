@@ -148,6 +148,14 @@
 	display: inline-block;
 }
 
+@media only screen and (max-device-width: 700px){
+	.flex-left i {
+		font-size: 1.5em;
+	}
+	.flex-left h3 {
+		font-size: 1em;
+	}
+}
 
 .expertise-card {
 	background-color: var(--expertise-card-bg);
@@ -186,11 +194,11 @@
 }
 
 #skills .container-fluid{
-	padding: 10% 2%;
+	padding: 5% 2%;
 
 }
 
-/*#skills {
+#skills {
 	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
@@ -200,7 +208,7 @@
 	-webkit-background-size: cover;
 	background-attachment: fixed;
 
-}*/
+}
 
 
 #skills div h4 {
