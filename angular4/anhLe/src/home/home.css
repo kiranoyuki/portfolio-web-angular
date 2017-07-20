@@ -179,14 +179,18 @@
 /*----------------Skill----------------*/
 #skills {
 	padding: 10% 2%;
+	width: 100%;
+}
+
+#skills .responsive-bg {
 	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
 	url("../assets/images/lg/skills.jpg");
 }
 
-/*@media only screen and (max-width: 500px){
-	#skills {
+@media only screen and (max-width: 500px){
+	#skills .responsive-bg {
 		background-image: linear-gradient(
 				rgba(20,20,20, .5),
 				rgba(20,20,20, .5)),
@@ -195,13 +199,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-	#skills {
+	#skills .responsive-bg{
 		background-image: linear-gradient(
 				rgba(20,20,20, .5),
 				rgba(20,20,20, .5)),
 		url("../assets/images/md/skills.jpg");
 	}
-}*/
+}
 
 #skills div h4 {
 	display: inline-block;
@@ -477,14 +481,18 @@
 
 /*-------------projects------------------*/
 #projects {
+	width: inherit;
+	height: auto;
+}
+#projects .responsive-bg{
 	background-image: linear-gradient(
 			rgba(20, 20, 20, 0.7),
 			rgba(20, 20, 20, 0.7)),
 	url("../assets/images/lg/projects.jpg");
 }
 
-/*@media only screen and (max-width: 500px){
-	#projects {
+@media only screen and (max-width: 500px){
+	#projects .responsive-bg {
 		background-image: linear-gradient(
 				rgba(20, 20, 20, 0.7),
 				rgba(20, 20, 20, 0.7)),
@@ -493,13 +501,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-	#projects {
+	#projects .responsive-bg{
 		background-image: linear-gradient(
 				rgba(20, 20, 20, 0.7),
 				rgba(20, 20, 20, 0.7)),
 		url("../assets/images/md/projects.jpg");
 	}
-}*/
+}
 
 
 .view-work {
