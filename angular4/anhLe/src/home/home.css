@@ -186,7 +186,7 @@
 	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
-	url("../assets/images/lg/skills.jpg");
+	url("../assets/images/lg/skills.png");
 }
 
 @media only screen and (max-width: 500px){
@@ -194,7 +194,7 @@
 		background-image: linear-gradient(
 				rgba(20,20,20, .5),
 				rgba(20,20,20, .5)),
-		url("../assets/images/sm/skills.jpg");
+		url("../assets/images/sm/skills.png");
 	}
 }
 
@@ -203,7 +203,7 @@
 		background-image: linear-gradient(
 				rgba(20,20,20, .5),
 				rgba(20,20,20, .5)),
-		url("../assets/images/md/skills.jpg");
+		url("../assets/images/md/skills.png");
 	}
 }
 
@@ -488,7 +488,7 @@
 	background-image: linear-gradient(
 			rgba(20, 20, 20, 0.7),
 			rgba(20, 20, 20, 0.7)),
-	url("../assets/images/lg/projects.jpg");
+	url("../assets/images/lg/projects.png");
 }
 
 @media only screen and (max-width: 500px){
@@ -496,7 +496,7 @@
 		background-image: linear-gradient(
 				rgba(20, 20, 20, 0.7),
 				rgba(20, 20, 20, 0.7)),
-		url("../assets/images/sm/projects.jpg");
+		url("../assets/images/sm/projects.png");
 	}
 }
 
@@ -505,7 +505,7 @@
 		background-image: linear-gradient(
 				rgba(20, 20, 20, 0.7),
 				rgba(20, 20, 20, 0.7)),
-		url("../assets/images/md/projects.jpg");
+		url("../assets/images/md/projects.png");
 	}
 }
 
