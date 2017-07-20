@@ -1,7 +1,7 @@
 .navbar{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.9em;
-	background: rgba(255, 255, 255, 0.78);
+	background: white;
 	padding-left: 3em;
 	padding-right: 3em;
 }
@@ -14,8 +14,12 @@
 	.navbar-custom{
 		display: flex;
 		align-items: center;
-		justify-items: center;
+		justify-content: space-around;
 	}
+
+    .flex-row {
+	    display: inline-flex;
+    }
 }
 
 .navbar-nav a {

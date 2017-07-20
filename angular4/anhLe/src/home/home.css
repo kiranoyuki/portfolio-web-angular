@@ -37,6 +37,7 @@
 	}
 }
 
+
 .c-container #intro-content {
 	width: inherit;
 	height: 50%;
@@ -189,7 +190,7 @@
 
 }
 
-.bg {
+/*#skills {
 	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
@@ -199,27 +200,8 @@
 	-webkit-background-size: cover;
 	background-attachment: fixed;
 
-}
+}*/
 
-@media only screen and (max-width: 500px){
-	.bg {
-		background-image: linear-gradient(
-				rgba(20,20,20, .5),
-				rgba(20,20,20, .5)),
-		url("../assets/images/lg/skills.png");
-		background-attachment: scroll;
-
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.bg{
-		background-image: linear-gradient(
-				rgba(20,20,20, .5),
-				rgba(20,20,20, .5)),
-		url("../assets/images/lg/skills.png");
-	}
-}
 
 #skills div h4 {
 	display: inline-block;
@@ -498,21 +480,19 @@
 	width: 100%;
 	height: auto;
 }
-#projects .responsive-bg{
+
+/*
+#projects {
 	background-image: linear-gradient(
-			rgba(20, 20, 20, 0.7),
-			rgba(20, 20, 20, 0.7)),
+			rgba(20,20,20, .5),
+			rgba(20,20,20, .5)),
 	url("../assets/images/lg/projects.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
 }
 
-@media only screen and (max-width: 500px){
-	#projects .responsive-bg {
-		background-image: linear-gradient(
-				rgba(20, 20, 20, 0.7),
-				rgba(20, 20, 20, 0.7)),
-		url("../assets/images/sm/projects.png");
-	}
-}
 
 @media only screen and (max-width: 800px) {
 	#projects .responsive-bg{
@@ -522,6 +502,7 @@
 		url("../assets/images/md/projects.png");
 	}
 }
+*/
 
 
 .view-work {

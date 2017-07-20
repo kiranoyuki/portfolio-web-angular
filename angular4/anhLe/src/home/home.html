@@ -24,7 +24,7 @@
 </div>
 
 <div id="about">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="padding-content text-center">
 			<h3>About</h3>
 			<div class="flex-center-item">
@@ -47,69 +47,76 @@
 
 
 <div id="expertise" *ngIf="expertise" class="padding-content">
-	<div class="container-fluid">
+	<div class="container">
 
 		<div class="title">
 			<h3>expertise</h3>
 			<h6>What I am good at.</h6>
 		</div>
 
-		<div class="row">
-			<div *ngFor="let exp of expertise"
-			     class="col-md-6">
-				<div class="expertise-card polaroid">
-					<div class="flex-left">
-						<i class="material-icons md-48 md-light">{{exp.icon}}</i>
-						<h3>{{exp.category}}</h3>
-					</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div *ngFor="let exp of expertise"
+				     class="col-sm-6">
+					<div class="expertise-card polaroid">
+						<div class="flex-left">
+							<i class="material-icons md-48 md-light">{{exp.icon}}</i>
+							<h3>{{exp.category}}</h3>
+						</div>
 
-					<h6>{{exp.description}}</h6>
+						<h6>{{exp.description}}</h6>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 
 </div>
 
-<div id="skills" *ngIf="skills" class="bg">
+<!--div id="skills" *ngIf="skills" class="bg">
 	<div class="container-fluid text-center">
 		<div class="title">
 			<h3>skills</h3>
 			<h6>Everything I use to create beautiful and functionable projects. </h6>
 		</div>
 
-		<div class="row">
-			<div id="languages" *ngIf="skills.languages" class="col-md-4">
-				<h3>Language</h3>
-				<ul>
-					<li *ngFor="let item of skills.languages"
-					    class="skills-item"><h6>{{item}}</h6></li>
-				</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="languages" *ngIf="skills.languages" class="col-sm-4">
+					<h3>Language</h3>
+					<ul>
+						<li *ngFor="let item of skills.languages"
+						    class="skills-item"><h6>{{item}}</h6></li>
+					</ul>
 
-			</div>
-			<div id="software" *ngIf="skills.software" class="col-md-4">
-				<h3>Software</h3>
-				<ul>
-					<li *ngFor="let item of skills.software"
-					    class="skills-item"><h6>{{item}}</h6></li>
-				</ul>
-			</div>
-			<div id="knowledge" *ngIf="skills.knowledge" class="col-md-4">
-				<h3>Knowledge</h3>
-				<ul>
-					<li *ngFor="let item of skills.knowledge"
-					     class="skills-item"><h6>{{item}}</h6></li>
-				</ul>
+				</div>
+				<div id="software" *ngIf="skills.software" class="col-sm-4">
+					<h3>Software</h3>
+					<ul>
+						<li *ngFor="let item of skills.software"
+						    class="skills-item"><h6>{{item}}</h6></li>
+					</ul>
+				</div>
+				<div id="knowledge" *ngIf="skills.knowledge" class="col-sm-4">
+					<h3>Knowledge</h3>
+					<ul>
+						<li *ngFor="let item of skills.knowledge"
+						    class="skills-item"><h6>{{item}}</h6></li>
+					</ul>
+				</div>
 			</div>
 		</div>
+
 
 		<div class="view-resume">
 			<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>
 		</div>
 	</div>
-</div>
+</div-->
 
-<div id="timeline" *ngIf="timeline" class="padding-content">
+<!--div id="timeline" *ngIf="timeline" class="padding-content">
 	<div class="title">
 		<h3>experience</h3>
 		<h6>My work experience.</h6>
@@ -135,7 +142,7 @@
 		</li>
 	</ul>
 	<i class="down-arrow"></i>
-</div>
+</div-->
 
 
 
@@ -143,8 +150,7 @@
 
 
 <!-- SHOWCASE PROJECTS -->
-<div id="projects" *ngIf="projects">
-	<div class="responsive-bg"></div>
+<!--div id="projects" *ngIf="projects">
 	<div class="padding-content">
 		<div>
 			<div class="title">
@@ -164,10 +170,10 @@
 	</div>
 
 
-</div>
+</div-->
 
 
-<div class="footer navbar-static-bottom text-center">
+<!--div class="footer navbar-static-bottom text-center">
 
 	<div class="network-icons">
 		<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -179,4 +185,4 @@
 		<p>All rights @ AnhLe - 2017</p>
 	</div>
 
-</div>
+</div-->
