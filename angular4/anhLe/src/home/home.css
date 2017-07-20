@@ -5,7 +5,7 @@
 	background-image: linear-gradient(
 			rgba(255,255,255, 0),
 			rgba(255,255,255, 1)),
-	url("../assets/images/lg/intro.jpg");
+	url("../assets/images/lg/intro.png");
 
 }
 
@@ -14,7 +14,7 @@
 		background-image: linear-gradient(
 				rgba(255,255,255, 0),
 				rgba(255,255,255, 1)),
-		url("../assets/images/sm/intro.jpg");
+		url("../assets/images/sm/intro.png");
 	}
 
 }
@@ -24,7 +24,7 @@
 		background-image: linear-gradient(
 				rgba(255,255,255, 0),
 				rgba(255,255,255, 1)),
-		url("../assets/images/md/intro.jpg");
+		url("../assets/images/md/intro.png");
 	}
 }
 
