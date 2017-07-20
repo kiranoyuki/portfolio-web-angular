@@ -4,7 +4,7 @@
 	min-height: 101vh;
 	width:100%;
 	position: relative;
-	background: linear-gradient(
+	background-image: linear-gradient(
 			rgba(255,255,255, 0),
 			rgba(255,255,255, 1)),
 	url("../assets/images/intro.jpg");
@@ -85,6 +85,12 @@
 
 
 /*----------------Experience----------------*/
+@media (max-width: 800px ) {
+	#expertise {
+		padding-left: 0.7em;
+		padding-right: 0.7em;
+	}
+}
 #expertise {
 	background-color: var(--expertise-bg);
 	color: var(--expertise-main-font);
@@ -148,8 +154,8 @@
 
 /*----------------Skill----------------*/
 #skills {
-	padding: 10% 5%;
-	background: linear-gradient(
+	padding: 10% 2%;
+	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
 	url("../assets/images/skills.jpg");
@@ -182,13 +188,13 @@
 	border-radius: 50%;
 	padding: 0;
 	margin: 1%;
-	width: 5em;
-	height: 5em;
+	width: 6em;
+	height: 6em;
 	background-color: rgba(20,20,20, .7);
 }
 
 .skills-item h6 {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	line-height: 1.25em;
 	text-align: center;
 }
@@ -429,7 +435,7 @@
 
 /*-------------projects------------------*/
 #projects {
-	background: linear-gradient(
+	background-image: linear-gradient(
 			rgba(20, 20, 20, 0.7),
 			rgba(20, 20, 20, 0.7)),
 	url("../assets/images/projects.jpg");
