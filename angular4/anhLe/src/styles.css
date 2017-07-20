@@ -58,18 +58,12 @@ h3 {
 	font-weight: 600;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-device-width: 1024px) {
 	.responsive-bg {
-		-webkit-background-size: 100%;
-		-moz-background-size: 100%;
-		-o-background-size: 100%;
-		background-size: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		background-attachment: scroll;
-
 	}
 }
 

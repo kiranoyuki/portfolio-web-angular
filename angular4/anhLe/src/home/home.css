@@ -1,5 +1,3 @@
-
-
 .c-container {
 	min-height: 101vh;
 	width:100%;
@@ -7,8 +5,27 @@
 	background-image: linear-gradient(
 			rgba(255,255,255, 0),
 			rgba(255,255,255, 1)),
-	url("../assets/images/intro.jpg");
+	url("../assets/images/lg/intro.jpg");
 
+}
+
+@media only screen and (max-width: 500px){
+	.c-container {
+		background-image: linear-gradient(
+				rgba(255,255,255, 0),
+				rgba(255,255,255, 1)),
+		url("../assets/images/sm/intro.jpg");
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+	.c-container {
+		background-image: linear-gradient(
+				rgba(255,255,255, 0),
+				rgba(255,255,255, 1)),
+		url("../assets/images/md/intro.jpg");
+	}
 }
 
 .c-container #intro-content {
@@ -158,8 +175,26 @@
 	background-image: linear-gradient(
 			rgba(20,20,20, .5),
 			rgba(20,20,20, .5)),
-	url("../assets/images/skills.jpg");
+	url("../assets/images/lg/skills.jpg");
 }
+
+/*@media only screen and (max-width: 500px){
+	#skills {
+		background-image: linear-gradient(
+				rgba(20,20,20, .5),
+				rgba(20,20,20, .5)),
+		url("../assets/images/sm/skills.jpg");
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#skills {
+		background-image: linear-gradient(
+				rgba(20,20,20, .5),
+				rgba(20,20,20, .5)),
+		url("../assets/images/md/skills.jpg");
+	}
+}*/
 
 #skills div h4 {
 	display: inline-block;
@@ -438,8 +473,26 @@
 	background-image: linear-gradient(
 			rgba(20, 20, 20, 0.7),
 			rgba(20, 20, 20, 0.7)),
-	url("../assets/images/projects.jpg");
+	url("../assets/images/lg/projects.jpg");
 }
+
+/*@media only screen and (max-width: 500px){
+	#projects {
+		background-image: linear-gradient(
+				rgba(20, 20, 20, 0.7),
+				rgba(20, 20, 20, 0.7)),
+		url("../assets/images/sm/projects.jpg");
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#projects {
+		background-image: linear-gradient(
+				rgba(20, 20, 20, 0.7),
+				rgba(20, 20, 20, 0.7)),
+		url("../assets/images/md/projects.jpg");
+	}
+}*/
 
 
 .view-work {

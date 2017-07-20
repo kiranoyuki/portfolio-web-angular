@@ -10,6 +10,14 @@
 	width: 100%;
 }
 
+@media only screen and (max-device-width: 736px) {
+	.navbar-custom{
+		display: flex;
+		align-items: center;
+		justify-items: center;
+	}
+}
+
 .navbar-nav a {
 	text-transform: uppercase;
 	color: var(--dark-grey);
