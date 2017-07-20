@@ -71,8 +71,7 @@
 
 </div>
 
-<div id="skills" *ngIf="skills">
-	<div class="responsive-bg"></div>
+<div id="skills" *ngIf="skills" class="bg">
 	<div class="container-fluid text-center">
 		<div class="title">
 			<h3>skills</h3>
@@ -144,22 +143,24 @@
 
 
 <!-- SHOWCASE PROJECTS -->
-<div id="projects" *ngIf="projects" class="padding-content">
+<div id="projects" *ngIf="projects">
 	<div class="responsive-bg"></div>
-	<div>
-		<div class="title">
-			<h3>My Latest Work</h3>
+	<div class="padding-content">
+		<div>
+			<div class="title">
+				<h3>My Latest Work</h3>
+			</div>
+
+			<div class="view-work text-center">
+				<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
+
+			</div>
 		</div>
 
-		<div class="view-work text-center">
-			<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
+		<div class="project-list">
+			<group-fader [items]="projects"></group-fader>
 
 		</div>
-	</div>
-
-	<div class="project-list">
-		<group-fader [items]="projects"></group-fader>
-
 	</div>
 
 
