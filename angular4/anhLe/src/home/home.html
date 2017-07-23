@@ -1,53 +1,47 @@
-<div id="intro" class="c-container">
-		<div class="responsive-bg"></div>
-		<div class="center-div">
-			<div class="flex-center-item">
-				<h1>{{intro[0]}}</h1>
-			</div>
-			<div class="flex-center-item">
-				<h4>{{intro[1]}}</h4>
-			</div>
-		</div>
+<div id="intro">
 
+	<div class="container-fluid">
+		<div class="row">
+			<div id="intro-content" class="col-sm-8">
+				<div>
+					<h1>{{intro[0]}}</h1>
+				</div>
 
+				<div>
+					<h5>{{intro[1]}}</h5>
+					<h6>{{intro[2]}}</h6>
+					<h6>{{intro[3]}}</h6>
+					<h5 class="margin-top">Check out my connection below:</h5>
+					<div class="network-icons">
+						<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="{{links.linkedin}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="{{links.mail}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
-	<div id="intro-scroll-button">
-		<my-fader [isVisible]="intro">
-			<div class="flex-center-item">
-				<h6><span></span></h6>
-				<a scrollTo href="#about"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
-				</span></a>
-			</div>
-		</my-fader>
-	</div>
-
-</div>
-
-<div id="about">
-	<div class="container">
-		<div class="padding-content text-center">
-			<h3>About</h3>
-			<div class="flex-center-item">
-				<h6>{{intro[2]}}</h6>
-			</div>
-
-			<div class="flex-center-item margin-top">
-				<h6>Check out my connection below</h6>
-				<div class="network-icons">
-					<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="{{links.linkedin}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					<a href="{{links.mail}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-
+					</div>
 				</div>
 			</div>
-
+			<div id="intro-bg" class="col-sm-4 noshow-on-phone">
+				<img src="../assets/images/about/intro.png" alt="">
+			</div>
 		</div>
 	</div>
+
+	<div id="intro-scroll-button">
+		<div class="flex-center-item" scrollTo scrollTargetSelector="#expertise">
+			<h6><span></span></h6>
+			<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		</div>
+	</div>
+
 </div>
 
+<div class="gray-break">
+</div>
 
-<div id="expertise" *ngIf="expertise" class="padding-content">
-	<div class="container">
+<div id="expertise">
+
+
+	<div class="container padding-content">
 
 		<div class="title">
 			<h3>expertise</h3>
@@ -75,102 +69,102 @@
 
 </div>
 
-<div id="skills" *ngIf="skills" class="bg">
-	<div class="container-fluid text-center">
-		<div class="title">
-			<h3>skills</h3>
-			<h6>Everything I use to create beautiful and functionable projects. </h6>
-		</div>
+<!--<div id="skills" *ngIf="skills" class="bg">-->
+	<!--<div class="container-fluid text-center">-->
+		<!--<div class="title">-->
+			<!--<h3>skills</h3>-->
+			<!--<h6>Everything I use to create beautiful and functionable projects. </h6>-->
+		<!--</div>-->
 
-		<div class="container-fluid">
-			<div class="row">
-				<div id="languages" *ngIf="skills.languages" class="col-sm-4">
-					<h3>Language</h3>
-					<ul>
-						<li *ngFor="let item of skills.languages"
-						    class="skills-item"><h6>{{item}}</h6></li>
-					</ul>
+		<!--<div class="container-fluid">-->
+			<!--<div class="row">-->
+				<!--<div id="languages" *ngIf="skills.languages" class="col-sm-4">-->
+					<!--<h3>Language</h3>-->
+					<!--<ul>-->
+						<!--<li *ngFor="let item of skills.languages"-->
+						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
+					<!--</ul>-->
 
-				</div>
-				<div id="software" *ngIf="skills.software" class="col-sm-4">
-					<h3>Software</h3>
-					<ul>
-						<li *ngFor="let item of skills.software"
-						    class="skills-item"><h6>{{item}}</h6></li>
-					</ul>
-				</div>
-				<div id="knowledge" *ngIf="skills.knowledge" class="col-sm-4">
-					<h3>Knowledge</h3>
-					<ul>
-						<li *ngFor="let item of skills.knowledge"
-						    class="skills-item"><h6>{{item}}</h6></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="view-resume">
-			<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>
-		</div>
-	</div>
-</div>
-
-<div id="timeline" *ngIf="timeline" class="padding-content">
-	<div class="title">
-		<h3>experience</h3>
-		<h6>My work experience.</h6>
-
-	</div>
-
-	<ul class="timeline">
-		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
-			<div class="timeline-badge">
-				<div class="timeline-badge-inner"></div>
-			</div>
-
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h3 class="timeline-title">{{item.title}}</h3>
-					<h4>{{item.company}}</h4>
-					<p class="text-muted"><i class="glyphicon glyphicon-time"></i>{{item.period}}</p>
-				</div>
-				<div class="timeline-body">
-					<h6>{{item.description}}</h6>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<i class="down-arrow"></i>
-</div>
+				<!--</div>-->
+				<!--<div id="software" *ngIf="skills.software" class="col-sm-4">-->
+					<!--<h3>Software</h3>-->
+					<!--<ul>-->
+						<!--<li *ngFor="let item of skills.software"-->
+						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
+					<!--</ul>-->
+				<!--</div>-->
+				<!--<div id="knowledge" *ngIf="skills.knowledge" class="col-sm-4">-->
+					<!--<h3>Knowledge</h3>-->
+					<!--<ul>-->
+						<!--<li *ngFor="let item of skills.knowledge"-->
+						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
 
 
+		<!--<div class="view-resume">-->
+			<!--<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->
+
+<!--<div id="timeline" *ngIf="timeline" class="padding-content">-->
+	<!--<div class="title">-->
+		<!--<h3>experience</h3>-->
+		<!--<h6>My work experience.</h6>-->
+
+	<!--</div>-->
+
+	<!--<ul class="timeline">-->
+		<!--<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">-->
+			<!--<div class="timeline-badge">-->
+				<!--<div class="timeline-badge-inner"></div>-->
+			<!--</div>-->
+
+			<!--<div class="timeline-panel">-->
+				<!--<div class="timeline-heading">-->
+					<!--<h3 class="timeline-title">{{item.title}}</h3>-->
+					<!--<h4>{{item.company}}</h4>-->
+					<!--<p class="text-muted"><i class="glyphicon glyphicon-time"></i>{{item.period}}</p>-->
+				<!--</div>-->
+				<!--<div class="timeline-body">-->
+					<!--<h6>{{item.description}}</h6>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</li>-->
+	<!--</ul>-->
+	<!--<i class="down-arrow"></i>-->
+<!--</div>-->
 
 
 
 
-<!-- SHOWCASE PROJECTS -->
-<div id="projects" *ngIf="projects">
-	<div class="padding-content">
-		<div>
-			<div class="title">
-				<h3>My Latest Work</h3>
-			</div>
-
-			<div class="view-work text-center">
-				<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>
-
-			</div>
-		</div>
-
-		<div class="project-list">
-			<group-fader [items]="projects"></group-fader>
-
-		</div>
-	</div>
 
 
-</div>
+<!--&lt;!&ndash; SHOWCASE PROJECTS &ndash;&gt;-->
+<!--<div id="projects" *ngIf="projects">-->
+	<!--<div class="padding-content">-->
+		<!--<div>-->
+			<!--<div class="title">-->
+				<!--<h3>My Latest Work</h3>-->
+			<!--</div>-->
+
+			<!--<div class="view-work text-center">-->
+				<!--<button class="btn my-btn-outline" type="button" (click)="seeProject()">View More Projects</button>-->
+
+			<!--</div>-->
+		<!--</div>-->
+
+		<!--<div class="project-list">-->
+			<!--<group-fader [items]="projects"></group-fader>-->
+
+		<!--</div>-->
+	<!--</div>-->
+
+
+<!--</div>-->
 
 
 <!--div class="footer navbar-static-bottom text-center">

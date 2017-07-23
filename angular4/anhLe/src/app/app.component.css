@@ -1,25 +1,51 @@
-.navbar{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.9em;
+.navbar-wrapper .navbar{
+	font-size: 0.8em;
 	background: white;
-	padding-left: 3em;
-	padding-right: 3em;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 60px;
+	align-items: center;
 }
 
-.navbar-custom {
-	width: 100%;
+
+.inline-block{
+	display: inline-block;
+	margin-top: 10px;
 }
 
-@media only screen and (max-device-width: 736px) {
-	.navbar-custom{
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+.navbar-right {
+	padding: 10px auto!important;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-device-width: 500px) {
+	.navbar-wrapper .navbar {
+		padding: 0.5em 3em;
+		height: 65px;
 	}
 
-    .flex-row {
-	    display: inline-flex;
-    }
+	.inline-block{
+		width: 100%;
+		margin-top: 0px;
+	}
+}
+
+.logo{
+	float: left;
+	width: 3em;
+	height: 3em;
+	margin-right: 2em;
+}
+
+.logo img {
+	width: inherit;
+	height: inherit;
 }
 
 .navbar-nav a {
@@ -32,8 +58,10 @@
 }
 
 .navbar-nav li {
-	margin: 1em !important;
+	margin: 1em 1.5em!important;
+	display: inline-block;
 }
+
 
 .navbar-nav a:hover{
 	color: var(--yellow);
@@ -49,5 +77,8 @@
 li .active{
 	border-bottom: solid 2px var(--dark-grey);
 }
+
+
+
 
 

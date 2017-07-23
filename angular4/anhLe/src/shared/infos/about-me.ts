@@ -3,12 +3,10 @@ import {AboutMe} from "../object-interface/about-interface";
 export const aboutMe : AboutMe = {
     introduction: [
         "Hi, I'm Anh Le",
-        "I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with " +
-        "beautiful design.",
-        "I love learning new and better ways to create seamless user experiences with clean, " +
-        "efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to " +
-        "work with those who are willing to share their knowledge as much as I want to learn. At the end of the day," +
-        " my primary goal is to create something beautiful with people that bring out the best in me."
+        "I am a thinker and a designer.",
+        "My Philosophy is to take complex problems and produce simple and effective designs. I am always intrigued to the way things work in order to understand and discover the fundamental basis of the problem. Such a drive that constantly convinced me that any complex problem always has a simple solution.",
+        "I am always looking for the opportunity to learn and share my knowledge through friends, colleagues, and mentors. I find opportunities to expand my wisdom through feedbacks and critics. Ultimately, my goal is to create things that work for a greater good.",
+        "'Leave it better than you found it.' –Robert Baden-Powell"
     ],
     experience: {
         expertise: [

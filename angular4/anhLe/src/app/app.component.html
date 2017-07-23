@@ -1,13 +1,19 @@
 <div class="navbar-wrapper">
 
-    <nav class="navbar navbar-light navbar-fixed-top bg-faded justify-content-between flex-nowrap flex-row">
-      <div class="navbar-custom">
-        <a routerLink="/home" class="navbar-brand">AL</a>
-        <ul class="nav navbar-nav flex-row pull-right">
-          <li><a routerLink="/projects" routerLinkActive="active active-color" >Projects</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active">Contact Me</a></li>
+    <nav class="navbar navbar-light navbar-fixed-top ">
+        <div class="inline-block">
+            <div class="flex-row">
+                <a routerLink="/home" class="logo"><img src="../assets/icons/Logo.png" alt="AL"></a>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a routerLink="/projects" routerLinkActive="active active-color" >Projects</a></li>
+                    <li><a routerLink="/contact" routerLinkActive="active">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav navbar-nav navbar-right noshow-on-phone">
+            <li><a href="mailto:{{links.email}}" target="_blank"><button type='button' class="custom-btn">Hire Me</button></a>
+            </li>
         </ul>
-      </div>
     </nav>
 
 </div>

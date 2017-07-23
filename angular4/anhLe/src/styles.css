@@ -5,9 +5,7 @@
 
 	/*-------------intro------------------*/
 	--intro-scroll-button-font: #3b599a;
-	--yellow: #f1bd39;
 	--dark-grey: #424242;
-	--inactive: #9E9E9E;
 	--main-font: #3b599a;
 
 	/*------------expertise--------------*/
@@ -22,14 +20,22 @@
 	--timeline-inactive: #d2c0d3;
 	--timeline-card-bg: #AB6EAE;
 	--timeline-card-font: #442650;
+
+
+	/*--------- home ------------*/
+	--bold-font: #212121;
+	--yellow: #f1bd39;
+	--inactive: #E0E0E0;
+	--grey-bg: #f8f8f8;
+
+;
 }
 
 body {
 	min-height: 100vh;
-	background-color: #F5F5F5;
-	color: white;
-	font-family: 'Lato', sans-serif;
-	padding-top: 20px;
+	color: var(--dark-grey);
+	font-family: 'Poppins', sans-serif;
+	padding-top: 50px;
 }
 
 body > .container {
@@ -42,21 +48,94 @@ body h2, h3, h4, h5, h6, p {
 	letter-spacing: 0.03em;
 }
 
-p {
-	font-size: 0.8em;
-	font-weight: 300;
+h1 {
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h5{
+	font-size: 1em;
+	font-weight: 600;
 }
 
 h6 {
 	font-weight: 300;
-	font-size: 1em;
 }
 
-h3 {
-	text-transform: uppercase;
-	font-size: 1.4em;
-	font-weight: 600;
+p {
+	font-style: italic;
 }
+@media (max-device-width: 740px) {
+
+	.noshow-on-phone{
+		display: none !important;
+	}
+}
+
+
+.custom-btn {
+	border: none;
+	background-color: var(--yellow);
+	border-radius: 1.5em;
+	z-index: 3;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.2s linear;
+	padding: 5px 1.5em;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	color: var(--bold-font);
+}
+
+.custom-btn:hover{
+	color: var(--bold-font);
+	background-color: var(--inactive);
+}
+
+.custom-btn:active, .custom-btn:focus{
+	outline: none !important;
+}
+
+
+.network-icons {
+	margin-top: 0.8em;
+	display: flex;
+	align-items: center;
+	min-height: 3em;
+}
+
+.network-icons a{
+	margin-right: 1em;
+	font-size: 1.5em;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+
+}
+
+.network-icons a:hover {
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	font-size: 2em;
+
+}
+
+.gray-break{
+	width: 100%;
+	height: 10vh;
+
+	background: white;
+	background: linear-gradient(to right bottom, white 50%, var(--grey-bg) 50%);
+
+}
+
+/*---------------old stuff ---------*/
 
 .responsive-bg {
 	width: 100%;
@@ -172,34 +251,7 @@ h3 {
 }
 
 
-.network-icons {
-	margin-top: 0.8em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 3em;
-}
 
-.network-icons a{
-	margin-left: 5px;
-	margin-right: 5px;
-	font-size: 1.5em;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-.network-icons a:hover {
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-	font-size: 2em;
-
-}
 
 
 .footer {
