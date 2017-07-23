@@ -11,22 +11,19 @@ export const aboutMe : AboutMe = {
     experience: {
         expertise: [
             {
-                icon: 'important_devices',
-                category: 'Web Development',
-                description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
-                "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
+                icon: '../assets/images/about/web.png',
+                category: 'Software Engineer',
+                description: "I have experience with web and android development using Angular 2, Java, Javascript, JQuery, Nodejs, CSS3, HTML5, Less, Android Studio and more. I implement responsive websites and scalable apps with semantic, modular and scalable code base."
             },
             {
-                icon: 'dashboard',
+                icon: '../assets/images/about/ux.png',
                 category: 'UI+UX',
-                description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
-                "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
+                description: "A product is not good if customer cannot use it intuitively. I create products with clean and intuitive interfaces. These interfaces provide users comfort and productivity as they find them efficient, easy to use, and functional on everyday platforms: browsers and mobile devices alike."
             },
             {
-                icon: 'lightbulb_outline',
+                icon: '../assets/images/about/ai.png',
                 category: 'Artificial Intelligent',
-                description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam " +
-                "eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"
+                description: "AI is the future and it will have many beneficial uses in society: from technology to economics, health care, law and much more. I have an ambitious to be a contributor to the future of AI and future breakthroughs. I believe the potential of AI will greatly improve the societal life in many aspects."
             }
         ],
         skills:{
