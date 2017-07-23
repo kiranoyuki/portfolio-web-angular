@@ -64,46 +64,70 @@
 
 </div>
 
-<!--<div id="skills" *ngIf="skills" class="bg">-->
-	<!--<div class="container-fluid text-center">-->
-		<!--<div class="title">-->
-			<!--<h3>skills</h3>-->
-			<!--<h6>Everything I use to create beautiful and functionable projects. </h6>-->
-		<!--</div>-->
+<div class="white-break">
+</div>
 
-		<!--<div class="container-fluid">-->
-			<!--<div class="row">-->
-				<!--<div id="languages" *ngIf="skills.languages" class="col-sm-4">-->
-					<!--<h3>Language</h3>-->
-					<!--<ul>-->
-						<!--<li *ngFor="let item of skills.languages"-->
-						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
-					<!--</ul>-->
+<div id="skills">
 
-				<!--</div>-->
-				<!--<div id="software" *ngIf="skills.software" class="col-sm-4">-->
-					<!--<h3>Software</h3>-->
-					<!--<ul>-->
-						<!--<li *ngFor="let item of skills.software"-->
-						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
-					<!--</ul>-->
-				<!--</div>-->
-				<!--<div id="knowledge" *ngIf="skills.knowledge" class="col-sm-4">-->
-					<!--<h3>Knowledge</h3>-->
-					<!--<ul>-->
-						<!--<li *ngFor="let item of skills.knowledge"-->
-						    <!--class="skills-item"><h6>{{item}}</h6></li>-->
-					<!--</ul>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
+	<div class="container-fluid padding-content">
+		<div class="title-left">
+			<h2>/Skills</h2>
+		</div>
+
+		<div class="row">
+			<div id="languages" *ngIf="skills.languages" class="col-sm-4">
+				<div class="polaroid">
+					<div class="text-center skill-img">
+						<img src="{{skills.icons[0]}}" alt="icon">
+					</div>
+					<div class="text-center content">
+						<h3>Language</h3>
+						<ul>
+							<li *ngFor="let item of skills.languages"
+							    class="skills-item"><h6>{{item}}</h6></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div id="software" *ngIf="skills.software" class="col-sm-4">
+				<div class="polaroid">
+					<div class="text-center skill-img">
+						<img src="{{skills.icons[1]}}" alt="icon">
+					</div>
+					<div class="text-center content">
+						<h3>Software</h3>
+						<ul>
+							<li *ngFor="let item of skills.software"
+							    class="skills-item"><h6>{{item}}</h6></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div id="knowledge" *ngIf="skills.knowledge" class="col-sm-4">
+				<div class="polaroid">
+					<div class="text-center skill-img">
+						<img src="{{skills.icons[2]}}" alt="icon">
+					</div>
+					<div class="text-center content">
+						<h3>Knowlegde</h3>
+						<ul>
+							<li *ngFor="let item of skills.knowledge"
+							    class="skills-item"><h6>{{item}}</h6></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 
-		<!--<div class="view-resume">-->
-			<!--<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>-->
-		<!--</div>-->
-	<!--</div>-->
-<!--</div>-->
+		<div class="view-resume">
+			<a href="{{resume}}" target="_blank"><button type='button' class="btn custom-btn">View My Resume</button></a>
+		</div>
+	</div>
+</div>
 
 <!--<div id="timeline" *ngIf="timeline" class="padding-content">-->
 	<!--<div class="title">-->

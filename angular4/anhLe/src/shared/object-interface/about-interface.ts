@@ -6,6 +6,7 @@ export interface AboutMe {
     experience : {
         expertise : Expertise[],
         skills : {
+            icons: string[],
             languages: string[],
             software: string[],
             knowledge: string[]

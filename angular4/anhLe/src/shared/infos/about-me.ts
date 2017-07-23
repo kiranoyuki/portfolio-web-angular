@@ -27,14 +27,21 @@ export const aboutMe : AboutMe = {
             }
         ],
         skills:{
+            icons: [
+                '../assets/images/about/language.png',
+                '../assets/images/about/software.png',
+                '../assets/images/about/knowledge.png'
+            ],
             languages: [
-                'Angular', 'Java', 'Javascript', 'C++', 'HTML5', 'Ionic'
+                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery', 'Python',
+               'Matlab', 'Maple', 'MySQL'
+
             ],
             software: [
-                'Photoshop', 'Illustrator', 'Axure', 'SolidWork', 'AutoCad'
+                'Photoshop', 'Illustrator', 'Android Studio', 'Visual Studio', 'Axure', 'SolidWork', 'AutoCad'
             ],
             knowledge: [
-                'Software Development', 'User Experience', 'Computer Graphics', 'AI', 'Machine learning'
+                'Software Development', 'User Experience', 'Artificial Intelligent', 'Data Structure', 'Machine learning', 'Algorithms', 'Computer Graphics'
             ]
         }
     },
