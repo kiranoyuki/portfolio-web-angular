@@ -6,5 +6,5 @@ export interface Work {
     company: string,
     title : string,
     period: string,
-    description: string
+    description: string[]
 }

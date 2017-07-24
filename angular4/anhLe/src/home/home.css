@@ -311,7 +311,7 @@
 }
 
 .timeline .timeline-content {
-	width: 44%;
+	width: 45%;
 	position: relative;
 	float: right;
 	text-align: left;
@@ -450,6 +450,11 @@
 .timeline-body p,
 .timeline-body ul {
 	margin-bottom: 0;
+}
+
+.timeline-body img {
+	display: inline-block;
+	margin: 5px;
 }
 
 @media (max-width: 767px) {

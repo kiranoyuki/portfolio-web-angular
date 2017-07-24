@@ -48,26 +48,35 @@ export const aboutMe : AboutMe = {
     timeline : [
         {
         id: 201,
-        company: 'Company one',
-        title: 'Web Dev',
-        period: 'May 2015 - Sep 2016',
-        description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
-        ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
-    },
+        company: 'Oracle Primavera',
+        title: 'Software Engineer',
+        period: 'April - September 2015, 2016',
+        description: [
+            "Modified and upgraded team’s web pages from an existing infrastructure to a new model-view-controller architecture to enhance the code efficiency, usability and maintainability using JQuery, Javascript, RequireJS, Grunt for front end development.",
+            "Worked closely with a team of 10 members to plan, design and develop the software’s solutions in a 3-month Agile development cycle.",
+            "Designed and executed manual test and QUnit test to ensure the app’s quality and high percentage of code coverage."
+        ]
+        },
     {
         id: 202,
-        company: 'Company one',
-        title: 'Web Dev',
-        period: 'May 2015 - Sep 2016',
-        description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
-        ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
+        company: 'Univtop',
+        title: 'Cofounder - UX Engineer',
+        period: 'Jan 2015 - April 2016',
+        description: [
+            "Analyzed user interaction design trends and developed design guidelines for a heavy-content mobile application allowing international students to connect, find, and exchange information about studying abroad.",
+            "Developed user interface prototyping for iOS using Illustrator and Axure RP and improved the user experience and usability by analyzing the user’s feedback.",
+            "Organized and participated in business and marketing meetings."
+        ]
     },
     {
         id: 203,
-        company: 'Company one',
-        title: 'Web Dev',
-        period: 'May 2015 - Sep 2016',
-        description: 'Assisted professor with grading homework and project assignments. Held office hours to aid students' +
-        ' in their understanding of core HCI concepts and reported to the professor the extent of their understanding'
+        company: 'Central Washington University',
+        title: 'Lab Technician',
+        period: 'Jan 2013 - Jun 2013',
+        description: [
+            "Planned and conducted experiments in hologram to find the relationship between exposure time, disk process time, and lifetime of the hologram disk.",
+            "Recorded and reported experiment results to the physics professor weekly."
+
+        ]
     }]
 };
