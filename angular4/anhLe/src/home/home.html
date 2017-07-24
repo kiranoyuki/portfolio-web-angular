@@ -129,33 +129,39 @@
 	</div>
 </div>
 
-<!--<div id="timeline" *ngIf="timeline" class="padding-content">-->
-	<!--<div class="title">-->
-		<!--<h3>experience</h3>-->
-		<!--<h6>My work experience.</h6>-->
+<div class="gray-break">
+</div>
 
-	<!--</div>-->
+<div id="timeline" *ngIf="timeline" class="padding-content">
+	<div class="title-right">
+		<h2>/Experience</h2>
+	</div>
 
-	<!--<ul class="timeline">-->
-		<!--<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">-->
-			<!--<div class="timeline-badge">-->
-				<!--<div class="timeline-badge-inner"></div>-->
-			<!--</div>-->
+	<ul class="timeline">
+		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
 
-			<!--<div class="timeline-panel">-->
-				<!--<div class="timeline-heading">-->
-					<!--<h3 class="timeline-title">{{item.title}}</h3>-->
-					<!--<h4>{{item.company}}</h4>-->
-					<!--<p class="text-muted"><i class="glyphicon glyphicon-time"></i>{{item.period}}</p>-->
-				<!--</div>-->
-				<!--<div class="timeline-body">-->
-					<!--<h6>{{item.description}}</h6>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</li>-->
-	<!--</ul>-->
-	<!--<i class="down-arrow"></i>-->
-<!--</div>-->
+			<div class="timeline-badge">
+				<div class="timeline-badge-inner"></div>
+			</div>
+
+			<div class="timeline-panel">
+				<div class="timeline-date">
+					<h6>{{item.period}}</h6>
+				</div>
+			</div>
+			<div class="timeline-content">
+				<div class="timeline-heading">
+					<h3 class="timeline-title">{{item.title}}</h3>
+					<h4>{{item.company}}</h4>
+				</div>
+				<div class="timeline-body">
+					<h6>{{item.description}}</h6>
+				</div>
+
+			</div>
+		</li>
+	</ul>
+</div>
 
 
 
