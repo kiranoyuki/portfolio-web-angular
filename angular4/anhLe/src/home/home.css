@@ -137,7 +137,7 @@
 
 @media (min-width: 765px) {
 
-	#expertise .polaroid h6 {
+	.polaroid h6 {
 		font-size: 1.2vw;
 	}
 
@@ -186,14 +186,23 @@
 	flex-wrap: wrap;
 }
 
+#skills .row:before, .row:after {
+	content: normal;
+}
+
 #skills .col-sm-4 {
+	display: flex;
 	margin-bottom: 50px;
+}
+
+#skills .col-sm-4:before, .col-sm-4:after {
+	content: normal;
 }
 
 #skills .polaroid {
 	padding-top: 20px;
 	border: solid 2px var(--yellow);
-	height: 100%;
+	height: inherit;
 	width: 100%;
 }
 
@@ -217,7 +226,13 @@
 #skills h6 {
 	margin-top: 0;
 	line-height: 1.15em;
-	font-size: 0.7em;
+	font-size: 1em;
+}
+
+@media (min-width: 765px) {
+	#skills h6 {
+		font-size: 1.2vw;
+	}
 }
 
 #skills img {
@@ -233,6 +248,12 @@
 .view-resume {
 	display: flex;
 	justify-content: center;
+}
+
+.view-resume .custom-btn {
+	font-weight: 600;
+	font-size: 1em;
+	margin-bottom: 50px;
 }
 
 
