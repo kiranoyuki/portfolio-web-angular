@@ -69,13 +69,13 @@
 }
 
 .navbar-nav a:focus{
-	color: var(--dark-grey);
+	color: var(--yellow);
 	background-color: transparent !important;
 
 }
 
 li .active{
-	border-bottom: solid 2px var(--dark-grey);
+	border-bottom: solid 2px var(--yellow);
 }
 
 

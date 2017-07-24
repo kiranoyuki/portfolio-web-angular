@@ -17,6 +17,9 @@
 	--inactive: #E0E0E0;
 	--grey-bg: #f8f8f8;
 
+	/*-------- footer ------------*/
+	--footer-font: #BFB2AE;
+
 ;
 }
 
@@ -65,7 +68,7 @@ h5{
 }
 
 h6 {
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 300;
 }
 
@@ -88,7 +91,7 @@ p {
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.2s linear;
-	padding: 5px 1.5em;
+	padding: 0.5em 1.5em;
 	font-size: 1em;
 	letter-spacing: 0.1em;
 	color: var(--bold-font);
@@ -164,6 +167,38 @@ p {
 }
 
 
+.flex-center-item {
+	align-self: center;
+	text-align: center;
+}
+
+.padding-content {
+	padding: 0 10%;
+}
+
+
+.footer{
+	background-color: var(--grey-bg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .network-icons a {
+	color: var(--yellow);
+}
+
+.footer h6 {
+	font-size: 11px;
+	color: var(--footer-font);
+	margin-top: 0px;
+}
+
+/*---------- footer ------------*/
+
+
+
 /*---------------old stuff ---------*/
 
 /*.responsive-bg {*/
@@ -216,10 +251,6 @@ p {
 	/*align-self: flex-start;*/
 /*}*/
 
-.flex-center-item {
-	align-self: center;
-	text-align: center;
-}
 
 /*.my-btn-outline {*/
 	/*position: relative;*/
@@ -253,9 +284,7 @@ p {
 /*}*/
 
 
-.padding-content {
-	padding: 0 10%;
-}
+
 
 
 /*.center-div {*/
