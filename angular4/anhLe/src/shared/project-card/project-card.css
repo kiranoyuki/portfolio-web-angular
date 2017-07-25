@@ -113,5 +113,6 @@
 @media (max-device-width: 765px){
 	.project-info ul li{
 		font-size: 1em;
+		font-weight: 400;
 	}
 }
