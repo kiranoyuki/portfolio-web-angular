@@ -46,7 +46,8 @@ import {ScrollToModule} from 'ng2-scroll-to';
     GroupFaderComponent,
     ProjectCardComponent,
     ProjectGroupComponent,
-    ProjectFilter
+    ProjectFilter,
+    TruncatePipe
   ],
   providers: [
     ModalService,

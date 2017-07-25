@@ -1,18 +1,21 @@
 
-
 <div class="work-item">
 	<div class="work-item-inner" (click)="chooseProject(project)">
 		<div class="project-img" [ngStyle]="{'background-image':'url('+ project.thumbnail.url +')'}"></div>
 		<div class="overlay">
 			<div class="overlay-inner"></div>
 			<div class="overlay-content">
-				<h4>{{project.name}}</h4>
-				<div>
-					<ul>
-						<li *ngFor="let tag of project.tags">{{tag}}</li>
-					</ul>
-				</div>
+				<h6>{{project.description.intro | truncate}}</h6>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="project-info text-center">
+	<h3>{{project.name}}</h3>
+	<div>
+		<ul>
+			<li *ngFor="let tag of project.tags">{{tag}}</li>
+		</ul>
 	</div>
 </div>

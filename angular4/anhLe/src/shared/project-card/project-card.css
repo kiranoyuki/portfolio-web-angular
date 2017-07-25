@@ -94,25 +94,24 @@
 	transform: translateY(-50%)
 }
 
-.work-item .overlay .overlay-content h4 {
-	text-transform: capitalize;
-	font-size: 1.7em;
+.project-info h3 {
+	margin-bottom: 0;
 }
-
-.overlay-content ul {
+.project-info ul {
 	padding-left: 0;
 	list-style: none;
 }
 
-.overlay-content ul li {
+.project-info ul li {
 	text-transform: uppercase;
 	display: inline-block;
 	margin: auto 0.5em;
-	font-size: 0.7em;
+	font-size: 0.8em;
+	color: var(--grey-font);
 }
 
-@media (min-width: 575px) and (max-width: 700px) {
-	.work-item .overlay .overlay-content h4 {
-		font-size: 14px;
+@media (max-device-width: 765px){
+	.project-info ul li{
+		font-size: 1em;
 	}
 }

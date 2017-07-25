@@ -5,8 +5,6 @@ import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../shared/services/modal.service';
 import { Project } from '../shared/object-interface/project-interface';
 import {  Router }    from '@angular/router';
-import { TruncatePipe } from '../shared/pipe/trunc.pipe';
-import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
     templateUrl: './projects.html',
