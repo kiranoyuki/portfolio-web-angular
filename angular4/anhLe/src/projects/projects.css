@@ -26,12 +26,6 @@
 	}
 }
 
-@media only screen and (max-device-width: 500px) {
-	.my-tab-btn{
-		font-size: 0.8em;
-	}
-}
-
 
 .footer {
 	position: absolute;
@@ -68,4 +62,11 @@
 
 .active .my-tab-btn {
 	color: var(--yellow);
+}
+
+
+@media only screen and (max-device-width: 500px) {
+	.my-tab-btn{
+		font-size: 0.9em;
+	}
 }

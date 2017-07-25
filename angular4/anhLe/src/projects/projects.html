@@ -5,7 +5,6 @@
 			<ul class="nav nav-tabs">
 				<li role="presentation" *ngFor="let item of menu" [ngClass]="{'active': activeMenu === item}">
 					<button type="button" class="my-tab-btn" (click)="setActiveTab(item)">{{item}}</button></li>
-
 			</ul>
 		</div>
 
