@@ -1,86 +1,128 @@
 #contact {
-	min-height: 88vh;
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 93vh;
+	width:100%;
+	overflow-y: scroll;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: center;
-	color: var(--dark-grey);
-	padding-top: 80px;
-	padding-bottom: 80px;
 }
 
-#contact > .row {
+.container-fluid {
+	margin-bottom: 10%;
+}
+.quote {
+	width: 70%;
+	margin: auto;
+	padding: 5%;
+}
+
+.quote img {
 	width: 100%;
-	height: inherit;
-	padding-left: 3em;
-	padding-right: 3em;
+	height: auto;
 }
 
 #left {
-	margin-top: 0.5em;
-}
-
-#right {
-	padding-left: 20px;
-}
-
-#intro h3 {
-	margin-top: 0;
-}
-
-@media (min-width: 980px){
-	.view-resume, .send-message {
-		width: 70%;
-	}
-
-}
-
-h5 {
-	margin-top: 20px;
-	color: var(--inactive);
-}
-
-.my-btn-outline {
-	width: 100%;
-	border-color: var(--dark-grey);
-}
-.my-btn-outline:hover {
-	background-color: var(--dark-grey);
-}
-.my-btn-outline {
-	color: var(--dark-grey);
-}
-.my-btn-outline:hover{
-	color: var(--yellow);
+	padding-left: 0;
+	padding-right: 0;
 }
 
 
-.view-resume a {
-	color: white;
+#intro {
+	color: var(--contact-font);
 }
+
+.margin-left {
+	margin-left: 1em;
+
+}
+
+#intro h5 {
+	font-weight: 300;
+}
+
 
 .myPhoto {
 	background-color: var(--yellow);
 	width: 100%;
-	height: 250px;
+	height: 200px;
 }
 
-.quote h6{
-	font-weight: 700;
-	color: var(--inactive);
+#personal-contact {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: center;
 }
 
-#personal-contact i {
-	color: var(--inactive);
-	margin-right: 0.5em;
+#personal-contact img{
+	margin-right: 0.7em;
+	width: 25px;
+	height: 25px;
+}
+#personal-contact h6 {
+	margin-bottom: 0;
+	font-size: 12px;
 }
 
-@media (max-width: 700px){
 
-	#personal-contact i {
-		display: block;
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.box {
+	background-color: var(--grey-bg);
+	height: 55%;
+	width: 70%;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	z-index: -1;
+}
+
+
+@media only screen and (max-width: 800px){
+	#contact {
+		min-height: 95vh;
+	}
+
+	.quote {
+		width: 100%;
+	}
+
+	.container-fluid {
+		margin-bottom: 20%;
+	}
+
+	.custom-btn {
+		font-size: 0.8em;
 	}
 }
 
+@media only screen and (max-width: 765px) {
+	.quote {
+		margin-top: 10%;
+	}
+	#left {
+		text-align: center;
+		margin-bottom: 10%;
+	}
 
+	#right{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+    #right .row .col-sm-4 {
+	    margin: 10% auto;
+    }
+}
 
 

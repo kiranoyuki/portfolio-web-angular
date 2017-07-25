@@ -1,55 +1,61 @@
-<div id="contact" class="container-fluid">
-	<div class="row">
-		<div id="left" class="col-lg-4">
-			<div class="myPhoto"></div>
-			<div class="quote">
-				<h6>“Creativity is to discover a question that has never been asked” - Kenya Hara</h6>
-			</div>
+<div id="contact" class="padding-content">
+
+	<div class="container-fluid">
+
+		<div class="quote">
+			<img src="../assets/images/contact/quote.png" alt="quote">
 		</div>
-		<div id="right" class="col-lg-8">
-			<div id="intro">
-				<h3>{{links.intro[0]}}</h3>
-				<h4>{{links.intro[1]}}</h4>
-			</div>
 
+		<div class="row">
+			<div id="left" class="col-sm-4">
+				<div class="myPhoto"></div>
 
-			<div class="view-resume">
-				<a href="{{resume}}" target="_blank"><button type='button' class="btn my-btn-outline">View My Resume</button></a>
-			</div>
-
-			<div>
-				<h5>Reach out to me at:</h5>
-			</div>
-
-			<div id="personal-contact" class="row">
-				<div class="col-md-6">
-					<h4><i class="fa fa-envelope" aria-hidden="true"></i>{{links.email}}</h4>
-				</div>
-				<div class="col-md-6">
-					<h4><i class="fa fa-phone"></i>{{links.phone}}</h4>
+				<div id="personal-contact">
+					<div>
+						<h6><img src="../assets/images/contact/mail.png" alt="mail:">{{links.email}}</h6>
+					</div>
+					<div>
+						<h6><img src="../assets/images/contact/phone.png" alt="phone:">{{links.phone}}</h6>
+					</div>
 				</div>
 			</div>
 
+			<div id="right" class="col-sm-8 container-fluid">
+				<div id="intro" class="margin-left">
+					<h1>{{links.intro[0]}}</h1>
+					<h5>{{links.intro[1]}}</h5>
+				</div>
 
-			<div class="send-message">
-				<a href="mailto:{{links.email}}" target="_blank"><button type='button' class="btn my-btn-outline">Send Message</button></a>
+
+				<div class="row ">
+					<div class="col-sm-4 margin-left">
+						<a href="{{resume}}" target="_blank"><button type='button' class="btn custom-btn">View My Resume</button></a>
+					</div>
+					<div class="col-sm-4 margin-left">
+						<a href="mailto:{{links.email}}" target="_blank"><button type='button' class="btn custom-btn">Send Message</button></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-</div>
 
 
-<div class="footer navbar-static-bottom text-center">
+	<div class="footer navbar-static-bottom text-center">
 
-	<div class="network-icons">
-		<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a href="{{links.linkedin}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-		<a href="{{links.email}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		<div class="network-icons">
+			<a href="{{links.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="{{links.linkedin}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a href="{{links.email}}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+		</div>
+		<div>
+			<h6>Anh Le @2017. All Right Reserved</h6>
+		</div>
 
 	</div>
-	<div>
-		<h6>Anh Le @2017. All Right Reserved</h6>
-	</div>
-
 </div>
+
+<div class="box noshow-on-phone"></div>
+
+

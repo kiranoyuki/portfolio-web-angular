@@ -22,6 +22,9 @@
 	/*-------- footer ------------*/
 	--footer-font: #BFB2AE;
 
+	/*-------- contact ------------*/
+	--contact-font: #616161;
+
 ;
 }
 
@@ -97,7 +100,7 @@ p {
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.2s linear;
-	padding: 0.5em 1.5em;
+	padding: 0.7em 1.5em;
 	font-size: 1em;
 	letter-spacing: 0.1em;
 	color: var(--bold-font);
@@ -193,6 +196,10 @@ p {
 
 .footer .network-icons a {
 	color: var(--yellow);
+}
+
+.footer .network-icons {
+	margin-top: 0px;
 }
 
 .footer h6 {
