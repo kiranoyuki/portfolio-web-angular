@@ -3,7 +3,7 @@
  */
 export const Tags:string[] = [
     'UI+UX',
-    'Web Development',
+    'Web Dev',
     'Artificial Intelligent'
 ];
 

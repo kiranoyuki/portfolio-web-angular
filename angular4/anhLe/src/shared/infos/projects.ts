@@ -11,7 +11,7 @@ export const ourProjects: Project[] = [
         name: 'Lifekit',
         place: 'Philadelphia',
         position: 'Frontend Engineer - UX Engineer',
-        tags: ['UI+UX', 'Web Development'],
+        tags: ['UI+UX', 'Web Dev'],
         description: {
             intro: 'A rapid response system to detect drug overdose cases and notify responder to quickly assist people that need help.',
             problem: 'The United States is in the midst of an opioid epidemic. Many patients and drug users are dying of ' +
@@ -36,7 +36,7 @@ export const ourProjects: Project[] = [
         name: 'EnjoyChess',
         place: 'Philadelphia',
         position: 'UX Designer - Software Engineer',
-        tags: ['UI+UX', 'Web Development', 'Artificial Intelligent'],
+        tags: ['UI+UX', 'Web Dev', 'Artificial Intelligent'],
         description: {
         intro: 'A webapp for people who loves chess to play online match and train chess skills with chess AI engine.',
             problem: 'To learn and experiment with several algorithms in artificial intelligent search such as Minimax, Alpha Beta Prunning, Iterative Deepening, Monte Carlo Search.',
