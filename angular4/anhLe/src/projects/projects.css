@@ -13,20 +13,6 @@
 	padding-right: 10%;
 }
 
-@media only screen and (min-width: 800px) {
-	.project-container{
-		min-height: 93vh;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.project-inner-container{
-		margin-bottom: 20%;
-		margin-top: 10%;
-	}
-}
-
-
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -65,8 +51,27 @@
 }
 
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (min-width: 800px) {
+	.project-container{
+		min-height: 93vh;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.project-inner-container{
+		margin-bottom: 20%;
+		margin-top: 10%;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
 	.my-tab-btn{
 		font-size: 0.8em;
+	}
+
+	.project-inner-container{
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 }
