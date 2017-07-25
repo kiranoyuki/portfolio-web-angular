@@ -1,6 +1,7 @@
 :root {
 	--dark-trans: rgba(27,27,27,0.8);
 	--light-grey-bg: #F5F5F5;
+	--tab-font: #BFB2AE;
 
 
 	/*----------timeline-------------*/
@@ -80,6 +81,10 @@ p {
 	.noshow-on-phone{
 		display: none !important;
 	}
+}
+
+.margin-top {
+	margin-top: 5%;
 }
 
 

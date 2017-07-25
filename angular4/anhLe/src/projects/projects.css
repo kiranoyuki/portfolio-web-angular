@@ -1,23 +1,30 @@
 .project-container {
-	/*background: linear-gradient(
-			rgba(20,20,20, .7),
-			rgba(20,20,20, .7)),
-	url("../assets/images/projectPage2.jpg") repeat-y center center fixed;*/
-	min-height: 100vh;
-	width: 100%;
-	/*position: relative;
+	position: relative;
 	top: 0;
 	left: 0;
-	overflow-y: scroll;*/
-	background-color: #F5F5F5;
-	color: var(--dark-grey);
+	overflow-y: scroll;
+	min-height: 95vh;
+	width:100%;
+}
 
+@media (min-width: 800px) {
+	.project-container{
+		min-height: 93vh;
+	}
 }
 
 .project-inner-container {
-	margin: 100px auto;
-	padding-left: 5%;
-	padding-right: 5%;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .filter {
@@ -43,7 +50,7 @@
 }
 
 .my-tab-btn {
-	color: var(--inactive);
+	color: var(--tab-font);
 }
 
 .active .my-tab-btn {

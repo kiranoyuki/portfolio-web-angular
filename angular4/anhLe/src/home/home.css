@@ -1,8 +1,9 @@
 #intro {
-	max-height: 101vh;
+	min-height: 101vh;
 	width:100%;
 	position: relative;
 	background-color: white;
+	margin-bottom: 20px;
 }
 
 #intro .container-fluid{
@@ -16,7 +17,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 5%;
 }
 
 @media (max-device-width: 750px) {
@@ -174,7 +174,6 @@
 
 #skills {
 	background-color: white;
-	margin-top: 5%;
 }
 
 /*#skills .padding-content {*/
@@ -250,7 +249,7 @@
 	justify-content: center;
 }
 
-.view-resume .custom-btn {
+.custom-btn {
 	font-weight: 600;
 	font-size: 1em;
 	margin-bottom: 50px;
@@ -518,45 +517,12 @@
 /*-------------projects------------------*/
 #projects {
 	width: 100%;
-	height: auto;
 }
 
-
-#projects {
-	background-image: linear-gradient(
-			rgba(20,20,20, .5),
-			rgba(20,20,20, .5)),
-	url("../assets/images/lg/projects.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-attachment: fixed;
+#projects .project-list{
+	width: 100%;
 }
 
-
-@media only screen and (max-width: 800px) {
-	#projects .responsive-bg{
-		background-image: linear-gradient(
-				rgba(20, 20, 20, 0.7),
-				rgba(20, 20, 20, 0.7)),
-		url("../assets/images/md/projects.png");
-	}
-}
-
-
-
-.view-work {
-	margin-top: 2em;
-}
-
-.project-list {
-	margin-top: 15%;
-	margin-bottom: 10%;
-}
-
-.view-work .my-btn-outline:hover {
-	color: var(--yellow);
-}
 
 
 
