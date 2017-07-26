@@ -1,5 +1,5 @@
 .navbar-wrapper .navbar{
-	font-size: 0.8em;
+	font-size: 0.9em;
 	background: white;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -35,7 +35,6 @@
 	.navbar-wrapper .navbar {
 		padding: 0.5em 3em;
 		height: 65px;
-		font-size: 1em;
 	}
 
 	.inline-block{
@@ -59,8 +58,7 @@
 .navbar-nav a {
 	text-transform: uppercase;
 	color: var(--bold-font);
-	font-size: 0.8em;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.1em;
 	padding: 0.2em 0!important;
 }

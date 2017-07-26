@@ -24,7 +24,7 @@
 }
 
 h6 {
-	font-size: 12px;
+	font-size: 1em;
 	font-weight: 300;
 }
 
@@ -35,7 +35,7 @@ h6 {
 	}
 
 	h6 {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 }
 
@@ -430,11 +430,6 @@ h6 {
 	margin-top: 0;
 }
 
-.timeline-body h6{
-	font-weight: 300;
-	font-size: 0.9em;
-}
-
 
 .timeline-body p,
 .timeline-body ul {
@@ -512,6 +507,7 @@ h6 {
 
 #projects .project-list{
 	width: 100%;
+	margin-bottom: 35px;
 }
 
 

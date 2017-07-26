@@ -29,20 +29,23 @@
 	padding-right: 0;
 }
 
+#right {
+	padding-left: 2.5em;
+}
 
 #intro {
 	color: var(--contact-font);
+	margin-bottom: 25px;
 }
 
-.margin-left {
-	margin-left: 1.5em;
-
-}
 
 #intro h5 {
 	font-weight: 300;
 }
 
+#right .custom-btn {
+	width: 100%;
+}
 
 .myPhoto {
 	background-color: var(--yellow);
@@ -58,13 +61,13 @@
 }
 
 #personal-contact img{
-	margin-right: 0.7em;
+	margin-right: 0.5em;
 	width: 25px;
 	height: 25px;
 }
 #personal-contact h6 {
 	margin-bottom: 0;
-	font-size: 12px;
+	font-size: 0.9em;
 }
 
 
@@ -117,7 +120,7 @@
 		align-items: center;
 		text-align: center;
 	}
-    #right .row .col-sm-4 {
+    #right .row .col-sm-6 {
 	    margin: 10% auto;
     }
 
