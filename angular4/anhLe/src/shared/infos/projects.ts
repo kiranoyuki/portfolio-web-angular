@@ -27,7 +27,7 @@ export const ourProjects: Project[] = [
         },
         images : [{
             title: 'intro',
-            url: '../assets/images/lg/lifekit-intro.png'
+            url: '../assets/images/lifekit/intro.png'
         }],
         content : Lifekit
     },
