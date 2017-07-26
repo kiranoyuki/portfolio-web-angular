@@ -86,10 +86,6 @@
 }
 
 
-.custom-btn {
-	font-size: 0.8em;
-}
-
 @media only screen and (max-width: 800px){
 	#contact {
 		min-height: 95vh;
@@ -125,10 +121,6 @@
 	    margin: 10% auto;
     }
 
-
-	.custom-btn {
-		font-size: 1.2em;
-	}
 }
 
 

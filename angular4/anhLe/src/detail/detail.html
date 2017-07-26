@@ -1,7 +1,5 @@
 <div *ngIf="project" >
 
-
-
 	<div id="project-nav" [ngClass]="{'show': scrollUp}">
 		<nav class="navbar navbar-default navbar-fixed-bottom">
 			<div class="container">
@@ -17,28 +15,26 @@
 
 	<!--   ---------------INTRO ------------------- -->
 
-	<div class="project-container">
-		<div id="project-intro" [ngStyle]="{'background-image':  'linear-gradient('+
-			'rgba(20,20,20, 0.8), rgba(20,20,20, .5)), url('+ project.images[0].url +')'}">
-			<div class="center-div">
-				<div class="flex-center-item">
-					<h1>{{project.name}}</h1>
-				</div>
-				<div class="flex-center-item">
-					<h4>{{project.description.intro}}</h4>
-					<h6>{{project.position}}</h6>
-				</div>
-			</div>
+	<div class="project-container padding-content">
+		<div class="project-name text-center" [ngStyle]="{'background-image':  'linear-gradient('+
+			'rgba(20,20,20, 0.5), rgba(20,20,20, .5)), url('+ project.images[0].url +')'}">
+			<h1>{{project.name}}</h1>
+			<h5>{{project.position}}</h5>
+		</div>
+
+		<div class="project-intro text-center margin-bottom">
+			<h4>{{project.description.intro}}</h4>
 		</div>
 
 		<!--   ---------------OVERVIEW------------------- -->
 
+		<hr>
 
-		<div id="project-overview" class="padding-content">
+		<div id="project-overview" class="margin-bottom">
 			<div class="container-fluid">
-				<h2>Overview</h2>
+				<h2>/Overview</h2>
 				<div class="row">
-					<div class="col-md-8">
+					<div class="left col-sm-6">
 						<div>
 							<h3>DESCRIPTION</h3>
 							<h6>{{project.description.problem}}</h6>
@@ -49,7 +45,7 @@
 						</div>
 
 					</div>
-					<div class="col-md-4">
+					<div class="right col-sm-6">
 						<div>
 							<h3>ROLE</h3>
 							<h6>{{project.position}}</h6>
@@ -67,11 +63,12 @@
 			</div>
 		</div>
 
+		<hr>
 		<!--   ---------------MAIN CONTENT ------------------- -->
-		<div id="project-content" class="padding-content" *ngIf="project.content !== ''">
+		<div id="project-content" class="margin-bottom" *ngIf="project.content !== ''">
 			<div *ngFor="let item of project.content">
 				<div class="item-title" *ngIf="item.title">
-					<h4>{{item.title}}</h4>
+					<h3>{{item.title}}</h3>
 				</div>
 				<div class="item-content" *ngIf="item.content">
 					<h6 *ngFor="let text of item.content">{{text}}</h6>
@@ -83,8 +80,8 @@
 		</div>
 
 		<!-- ------------------ SUGGEST NEXT PROJECT ------------ -->
-		<div id="moreProjects" class="padding-content">
-			<h3>MORE WORK</h3>
+		<div id="moreProjects">
+			<h2>/MORE WORK</h2>
 
 			<div class="project-list">
 				<group-fader [items]="moreProjects"></group-fader>

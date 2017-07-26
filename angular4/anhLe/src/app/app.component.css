@@ -5,6 +5,7 @@
 	padding-right: 10%;
 	height: 60px;
 	align-items: center;
+	color: var(--main-font);
 }
 
 
@@ -24,10 +25,17 @@
 	align-items: center;
 }
 
+.navbar-nav .custom-btn {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--amber-font);
+}
+
 @media (max-device-width: 500px) {
 	.navbar-wrapper .navbar {
 		padding: 0.5em 3em;
 		height: 65px;
+		font-size: 1em;
 	}
 
 	.inline-block{

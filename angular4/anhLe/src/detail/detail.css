@@ -1,5 +1,5 @@
-.project-container {
-	color: var(--main-font);
+h6 {
+	font-size: 1em;
 }
 
 #project-nav {
@@ -35,49 +35,125 @@
 	background-color: transparent;
 }
 
-#project-intro {
+.project-name {
+	margin: 3em auto;
 	width: 100%;
-	min-height: 101vh;
+	height: 35vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: center center fixed;
+}
+
+.project-name h1 {
+	font-size: 2.5em;
 	color: white;
+	margin: 0;
 }
 
-#project-intro h4 {
-	font-weight: 300;
-	color: var(--yellow);
-}
-#project-intro h6 {
+.project-name h5{
+	color: white;
+	margin: 0;
 	text-transform: uppercase;
-	font-weight: 400;
 }
 
-.center-div {
-	width: 80%;
-	background-color: rgba(225,225,225, 0.3);
+.project-intro {
+	margin: auto 10%;
+	color: var(--amber-font);
+}
+.project-intro h4 {
+	text-transform: none;
+	font-size: 1.1em;
 }
 
-#tools h6{
+
+/*---------- overview --------------*/
+h2 {
+	font-size: 1.5em;
+}
+#tools {
+	margin-bottom: 1em;
+}
+
+.margin-bottom {
+	margin-bottom: 3em;
+}
+
+.right {
+	background-color: var(--grey-bg);
+	padding: 1em 1em;
+}
+
+.right h3 {
+	margin-bottom: 0;
+}
+
+.right h6 {
 	display: inline-block;
-	margin: 10px 5px;
+	margin: 0 1em 0 0;
 }
 
-#moreProjects h3 {
-	color:  var(--dark-grey);
+
+@media only screen and (min-width: 500px) {
+	.right {
+		width: 45%;
+		margin: 2em 0 0 5%;
+		padding: 2em 3em;
+	}
+
+	h6 {
+		font-size: 0.8em;
+	}
+}
+
+#project-content {
+	padding: 0.5em 15px;
+}
+
+
+/*#project-intro {*/
+	/*width: 100%;*/
+	/*min-height: 101vh;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*color: white;*/
+/*}*/
+
+/*#project-intro h4 {*/
+	/*font-weight: 300;*/
+	/*color: var(--yellow);*/
+/*}*/
+/*#project-intro h6 {*/
+	/*text-transform: uppercase;*/
+	/*font-weight: 400;*/
+/*}*/
+
+/*.center-div {*/
+	/*width: 80%;*/
+	/*background-color: rgba(225,225,225, 0.3);*/
+/*}*/
+
+/*#tools h6{*/
+	/*display: inline-block;*/
+	/*margin: 10px 5px;*/
+/*}*/
+
+#moreProjects h2 {
 	padding-bottom: 10px;
 	margin-bottom: 30px;
 	border-bottom: solid 3px var(--yellow);
 }
 
-#project-content {
-	background-color: white;
-}
+/*#project-content {*/
+	/*background-color: white;*/
+/*}*/
 
 .item-img {
 	margin: 3em auto;
 }
-#project-content img {
+.item-img img {
 	max-width: 100%;
 	height: auto;
 }
