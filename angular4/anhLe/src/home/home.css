@@ -63,7 +63,8 @@ h6 {
 
 @media only screen and (max-device-width: 800px) {
 	#intro-bg {
-		top: 40%;
+		min-height: 60vh;
+		padding-top: 40%;
 	}
 }
 
