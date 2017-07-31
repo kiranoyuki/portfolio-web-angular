@@ -11,13 +11,11 @@ import {DetailComponent} from '../detail/detail.component';
 import {ProjectsComponent} from '../projects/projects.component';
 import {ErrorComponent} from '../error/error.component';
 import {ContactComponent} from '../contact/contact.component';
-import {FaderComponent} from '../shared/fader/fader.component';
 import {AppRouting}     from './app.routes';
 import {AppComponent} from "./app.component";
 import {TruncatePipe} from "../shared/pipe/trunc.pipe";
 import {ProjectCardComponent} from "../shared/project-card/project-card.component";
 import {ProjectGroupComponent} from "../shared/group-project/group-project.component";
-import {GroupFaderComponent} from "../shared/group-fader/group-fader.component";
 import {HomeCacheService} from "../shared/services/home-cache.service";
 import {ModalService} from "../shared/services/modal.service";
 import {ProjectFilter} from "../shared/pipe/ProjectFilter";
@@ -39,8 +37,6 @@ import {ScrollToModule} from 'ng2-scroll-to';
     ProjectsComponent,
     ContactComponent,
     ErrorComponent,
-    FaderComponent,
-    GroupFaderComponent,
     ProjectCardComponent,
     ProjectGroupComponent,
     ProjectFilter,

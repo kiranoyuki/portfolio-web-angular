@@ -5,10 +5,37 @@ import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../shared/services/modal.service';
 import { Project } from '../shared/object-interface/project-interface';
 import {  Router }    from '@angular/router';
+import {trigger, transition, style, query, group, animate, keyframes, animateChild, stagger} from "@angular/animations";
 
 @Component({
     templateUrl: './projects.html',
-    styleUrls: ['./projects.css']
+    styleUrls: ['./projects.css'],
+    /*animations : [
+        trigger('changeFilter', [
+
+            transition('void => *', [
+                query('*', [
+                    animate(300, keyframes([
+                        style({opacity: 0, transform: 'translateX(-100%)', offset: 0}),
+                        style({opacity: 1, transform: 'translateX(15px)',  offset: 0.3}),
+                        style({opacity: 1, transform: 'translateX(0)',     offset: 1.0})
+                    ]))
+                ], {optional: true})
+
+            ]),
+            transition('* => void', [
+                query('*', [
+                    animate(300, keyframes([
+                        style({opacity: 1, transform: 'translateX(0)',     offset: 0}),
+                        style({opacity: 1, transform: 'translateX(-15px)', offset: 0.7}),
+                        style({opacity: 0, transform: 'translateX(100%)',  offset: 1.0})
+                    ]))
+                ], {optional: true})
+
+            ])
+        ])
+
+    ]*/
 })
 
 export class ProjectsComponent implements OnInit {
@@ -19,6 +46,7 @@ export class ProjectsComponent implements OnInit {
     activeMenu:string;
     display:any[];
     links:any;
+    change:string = 'leave';
 
     constructor ( public _modalService: ModalService, public router: Router ) {}
 
@@ -41,6 +69,8 @@ export class ProjectsComponent implements OnInit {
         this.activeMenu = menuItem;
         this.display = null;
         this.filterProject(menuItem);
+        this.change = (this.change === 'leave' ? 'enter' : 'leave');
+        console.log(this.change);
 
     }
 

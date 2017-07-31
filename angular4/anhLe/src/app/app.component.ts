@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation, OnInit} from '@angular/core';
-import {trigger, transition, style, query, group, animate, animateChild} from "@angular/animations";
+import {trigger, transition, style, query, group, animate, animateChild, stagger} from "@angular/animations";
 import {Router, NavigationEnd} from "@angular/router";
 import {ModalService} from "../shared/services/modal.service";
 
@@ -12,24 +12,28 @@ import {ModalService} from "../shared/services/modal.service";
     trigger('routerAnimation', [
 
       transition('* => *', [
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0 }), { optional: true }),
-        query(':enter', style({ transform: 'translateY(100%)' }), { optional: true }),
+        query(':leave', style({ opacity: 1}), { optional: true }),
 
         group([
-          query(':leave', group([
-            animate('700ms cubic-bezier(.35,0,.25,1)', style({
-              transform: 'translateY(0%) scale(0)',
-              opacity: 0
-            })),
-            animateChild()
-          ]), { optional: true }),
-          query(':enter', group([
-            animate('800ms ease-in-out', style({ transform: 'translateY(0%)' })),
-            animateChild()
-          ]), { optional: true })
+          query(':enter', [
+              query('*', [
+                style({ transform: 'translateY(20px)', opacity: 0 }),
+                stagger(20, [
+                  animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
+                ]),
+                animateChild()
+              ])
+          ], { optional: true }),
+          query(':leave', [
+              query('*', [
+                animate('2s', style({ opacity: 0 })),
+                animateChild()
+              ])
+          ], { optional: true })
         ])
       ])
     ])
+
   ]
 })
 export class AppComponent implements OnInit{

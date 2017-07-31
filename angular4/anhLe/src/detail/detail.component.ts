@@ -7,11 +7,33 @@ import { Project } from '../shared/object-interface/project-interface';
 import { ModalService} from '../shared/services/modal.service';
 import { Image } from '../shared/object-interface/image-interface';
 import { NgZone } from '@angular/core';
+import {query, stagger, animate, style, transition, trigger, animateChild, group} from '@angular/animations';
 
 
 @Component({
     templateUrl : './detail.html',
-    styleUrls: ['./detail.css']
+    styleUrls: ['./detail.css'],
+    // animations: [
+    //     trigger('animation', [
+    //         transition('* => *', [
+    //             query(':leave', style({ opacity: 1}), { optional: true }),
+    //
+    //             group([
+    //                 query(':enter', [
+    //                     style({ transform: 'translateY(20px)', opacity: 0 }),
+    //                     stagger(20, [
+    //                         animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
+    //                     ]),
+    //                     animateChild()
+    //                 ],{ optional: true }),
+    //                 query(':leave', [
+    //                     animate('2s', style({ opacity: 0 })),
+    //                     animateChild()
+    //                 ], { optional: true })
+    //             ])
+    //         ])
+    //     ])
+    // ]
 })
 
 export class DetailComponent implements OnInit {

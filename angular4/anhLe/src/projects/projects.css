@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	overflow-y: scroll;
-	min-height: 95vh;
+	min-height: 90vh;
 	width:100%;
 }
 
@@ -11,14 +11,9 @@
 	margin-top: 25px;
 	padding-left: 10%;
 	padding-right: 10%;
+	margin-bottom: 10%;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
 
 .filter {
 	margin-bottom: 30px;
@@ -51,16 +46,12 @@
 }
 
 
-@media only screen and (min-width: 800px) {
-	.project-container{
-		min-height: 93vh;
-	}
-}
-
 @media only screen and (max-width: 800px) {
+	.project-container {
+		min-height: 86vh;
+	}
 	.project-inner-container{
 		margin-bottom: 20%;
-		margin-top: 10%;
 	}
 }
 

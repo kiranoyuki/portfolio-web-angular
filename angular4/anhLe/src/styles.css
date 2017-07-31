@@ -42,7 +42,7 @@ body {
 	min-height: 100vh;
 	color: var(--main-font);
 	font-family: 'Source Sans Pro', sans-serif;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 body > .container {
@@ -213,6 +213,9 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .footer .network-icons i {
@@ -228,6 +231,7 @@ p {
 	color: var(--footer-font);
 	margin-top: 0px;
 }
+
 
 .show {
 	visibility: visible !important;
