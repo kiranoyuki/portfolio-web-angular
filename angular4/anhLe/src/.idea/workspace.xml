@@ -22,7 +22,7 @@
     <favorites_list name="src" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3954581">
+    <splitter split-orientation="horizontal" split-proportion="0.11276429">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
@@ -113,16 +113,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="detail.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/detail/detail.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="57" column="10" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles.css">
               <provider selected="true" editor-type-id="text-editor">
@@ -143,6 +133,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="projects.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/projects/projects.css">
               <provider selected="true" editor-type-id="text-editor">
@@ -153,7 +153,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trunc.pipe.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="trunc.pipe.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/shared/pipe/trunc.pipe.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
@@ -228,7 +228,6 @@
         <option value="$PROJECT_DIR$/shared/infos/constant.ts" />
         <option value="$PROJECT_DIR$/shared/project-card/project-card.html" />
         <option value="$PROJECT_DIR$/shared/infos/project-detail/lifekit.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/shared/project-card/project-card.css" />
         <option value="$PROJECT_DIR$/home/home.css" />
         <option value="$PROJECT_DIR$/shared/infos/project-detail/enjoychess.ts" />
@@ -253,6 +252,7 @@
         <option value="$PROJECT_DIR$/app/app.component.css" />
         <option value="$PROJECT_DIR$/projects/projects.css" />
         <option value="$PROJECT_DIR$/shared/pipe/trunc.pipe.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -379,12 +379,12 @@
       <workItem from="1500511319399" duration="14367000" />
       <workItem from="1500658089301" duration="1012000" />
       <workItem from="1500756548858" duration="21690000" />
-      <workItem from="1500845065295" duration="54610000" />
+      <workItem from="1500845065295" duration="54943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91679000" />
+    <option name="totallyTimeSpent" value="92012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1277" height="745" extended-state="0" />
@@ -574,14 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/project-card/project-card.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -715,7 +707,7 @@
         <state relative-caret-position="105">
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,6 +828,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shared/pipe/trunc.pipe.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -844,10 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
