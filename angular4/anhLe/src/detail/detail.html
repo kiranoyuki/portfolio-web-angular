@@ -16,10 +16,13 @@
 	<!--   ---------------INTRO ------------------- -->
 
 	<div class="project-container padding-content">
-		<div class="project-name text-center" [ngStyle]="{'background-image':  'linear-gradient('+
-			'rgba(20,20,20, 0.5), rgba(20,20,20, .5)), url('+ project.images[0].url +')'}">
-			<h1>{{project.name}}</h1>
-			<h5>{{project.position}}</h5>
+		<div class="project-image text-center" [ngStyle]="{'background-image':  'linear-gradient('+
+			'rgba(20,20,20, 0.3), rgba(20,20,20, .5)), url('+ project.images[0].url +')'}">
+			<div class="project-name">
+				<h1>{{project.name}}</h1>
+				<h5>{{project.position}}</h5>
+			</div>
+
 		</div>
 
 		<div class="project-intro text-center margin-bottom">

@@ -50,7 +50,16 @@
 .myPhoto {
 	background-color: var(--yellow);
 	width: 100%;
-	height: 200px;
+	max-height: 300px;
+	max-width: 400px;
+	overflow-y: hidden;
+
+
+}
+
+.myPhoto img {
+	width: 100%;
+	height: auto;
 }
 
 #personal-contact {

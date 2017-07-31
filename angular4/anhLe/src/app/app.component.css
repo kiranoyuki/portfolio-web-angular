@@ -3,7 +3,7 @@
 	background: white;
 	padding-left: 10%;
 	padding-right: 10%;
-	height: 60px;
+	height: 70px;
 	align-items: center;
 	color: var(--main-font);
 }
@@ -26,14 +26,14 @@
 }
 
 .navbar-nav .custom-btn {
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 600;
 	color: var(--amber-font);
+	margin-bottom: 0.5em;
 }
 
 @media (max-device-width: 500px) {
 	.navbar-wrapper .navbar {
-		padding: 0.5em 3em;
 		height: 65px;
 	}
 

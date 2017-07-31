@@ -11,13 +11,14 @@ import {ModalService} from "../shared/services/modal.service";
   animations : [
     trigger('routerAnimation', [
 
-      transition('homePage => *', [
+      transition('* => *', [
         query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0 }), { optional: true }),
         query(':enter', style({ transform: 'translateY(100%)' }), { optional: true }),
 
         group([
           query(':leave', group([
-            animate('10ms ease-out', style({
+            animate('700ms cubic-bezier(.35,0,.25,1)', style({
+              transform: 'translateY(0%) scale(0)',
               opacity: 0
             })),
             animateChild()
@@ -27,26 +28,7 @@ import {ModalService} from "../shared/services/modal.service";
             animateChild()
           ]), { optional: true })
         ])
-      ]),
-
-      transition('* => *', [
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0 }), { optional: true }),
-        query(':enter', style({ transform: 'translateY(100%)' }), { optional: true }),
-
-        group([
-          query(':leave', group([
-            animate('700ms cubic-bezier(.35,0,.25,1)', style({ transform: 'translateY(-100%)' })), // y: '-100%'
-            animateChild()
-          ]), { optional: true }),
-          query(':enter', group([
-            animate('800ms ease-in-out', style({ transform: 'translateY(0%)' })),
-            animateChild()
-          ]), { optional: true })
-        ])
       ])
-
-
-
     ])
   ]
 })

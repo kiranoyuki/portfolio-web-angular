@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
     }*/
 
     getProject(){
-        this.projects = this._modalService.getProjects().slice(-3);
+        this.projects = this._modalService.getProjects().slice(0,3);
     }
 
     getExpertise() {

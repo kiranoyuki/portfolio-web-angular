@@ -53,6 +53,7 @@ h6 {
 }
 
 #intro-bg {
+	margin-top: 15%;
 	max-height: 75vh;
 	overflow: hidden;
 	position: absolute;
