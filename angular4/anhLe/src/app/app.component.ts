@@ -23,7 +23,7 @@ import {ModalService} from "../shared/services/modal.service";
               query('*', [
                 style({ transform: 'translateY(20%)'}),
                 stagger(10, [
-                  animate('700ms ease-in', style('*'))
+                  animate('800ms ease-in-out', style('*'))
                 ])
               ])
           ], { optional: true }),
