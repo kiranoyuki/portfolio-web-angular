@@ -58,8 +58,9 @@
 
 @media only screen and (max-width: 500px) {
 	.my-tab-btn{
-		font-size: 1em;
+		font-size: 0.9em;
 		font-weight: 400;
+		margin: 0.3em;
 	}
 
 	.project-inner-container{
