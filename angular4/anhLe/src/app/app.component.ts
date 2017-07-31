@@ -22,14 +22,14 @@ import {ModalService} from "../shared/services/modal.service";
           query(':enter', [
               query('*', [
                 style({ transform: 'translateY(20%)'}),
-                stagger(20, [
-                  animate('800ms cubic-bezier(.35,0,.25,1)', style('*'))
+                stagger(10, [
+                  animate('700ms ease-in', style('*'))
                 ])
               ])
           ], { optional: true }),
           query(':leave', [
               query('*', [
-                animate('2s cubic-bezier(.35,0,.25,1)', style({ opacity: 0 })),
+                animate('2s ease-in', style({ opacity: 0 })),
               ])
           ], { optional: true })
         ])
