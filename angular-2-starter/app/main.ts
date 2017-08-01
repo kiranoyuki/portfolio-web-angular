@@ -1,5 +1,0 @@
-// main entry point
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { RootModule } from './root/root.module';
-
-platformBrowserDynamic().bootstrapModule(RootModule);
