@@ -119,7 +119,7 @@ p {
 	border: none;
 	background-color: var(--yellow);
 	border-radius: 1.5em;
-	z-index: 3;
+	/*z-index: 3;*/
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.2s linear;
@@ -235,6 +235,8 @@ p {
 
 .footer .network-icons {
 	margin-top: 0px;
+	z-index: 5;
+
 }
 
 .footer h6 {
