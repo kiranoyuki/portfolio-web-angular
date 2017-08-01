@@ -3,6 +3,9 @@
  */
 export const Lifekit = [
     {
+        title: 'Best community service award - Drexel University, 2017.'
+    },
+    {
         img: '../assets/images/lifekit/lifekit1.png',
         title : 'Lifekit solutions',
         content: ['Mobile App: Provides a user Interface encompassing the overdose detection hardware and aid service.',
