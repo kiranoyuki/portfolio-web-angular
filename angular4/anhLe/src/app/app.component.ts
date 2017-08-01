@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation, OnInit} from '@angular/core';
-import {trigger, transition, style, query, group, animate, animateChild, stagger} from "@angular/animations";
+import {trigger, transition, style, query, group, animate, stagger} from "@angular/animations";
 import {Router, NavigationEnd} from "@angular/router";
 import {ModalService} from "../shared/services/modal.service";
 

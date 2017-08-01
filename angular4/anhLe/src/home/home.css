@@ -116,6 +116,7 @@ h6 {
 
 #expertise{
 	background-color: var(--grey-bg);
+	padding-bottom: 10%;
 }
 
 /*#expertise .padding-content{*/
@@ -190,6 +191,7 @@ h6 {
 
 #skills {
 	background-color: white;
+	padding-bottom: 10%;
 }
 
 /*#skills .padding-content {*/
@@ -253,10 +255,6 @@ h6 {
 	height: 30px;
 }
 
-.view-resume {
-	display: flex;
-	justify-content: center;
-}
 
 .custom-btn {
 	margin-bottom: 50px;
@@ -266,18 +264,22 @@ h6 {
 
 /*----------------Timeline----------------*/
 #timeline {
-	padding-bottom: 15%;
+	padding-bottom: 5%;
 	background-color: var(--grey-bg);
 }
 
 
+.view-resume {
+	display: flex;
+	justify-content: center;
+}
 
 .timeline {
 	margin-top: 10%;
 	list-style: none;
 	padding: 40px 0 20px;
 	position: relative;
-	margin-bottom: 0;
+	margin-bottom: 10%;
 }
 
 .timeline:before {
@@ -426,9 +428,9 @@ h6 {
 }
 
 .timeline-heading h4 {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-weight: 600;
-	color: var(--timeline-card-font);
+	color: var(--amber-font);
 	margin-top: 0;
 }
 
@@ -509,7 +511,11 @@ h6 {
 
 #projects .project-list{
 	width: 100%;
-	margin-bottom: 35px;
+	margin-bottom: 5%;
+}
+
+.view-work{
+	padding-bottom: 10%;
 }
 
 

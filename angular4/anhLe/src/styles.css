@@ -4,6 +4,7 @@
 	--main-font: #2b2a2a;
 	--amber-font: #616161;
 	--project-font: #4B4337;
+	--normal-text: #7c7c7c;
 
 
 	/*----------timeline-------------*/
@@ -96,6 +97,16 @@ p {
 
 	.noshow-on-phone{
 		display: none !important;
+	}
+
+}
+
+@media only screen and (max-device-width: 800px){
+
+	h6 {
+		font-weight: 400!important;
+		color: var(--normal-text);
+
 	}
 }
 

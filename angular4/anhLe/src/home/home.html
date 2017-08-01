@@ -35,34 +35,51 @@
 
 </div>
 
+
+
 <div id="break1" class="gray-break">
 </div>
 
-<div id="expertise">
 
-
-	<div class="container-fluid padding-content">
-
-		<div class="title-right">
-			<h2>/expertise</h2>
-		</div>
-
-		<div class="row">
-			<div *ngFor="let exp of expertise"
-			     class="col-sm-4 polaroid text-justify">
-				<div class="text-center">
-					<img src="{{exp.icon}}" alt="icon">
-					<h3>{{exp.category}}</h3>
-				</div>
-
-				<h6>{{exp.description}}</h6>
-			</div>
-		</div>
-
-
+<div id="timeline" *ngIf="timeline" class="padding-content">
+	<div class="title-right">
+		<h2>/Experience</h2>
 	</div>
 
+	<ul class="timeline  margin-top">
+		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
+
+			<div class="timeline-badge">
+				<div class="timeline-badge-inner"></div>
+			</div>
+
+			<div class="timeline-panel">
+				<div class="timeline-date">
+					<h6>{{item.period}}</h6>
+				</div>
+			</div>
+			<div class="timeline-content">
+				<div class="timeline-heading">
+					<h3 class="timeline-title">{{item.title}}</h3>
+					<h4>{{item.company}}</h4>
+				</div>
+				<div class="timeline-body text-left">
+					<h6 *ngFor="let content of item.description"><img src="../assets/images/about/+.png" alt="+">{{content}}</h6>
+
+				</div>
+
+			</div>
+		</li>
+	</ul>
+
+	<div class="view-resume">
+		<a href="{{resume}}" target="_blank"><button type='button' class="btn custom-btn">View Resume</button></a>
+	</div>
 </div>
+
+
+
+
 
 <div class="white-break">
 </div>
@@ -123,51 +140,38 @@
 		</div>
 
 
-		<div class="view-resume">
-			<a href="{{resume}}" target="_blank"><button type='button' class="btn custom-btn">View Resume</button></a>
-		</div>
+
 	</div>
 </div>
 
 <div class="gray-break">
 </div>
 
-<div id="timeline" *ngIf="timeline" class="padding-content">
-	<div class="title-right">
-		<h2>/Experience</h2>
+<div id="expertise">
+
+
+	<div class="container-fluid padding-content">
+
+		<div class="title-right">
+			<h2>/expertise</h2>
+		</div>
+
+		<div class="row">
+			<div *ngFor="let exp of expertise"
+			     class="col-sm-4 polaroid text-justify">
+				<div class="text-center">
+					<img src="{{exp.icon}}" alt="icon">
+					<h3>{{exp.category}}</h3>
+				</div>
+
+				<h6>{{exp.description}}</h6>
+			</div>
+		</div>
+
+
 	</div>
 
-	<ul class="timeline  margin-top">
-		<li *ngFor="let item of timeline; let even=even;" [ngClass]="{'timeline-inverted': even}">
-
-			<div class="timeline-badge">
-				<div class="timeline-badge-inner"></div>
-			</div>
-
-			<div class="timeline-panel">
-				<div class="timeline-date">
-					<h6>{{item.period}}</h6>
-				</div>
-			</div>
-			<div class="timeline-content">
-				<div class="timeline-heading">
-					<h3 class="timeline-title">{{item.title}}</h3>
-					<h4>{{item.company}}</h4>
-				</div>
-				<div class="timeline-body text-left">
-					<h6 *ngFor="let content of item.description"><img src="../assets/images/about/+.png" alt="+">{{content}}</h6>
-
-				</div>
-
-			</div>
-		</li>
-	</ul>
 </div>
-
-
-
-
-
 
 <!-- SHOWCASE PROJECTS -->
 <div class="white-break">
