@@ -19,10 +19,10 @@ export const ourProjects: Project[] = [
             intro: 'A rapid response system to detect drug overdose cases and notify responder to quickly assist people that need help.',
             problem: 'The United States is in the midst of an opioid epidemic. Many patients and drug users are dying of ' +
             'overdoses in record numbers.  Oftentimes, help is simply not available and/or not on time.',
-            achieve: 'Univtop is a powerful platform and a great tool to utilize for any prospective international student. ' +
-            'We connect the community to help new students find the help they need, and prepare them for the education journey with energy and excitement.',
+            achieve: 'Lifekit seeks to be a rapid response system to overdosers - notifying emergency responders to ' +
+            'quickly neutralize the effects of the overdose with a drug called Naloxone. With a combination of sensors measuring heart and respiratory rate, the app will automatically determine and alert responders of the overdosers’ whereabouts for assistance.',
             platform: 'Web, Android, IOS',
-            tools: ['Photoshop', 'Illustrator', 'Slack', 'Jira', 'Axure', 'Whiteboard', 'Pen and Paper']
+            tools: ['Angular2', 'Ionic2', 'Javascript', 'Nodejs', 'MySQL', 'Apache Cordova', 'GoogleMapAPI']
         },
         thumbnail: {
             title: 'projectthumbnail',
@@ -63,7 +63,7 @@ export const ourProjects: Project[] = [
         name: 'Xmario',
         place: 'Philadelphia',
         position: 'Software Developer',
-        tags: ['Artificial Intelligent'],
+        tags: ['Artificial Intelligence'],
         description: {
             intro: 'An experiment to study and develop the intelligent behavior of mario in the Super Mario game.',
             problem: 'A mini project to explore the possibilities and limits of applying Decision Trees, FSMs, Behavior Trees towards implementing the decision making of AI character in game.',
@@ -86,7 +86,7 @@ export const ourProjects: Project[] = [
         name: 'Othello',
         place: 'Philadelphia',
         position: 'Software Developer',
-        tags: ['Artificial Intelligent'],
+        tags: ['Artificial Intelligence'],
         description: {
             intro: 'A program that have two AI agents to compete in Othello game',
             problem: 'To learn and experiment with several algorithms in artificial intelligent search such as Minimax, and The Monte Carlo algorithm.',

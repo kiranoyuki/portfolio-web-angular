@@ -76,6 +76,9 @@
 				<div class="item-content" *ngIf="item.content">
 					<h6 *ngFor="let text of item.content">{{text}}</h6>
 				</div>
+				<ul class="item-list" *ngIf="item.list">
+					<li *ngFor="let text of item.list"><h6>{{text}}</h6></li>
+				</ul>
 				<div class="item-img noshow-on-phone" *ngIf="item.img">
 					<img src="{{item.img}}" alt="{{item.title}}">
 				</div>

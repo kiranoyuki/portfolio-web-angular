@@ -4,7 +4,7 @@
 	--main-font: #2b2a2a;
 	--amber-font: #616161;
 	--project-font: #4B4337;
-	--normal-text: #7c7c7c;
+	--normal-text: #939393;
 
 
 	/*----------timeline-------------*/
@@ -86,8 +86,10 @@ h5{
 }
 
 h6 {
-	font-size: 1.1em;
-	font-weight: 300;
+	font-size: 1em;
+	font-weight: 400;
+	color: var(--normal-text);
+
 }
 
 p {
@@ -101,14 +103,6 @@ p {
 
 }
 
-@media only screen and (max-device-width: 800px){
-
-	h6 {
-		font-weight: 400!important;
-		color: var(--normal-text);
-
-	}
-}
 
 .margin-top {
 	margin-top: 5%;

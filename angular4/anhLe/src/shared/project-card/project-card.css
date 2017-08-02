@@ -70,7 +70,6 @@
 	height: 100%;
 	opacity: 0;
 	border: 15px solid var(--yellow);
-	color: #fff;
 	cursor: pointer;
 	transform-style: flat;
 	transform: translate3d(0,0,0)
@@ -92,6 +91,11 @@
 	text-align: center;
 	padding: 0 15px;
 	transform: translateY(-50%)
+}
+
+.overlay-content h6 {
+	color: #fff;
+
 }
 
 .project-info h3 {

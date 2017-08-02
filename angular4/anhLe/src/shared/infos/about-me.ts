@@ -4,7 +4,7 @@ export const aboutMe : AboutMe = {
     introduction: [
         "Hi, I'm Anh Le",
         "I am a thinker and a designer.",
-        "My philosophy is to take complex problems and produce simple and effective designs. I am always intrigued to the way things work in order to understand and discover the fundamental basis of the problem. Such a drive that constantly convinced me that any complex problem always has a simple solution.",
+        "My philosophy is to take complex problems and produce simple and effective designs. I am always intrigued to the way things work in order to understand and discover the fundamental basis of the problem. Such a drive constantly convinced me that any complex problem always has a simple solution.",
         "I am always looking for the opportunity to learn and share my knowledge through friends, colleagues, and mentors. I find opportunities to expand my wisdom through feedbacks and critics. Ultimately, my goal is to create things that work for a greater good.",
         "'Leave it better than you found it.' –Robert Baden-Powell"
     ],
@@ -18,12 +18,12 @@ export const aboutMe : AboutMe = {
             {
                 icon: '../assets/images/about/ux.png',
                 category: 'UI+UX',
-                description: "A product is not good if customer cannot use it intuitively. I create products with clean and intuitive interfaces. These interfaces provide users comfort and productivity as they find them efficient, easy to use, and functional on everyday platforms: browsers and mobile devices alike."
+                description: "A product is not good if customers cannot use it intuitively. I create products with clean and intuitive interfaces. These interfaces provide users comfort and productivity as they find them efficient, easy to use, and functional on everyday platforms: browsers and mobile devices alike."
             },
             {
                 icon: '../assets/images/about/ai.png',
-                category: 'Artificial Intelligent',
-                description: "AI is the future and it will have many beneficial uses in society: from technology to economics, health care, law and much more. I have an ambitious to be a contributor to the future of AI and future breakthroughs. I believe the potential of AI will greatly improve the societal life in many aspects."
+                category: 'Artificial Intelligence',
+                description: "AI is the future and it will have many beneficial uses in society: from technology to economics, health care, law and much more. I have an ambition to be a contributor to the future of AI and its future breakthroughs. I believe the potential of AI will greatly improve the societal life in many aspects."
             }
         ],
         skills:{
@@ -41,7 +41,7 @@ export const aboutMe : AboutMe = {
                 'Photoshop', 'Illustrator', 'Android Studio', 'Visual Studio', 'Axure', 'SolidWork', 'AutoCad'
             ],
             knowledge: [
-                'Software Development', 'User Experience', 'Artificial Intelligent', 'Data Structure', 'Machine learning', 'Algorithms', 'Computer Graphics'
+                'Software Development', 'User Experience', 'Artificial Intelligence', 'Data Structure', 'Machine learning', 'Algorithms', 'Computer Graphics'
             ]
         }
     },
@@ -52,9 +52,9 @@ export const aboutMe : AboutMe = {
         title: 'Software Engineer',
         period: 'April - September 2015, 2016',
         description: [
-            "Modified and upgraded team’s web pages from an existing infrastructure to a new model-view-controller architecture to enhance the code efficiency, usability and maintainability using JQuery, Javascript, RequireJS, Grunt for front end development.",
+            "Modified and upgraded team’s web pages from an existing infrastructure to a new model-view-controller architecture to enhance the code efficiency, usability and maintainability using JQuery, Javascript, RequireJS, and Grunt for front end development.",
             "Worked closely with a team of 10 members to plan, design and develop the software’s solutions in 3-month Agile development cycles.",
-            "Designed and executed manual testes and QUnit testes to ensure the app’s quality and high percentage of code coverage."
+            "Designed and executed manual tests and QUnit tests to ensure the app’s quality and high percentage of code coverage."
         ]
         },
     {

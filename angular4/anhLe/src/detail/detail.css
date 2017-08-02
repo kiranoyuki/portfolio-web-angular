@@ -133,6 +133,10 @@ h6 {
 	max-height:100%;
 }
 
+.item-list li h6{
+	margin-bottom: 0;
+}
+
 
 
 
