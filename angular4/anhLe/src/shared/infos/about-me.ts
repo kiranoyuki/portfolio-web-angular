@@ -33,7 +33,7 @@ export const aboutMe : AboutMe = {
                 '../assets/images/about/knowledge.png'
             ],
             languages: [
-                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery', 'Python',
+                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery',
                'Matlab', 'Maple', 'MySQL'
 
             ],
