@@ -63,7 +63,7 @@ export const ourProjects: Project[] = [
         name: 'Xmario',
         place: 'Philadelphia',
         position: 'Software Developer',
-        tags: ['Artificial Intelligence'],
+        tags: ['Others'],
         description: {
             intro: 'An experiment to study and develop the intelligent behavior of mario in the Super Mario game.',
             problem: 'A mini project to explore the possibilities and limits of applying Decision Trees, FSMs, Behavior Trees towards implementing the decision making of AI character in game.',
@@ -86,7 +86,7 @@ export const ourProjects: Project[] = [
         name: 'Othello',
         place: 'Philadelphia',
         position: 'Software Developer',
-        tags: ['Artificial Intelligence'],
+        tags: ['Others'],
         description: {
             intro: 'A program that have two AI agents to compete in Othello game',
             problem: 'To learn and experiment with several algorithms in artificial intelligent search such as Minimax, and The Monte Carlo algorithm.',

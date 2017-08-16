@@ -2,18 +2,18 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	min-height: 95vh;
+	min-height: 85vh;
 	width:100%;
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-bottom: -74px;
+	/*margin-bottom: -74px;*/
 }
 
 
 .container-fluid {
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 .quote {
@@ -96,24 +96,15 @@
 
 
 @media only screen and (max-height: 1024px){
-	#contact {
-		min-height: 93vh;
-	}
 
 	.quote {
 		width: 100%;
 	}
 
-	.container-fluid {
-		margin-bottom: 15%;
-	}
-
 }
 
 @media only screen and (max-height: 765px) {
-	.quote {
-		margin-top: 10%;
-	}
+
 	#left {
 		text-align: center;
 		margin-bottom: 10%;

@@ -19,12 +19,12 @@ export const aboutMe : AboutMe = {
                 icon: '../assets/images/about/ux.png',
                 category: 'UI+UX',
                 description: "A product is not good if customers cannot use it intuitively. I create products with clean and intuitive interfaces. These interfaces provide users comfort and productivity as they find them efficient, easy to use, and functional on everyday platforms: browsers and mobile devices alike."
-            },
-            {
-                icon: '../assets/images/about/ai.png',
-                category: 'Artificial Intelligence',
-                description: "AI is the future and it will have many beneficial uses in society: from technology to economics, health care, law and much more. I have an ambition to be a contributor to the future of AI and its future breakthroughs. I believe the potential of AI will greatly improve the societal life in many aspects."
             }
+            // {
+            //     icon: '../assets/images/about/ai.png',
+            //     category: 'Problem Solver',
+            //     description: "AI is the future and it will have many beneficial uses in society: from technology to economics, health care, law and much more. I have an ambition to be a contributor to the future of AI and its future breakthroughs. I believe the potential of AI will greatly improve the societal life in many aspects."
+            // }
         ],
         skills:{
             icons: [
@@ -33,15 +33,14 @@ export const aboutMe : AboutMe = {
                 '../assets/images/about/knowledge.png'
             ],
             languages: [
-                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery',
-               'Matlab', 'Maple', 'MySQL'
+                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery', 'Matlab', 'Maple', 'MySQL'
 
             ],
             software: [
-                'Photoshop', 'Illustrator', 'Android Studio', 'Visual Studio', 'Axure', 'SolidWork', 'AutoCad'
+                'Photoshop', 'Illustrator', 'Android Studio', 'Visual Studio', 'Axure', 'SolidWork', 'AutoCad', 'Jira', 'Git'
             ],
             knowledge: [
-                'Software Development', 'User Experience', 'Artificial Intelligence', 'Data Structure', 'Machine learning', 'Algorithms', 'Computer Graphics'
+                'Software Development', 'User Experience', 'Web and Mobile App Development', 'Software Design', 'Data Structure', 'Algorithms'
             ]
         }
     },

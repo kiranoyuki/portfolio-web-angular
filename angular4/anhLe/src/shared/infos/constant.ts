@@ -2,9 +2,9 @@
  * Created by anhle on 7/12/17.
  */
 export const Tags:string[] = [
-    'UI+UX',
     'Web Dev',
-    'Artificial Intelligence'
+    'UI+UX',
+    'Others'
 ];
 
 
