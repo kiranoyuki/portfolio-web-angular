@@ -33,7 +33,7 @@ export const aboutMe : AboutMe = {
                 '../assets/images/about/knowledge.png'
             ],
             languages: [
-                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'Jquery', 'Matlab', 'Maple', 'MySQL'
+                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'jQuery', 'Matlab', 'Maple', 'MySQL', 'Lodash.js', 'Handlebar.js'
 
             ],
             software: [
@@ -49,11 +49,11 @@ export const aboutMe : AboutMe = {
         id: 201,
         company: 'Oracle Primavera',
         title: 'Software Engineer',
-        period: 'April - September 2015, 2016',
+        period: 'April - September 2016',
         description: [
-            "Modified and upgraded team’s web pages from an existing infrastructure to a new model-view-controller architecture to enhance the code efficiency, usability and maintainability using JQuery, Javascript, RequireJS, and Grunt for front end development.",
-            "Worked closely with a team of 10 members to plan, design and develop the software’s solutions in 3-month Agile development cycles.",
-            "Designed and executed manual tests and QUnit tests to ensure the app’s quality and high percentage of code coverage."
+            "Implemented a general-usage Javascript modal box class that handles the creation of new work packages as well as the assignment of start and finish times for each individual projects",
+            "Implemented two complete Prime application pages with 4 different grids that auto-broadcast changes to other projects and packages when users modify projects or work packages",
+            "Designed and executed manual tests and qUnit tests to cover more than 7 pages of Prime application, increasing the code coverage by 63%"
         ]
         },
     {
@@ -62,13 +62,25 @@ export const aboutMe : AboutMe = {
         title: 'Cofounder - UX Engineer',
         period: 'Jan 2015 - April 2016',
         description: [
-            "Analyzed user interaction design trends and developed design guidelines for a heavy-content mobile application: allowing international students to connect, find, and exchange information about studying abroad.",
-            "Developed user interface prototyping for iOS using Illustrator and Axure RP and improved the user experience and usability by analyzing the user’s feedback.",
-            "Organized and participated in business and marketing meetings."
+            "Analyzed user interface design trends and developed design guidelines for a content-heavy mobile application that allows international students to connect to each other, and exchange information on studying abroad",
+            "Developed UI high fidelity prototype for iOS app using Illustrator and followed User-Experience Research Methods to test usability on a group of 28 international students from different backgrounds",
+            "Participated and consulted in weekly meetings including business, marketing, and technical design aspects"
         ]
     },
     {
         id: 203,
+        company: 'Oracle Primavera',
+        title: 'Software Engineer',
+        period: 'April - September 2015',
+        description: [
+            "Worked on a feature team in Agile development to complete goals for 2-week sprints in a 6-month product release cycle of Prime application.",
+            "Implemented a generic panel to display details of a project management grid for the internal javascript framework that can be used by other developers using Bootstrap, Javascript, jQuery, lodash.js, Sass, and Grunt.",
+            "Utilized the internal libraries and APIs to modify and upgrade 4 complete pages of Prime application to the new MVC standard.",
+            "Fixed 32% of the team’s bugs within 3 weeks of the bug fixing stage, and decreased the total defects to below 18 before the cycle release."
+        ]
+        },
+    {
+        id: 204,
         company: 'Central Washington University',
         title: 'Lab Technician',
         period: 'Jan 2013 - Jun 2013',

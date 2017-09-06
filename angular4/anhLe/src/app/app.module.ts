@@ -20,6 +20,7 @@ import {HomeCacheService} from "../shared/services/home-cache.service";
 import {ModalService} from "../shared/services/modal.service";
 import {ProjectFilter} from "../shared/pipe/ProjectFilter";
 import {ScrollToModule} from 'ng2-scroll-to';
+import {SafeStylePipe} from "../shared/pipe/SafeStylePipe";
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {ScrollToModule} from 'ng2-scroll-to';
     ProjectCardComponent,
     ProjectGroupComponent,
     ProjectFilter,
-    TruncatePipe
+    TruncatePipe,
+    SafeStylePipe
   ],
   providers: [
     ModalService,

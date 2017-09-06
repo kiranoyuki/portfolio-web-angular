@@ -13,27 +13,6 @@ import {query, stagger, animate, style, transition, trigger, animateChild, group
 @Component({
     templateUrl : './detail.html',
     styleUrls: ['./detail.css'],
-    // animations: [
-    //     trigger('animation', [
-    //         transition('* => *', [
-    //             query(':leave', style({ opacity: 1}), { optional: true }),
-    //
-    //             group([
-    //                 query(':enter', [
-    //                     style({ transform: 'translateY(20px)', opacity: 0 }),
-    //                     stagger(20, [
-    //                         animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
-    //                     ]),
-    //                     animateChild()
-    //                 ],{ optional: true }),
-    //                 query(':leave', [
-    //                     animate('2s', style({ opacity: 0 })),
-    //                     animateChild()
-    //                 ], { optional: true })
-    //             ])
-    //         ])
-    //     ])
-    // ]
 })
 
 export class DetailComponent implements OnInit {
@@ -63,14 +42,17 @@ export class DetailComponent implements OnInit {
             this.project = this._modalService.getOneProject(params.id);
             this.images = this._modalService.getImagesFromProject(this.project);
             this.moreProjects = this._modalService.getProjects().filter(project => project !== this.project);
+
         });
         this.links = this._modalService.getContact();
+
     }
 
     chooseNextProject() {
         let id = Number(this.project.id);
         let nextId = id > this.moreProjects.length? 1 : id+1;
         this.router.navigate(['/detail', nextId.toString()]);
+
 
     }
 
