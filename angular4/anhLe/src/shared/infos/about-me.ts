@@ -13,7 +13,7 @@ export const aboutMe : AboutMe = {
             {
                 icon: '../assets/images/about/web.png',
                 category: 'Software Engineer',
-                description: "I have experience with web and android development using Angular 2, Java, Javascript, JQuery, Nodejs, CSS3, HTML5, Less, Android Studio and more. I implement responsive websites and scalable apps with semantic, modular and scalable code base."
+                description: "I have experience with web and android development using React/Redux, Angular 2,4, Python, Java, Javascript, CSS3, HTML5, Less, and more. I implement responsive websites and scalable apps with semantic, modular and scalable code base."
             },
             {
                 icon: '../assets/images/about/ux.png',
@@ -33,11 +33,11 @@ export const aboutMe : AboutMe = {
                 '../assets/images/about/knowledge.png'
             ],
             languages: [
-                'Java', 'Javascript', 'Angular 2', 'C++', 'HTML5', 'CSS3', 'Less', 'Ionic2', 'Nodejs', 'jQuery', 'Matlab', 'Maple', 'MySQL', 'Lodash.js', 'Handlebar.js'
+                'React', 'Python', 'Javascript', 'Angular 2', 'Typescript', 'Java', 'PostgreSQL', 'HTML5', 'CSS3', 'Matlab', 'Lodash.js'
 
             ],
             software: [
-                'Photoshop', 'Illustrator', 'Android Studio', 'Visual Studio', 'Axure', 'SolidWork', 'AutoCad', 'Jira', 'Git'
+                'Git', 'Docker', 'Bazel', 'Photoshop', 'Illustrator', 'Android Studio', 'Vagrant' 
             ],
             knowledge: [
                 'Software Development', 'User Experience', 'Web and Mobile App Development', 'Software Design', 'Data Structure', 'Algorithms'
@@ -46,18 +46,33 @@ export const aboutMe : AboutMe = {
     },
     timeline : [
         {
-        id: 201,
+        id: 201, 
+        company: 'Vistar Media',
+        title: 'Full Stack Software Engineer',
+        period: 'November 2017 - Present',
+        description: [
+            "Develop a high-volume ads delivery software to scale out-of-home advertisersand exchange platform",
+            "Implement features including planning and scheduling ads campaign, generatingmetrics tables, and mailing scheduled reports to group users",
+            "Lead a team of two to redesign a feature for bulk uploading and validatingads campaign’s assets",
+            "Increase bulk venues transaction speed by 75% through refactoring server’s venuesendpoint with Python and PostgreSQL",
+            "Increase the application’s load time by 30% through upgrading the existing front endcode from Flux to Redux"
+        ]
+
+        },
+        {
+        id: 202,
         company: 'Oracle Primavera',
-        title: 'Software Engineer',
+        title: 'Software Developer',
         period: 'April - September 2016',
         description: [
-            "Implemented a general-usage Javascript modal box class that handles the creation of new work packages as well as the assignment of start and finish times for each individual projects",
-            "Implemented two complete Prime application pages with 4 different grids that auto-broadcast changes to other projects and packages when users modify projects or work packages",
-            "Designed and executed manual tests and qUnit tests to cover more than 7 pages of Prime application, increasing the code coverage by 63%"
+            "Designed and developed features for Prime application, including organizingand delivering portfolios and projects through a cloud based platform",
+            "Lead front end for a team of four to design and develop a feature to monitorproject progress against original and current baselines",
+            "Reduced Scope management page’s latency by 400 ms and Prime application’slatency by 1900 ms by refactoring the old legacy front end",
+            "Increased code coverage by 63% with qUnit testing for 15 different pages ofPrime application"
         ]
         },
     {
-        id: 202,
+        id: 203,
         company: 'Univtop',
         title: 'Cofounder - UX Engineer',
         period: 'Jan 2015 - April 2016',
@@ -68,19 +83,19 @@ export const aboutMe : AboutMe = {
         ]
     },
     {
-        id: 203,
+        id: 204,
         company: 'Oracle Primavera',
-        title: 'Software Engineer',
+        title: 'Software Developer',
         period: 'April - September 2015',
         description: [
-            "Worked on a feature team in Agile development to complete goals for 2-week sprints in a 6-month product release cycle of Prime application.",
-            "Implemented a generic panel to display details of a project management grid for the internal javascript framework that can be used by other developers using Bootstrap, Javascript, jQuery, lodash.js, Sass, and Grunt.",
-            "Utilized the internal libraries and APIs to modify and upgrade 4 complete pages of Prime application to the new MVC standard.",
-            "Fixed 32% of the team’s bugs within 3 weeks of the bug fixing stage, and decreased the total defects to below 18 before the cycle release."
+            "Contributed to the internal libraries by developing panels for project managementpurpose",
+            "Improved 18% transaction speed by upgrading Prime’s front end with Javascript,LodashJS and internal libraries",
+            "Reduced the team’s total defects below 20 by fixing 37% of team’s bugs within three weeks before the release",
+            "Developed and executed qUnit and manual testing for 8 different pages of Prime application"
         ]
         },
     {
-        id: 204,
+        id: 205,
         company: 'Central Washington University',
         title: 'Lab Technician',
         period: 'Jan 2013 - Jun 2013',

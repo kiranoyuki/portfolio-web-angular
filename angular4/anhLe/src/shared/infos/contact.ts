@@ -2,7 +2,7 @@
  * Created by anhle on 7/19/17.
  */
 export const contact = {
-    email: 'le.masque.anh@gmail.com',
+    email: 'qwen.anhle@gmail.com',
 
     icons: [
         'fa fa-github',

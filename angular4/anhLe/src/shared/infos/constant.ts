@@ -13,10 +13,9 @@ export const Contact = {
         "Let's talk",
         "I am always looking forward for new opportunities."
     ],
-    resume: '../assets/Anh-Quynh-Le.pdf',
+    resume: '../assets/Anh_Le.pdf',
     linkedin: 'https://www.linkedin.com/in/anhquynhle/',
     github: 'https://github.com/kiranoyuki',
-    email: 'le.masque.anh@gmail.com',
+    email: 'qwen.anhle@gmail.com',
     phone: '215.834.8222',
-    address: '335 N 40st, Philadelphia, PA 19104',
 };

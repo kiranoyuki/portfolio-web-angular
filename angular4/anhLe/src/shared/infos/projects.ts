@@ -7,10 +7,35 @@ import {EnjoyChess} from "./project-detail/enjoychess";
 import {Xmario} from "./project-detail/xmario";
 import {Othello} from "./project-detail/othello";
 import {Septa} from "./project-detail/septa";
+import {SherwoodFolk} from "./project-detail/sherwood";
 
 export const ourProjects: Project[] = [
     {
         id: 1,
+        name: 'SherwoodFolks',
+        place: 'Philadelphia',
+        position: 'Web Developer',
+        tags: ['UI+UX', 'Web Dev'],
+        description: {
+            intro: 'A web version of Robinhood to provide users with a fastest and efficient experience in quick trading with a broad overview of the current stocks',
+            problem: 'Robinhood does not have a system where users can have the "one-click" trading stocks experience. This can slow down the efficiency of those active users, who love to have the fastest way to react to the stock market.',
+            achieve: 'SherwoodFolk provides a "one-click" solution to let users interact with the stocks and allow them to trade within 5 seconds. ',
+            platform: 'Web',
+            tools: ['Angular2,4', 'Typescript', 'Bootstrap', 'RobinhoodApi'],
+            
+        },
+        thumbnail: {
+            title: 'projectthumbnail',
+            url: '../assets/thumbnail/sherwood.png'
+        },
+        images : [{
+            title: 'intro',
+            url: '../assets/images/sherwood/4.png'
+        }],
+        content : SherwoodFolk
+    },
+    {
+        id: 2,
         name: 'Lifekit',
         place: 'Philadelphia',
         position: 'Frontend Developer - UX Engineer',
@@ -22,7 +47,7 @@ export const ourProjects: Project[] = [
             achieve: 'Lifekit seeks to be a rapid response system to overdosers - notifying emergency responders to ' +
             'quickly neutralize the effects of the overdose with a drug called Naloxone. With a combination of sensors measuring heart and respiratory rate, the app will automatically determine and alert responders of the overdosers’ whereabouts for assistance.',
             platform: 'Web, Android, IOS',
-            tools: ['Angular2', 'Ionic2', 'Javascript', 'Nodejs', 'MySQL', 'Apache Cordova', 'GoogleMapAPI']
+            tools: ['Angular2', 'Ionic2', 'Typescript', 'Nodejs', 'MySQL', 'Apache Cordova', 'GoogleMapAPI']
         },
         thumbnail: {
             title: 'projectthumbnail',
@@ -35,7 +60,7 @@ export const ourProjects: Project[] = [
         content : Lifekit
     },
     {
-        id: 2,
+        id: 3,
         name: 'EnjoyChess',
         place: 'Philadelphia',
         position: 'UX Engineer - Software Developer',
@@ -45,7 +70,7 @@ export const ourProjects: Project[] = [
             problem: 'A mini project to learn and implement a dynamic webapp that has login authentication oAuth, secure online interaction with network sockets, and dynamically updating content.',
             achieve: 'Implemented an online platform that only focus on chess, with a simple and clean interface. People can keep track of their match records, create custom tournaments, or simply invite other for a match.',
             platform: 'Web',
-            tools: ['Javascript', 'Nodejs', 'Jquery', 'Bootstrap', 'FacebookAPI', 'mySQL', 'GoogleAPI']
+            tools: ['Javascript', 'Nodejs', 'Jquery', 'Bootstrap', 'FacebookAPI', 'MySQL', 'GoogleAPI']
         },
 
         thumbnail: {
@@ -59,7 +84,7 @@ export const ourProjects: Project[] = [
         content: EnjoyChess
     },
     {
-        id: 3,
+        id: 4,
         name: 'Xmario',
         place: 'Philadelphia',
         position: 'Software Developer',
@@ -82,7 +107,7 @@ export const ourProjects: Project[] = [
         content : Xmario
     },
     {
-        id: 4,
+        id: 5,
         name: 'Othello',
         place: 'Philadelphia',
         position: 'Software Developer',
@@ -104,7 +129,7 @@ export const ourProjects: Project[] = [
         }],
         content : Othello
     }, {
-        id: 5,
+        id: 6,
         name: 'SeptaTracker',
         place: 'Philadelphia',
         position: 'Android Developer',
